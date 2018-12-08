@@ -480,20 +480,18 @@
                         <div class="iteminner">
                              <span class="item-photo item-nopic">
                                  <img style=" display:block;" width="210" height="140"
-                                      src="http://you.ctrip.com/place/guangxi100052.html" writing="0" alt="">
+                                      src="images/user/eea9d0e1323c418c933f7283ec99cecf_C_240_140.jpg" writing="0"
+                                      alt="">
                              </span>
                             <dl>
                                 <dt class="ellipsis">巡礼全球大都会城市</dt>
                                 <dd class="item-user">_CFT****06058发表于&nbsp;2018-12-07
-                                    <span class="lastreply">
-最新回复&nbsp;2018-12-07                                     </span>
+                                    <span class="lastreply">最新回复&nbsp;2018-12-07</span>
                                 </dd>
                                 <dd class="item-short">城市综合体，是城市与建筑的精彩对话，也是都会生活的巅峰范本。一座综合体就像“城中之城......</dd>
                                 <dd class="item-prac">
-                                     <span class="tips_a">
-                                     </span>
-                                    <span class="tips_b">
-</span>
+                                    <span class="tips_a"></span>
+                                    <span class="tips_b"></span>
                                 </dd>
 
                             </dl>
@@ -523,5 +521,87 @@
     </div>
 </div>
 </body>
-<script src="js/user/_bfa.min.js"></script>
+
+<div class="footgray">
+    <div class="footinner cf">
+        <dl>
+            <dt>社区必读</dt>
+            <dd><a href="http://you.ctrip.com/htmlpages/eula.html" target="_blank">用户协议</a></dd>
+            <dd><a href="http://you.ctrip.com/htmlpages/guide.html" target="_blank">社区指南</a></dd>
+            <dd><a href="http://you.ctrip.com/htmlpages/exp.html" target="_blank">经验与等级</a></dd>
+            <dd><a href="http://you.ctrip.com/htmlpages/help.html" target="_blank">新手导航</a></dd>
+            <dd><a href="http://you.ctrip.com/thematic/marketing/mianze" target="_blank">网络信息侵权保障</a></dd>
+        </dl>
+        <dl>
+            <dt>发现你的旅行</dt>
+            <dd><a href="http://you.ctrip.com/place" target="_blank">了解目的地</a></dd>
+            <dd><a href="http://you.ctrip.com/travels" target="_blank">阅读精彩游记</a></dd>
+            <dd><a href="http://you.ctrip.com/guides" target="_blank">下载精品攻略</a></dd>
+            <dd><a href="http://you.ctrip.com/asks" target="_blank">请教旅行达人</a></dd>
+            <dd><a href="http://you.ctrip.com/events" target="_blank">发起结伴</a></dd>
+        </dl>
+        <dl>
+            <dt>分享你的旅行</dt>
+            <dd><a href="http://you.ctrip.com/add-travel/guide.html" target="_blank">发表游记大作</a></dd>
+            <dd><a href="http://you.ctrip.com/dianping/" target="_blank">点评去过的景点</a></dd>
+        </dl>
+        <dl class="ftabout">
+            <dt>关于我们</dt>
+            <dd><a href="http://you.ctrip.com/htmlpages/about.html" target="_blank">社区简介</a></dd>
+            <dd><a href="http://you.ctrip.com/htmlpages/contact.html" target="_blank">联系我们</a></dd>
+            <dd><a href="http://you.ctrip.com/htmlpages/job.html" target="_blank">加入我们</a></dd>
+            <dd><a href="http://you.ctrip.com/intelligence.html" target="_blank">智慧旅游</a></dd>
+        </dl>
+        <dl class="ftguanzhu">
+            <dt>关注携程攻略社区</dt>
+            <dd class="youguanzhu cf"><span class="ftweixin"></span></dd>
+        </dl>
+    </div>
+</div>
+
+<script src="js/user/jquery-3.3.1.js"></script>
+<script src=""></script>
+<script>
+    /*
+        目的热点图片特效
+    */
+    $(function () {
+        $(".hot_destlist li").hover(function () {
+            $(this).find(".liner_bg").css("height", "100%");
+            $(this).find(".liner_bg dl").css({top: "auto", bottom: "0"});
+        }, function () {
+            $(this).find(".liner_bg").css("height", "40px");
+            $(this).find(".liner_bg dl").css({top: "o", bottom: "auto"});
+        });
+    });
+
+    /*
+    * 游记列表特效
+    * */
+    $(function () {
+        $tabs(".journaltab li", ".journalslist");
+        $(".journaltab a").click(function () {
+            var b = $(this).parents(".normalbox").offset().top - $(".ttd_topnav").height();
+            $("body,html").animate({scrollTop: b}, 800)
+        })
+    });
+
+    function $tabs(b, a, c) {
+        $(b).click(function () {
+            if ($(this).parent().hasClass("scroll-top")) {
+                var d = $(".journalbtn_t").offset().top;
+                $("body,html").animate({scrollTop: d}, 500)
+            }
+            $(this).addClass("current").siblings().removeClass("current");
+            $(a).hide().eq($(b).index(this)).show();
+            "function" == typeof c && c($(this))
+        });
+        $(".journalslistv1 .journal-item").hover(function () {
+            $(this).addClass("itemhover")
+        }, function () {
+            $(this).removeClass("itemhover")
+        })
+    }
+
+</script>
 </html>

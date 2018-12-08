@@ -17,4 +17,12 @@ public class UserController {
         return UserConstant.USER_INDEX;
     }
 
+    /**
+     * 城镇
+     */
+    @RequestMapping("/city")
+    public String city(){
+        return UserConstant.CITY_INDEX;
+    }
+
 }
