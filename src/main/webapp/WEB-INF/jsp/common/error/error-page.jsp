@@ -29,7 +29,7 @@
 </head>
 <body class="app sidebar-mini rtl">
 <!-- Navbar-->
-<header class="app-header"><a class="app-header__logo" href="../administrator/index.html">Vali</a>
+<header class="app-header"><a class="app-header__logo" href="../../administrator/index.html">Vali</a>
     <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
     <!-- Navbar Right Menu-->
     <ul class="app-nav">
@@ -81,9 +81,9 @@
         <!-- User Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
             <ul class="dropdown-menu settings-menu dropdown-menu-right">
-                <li><a class="dropdown-item" href="../administrator/page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-                <li><a class="dropdown-item" href="../administrator/page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-                <li><a class="dropdown-item" href="../administrator/page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                <li><a class="dropdown-item" href="../../administrator/page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+                <li><a class="dropdown-item" href="../../administrator/page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+                <li><a class="dropdown-item" href="../../administrator/page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
             </ul>
         </li>
     </ul>
@@ -98,39 +98,39 @@
         </div>
     </div>
     <ul class="app-menu">
-        <li><a class="app-menu__item" href="../administrator/index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li><a class="app-menu__item" href="../../administrator/index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="../administrator/bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
+                <li><a class="treeview-item" href="../../administrator/bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
                 <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-                <li><a class="treeview-item" href="../administrator/ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-                <li><a class="treeview-item" href="../administrator/widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
+                <li><a class="treeview-item" href="../../administrator/ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
+                <li><a class="treeview-item" href="../../administrator/widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
             </ul>
         </li>
-        <li><a class="app-menu__item" href="../administrator/charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
+        <li><a class="app-menu__item" href="../../administrator/charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="../administrator/form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
-                <li><a class="treeview-item" href="../administrator/form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-                <li><a class="treeview-item" href="../administrator/form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-                <li><a class="treeview-item" href="../administrator/form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
+                <li><a class="treeview-item" href="../../administrator/form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
+                <li><a class="treeview-item" href="../../administrator/form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
+                <li><a class="treeview-item" href="../../administrator/form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
+                <li><a class="treeview-item" href="../../administrator/form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
             </ul>
         </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="../administrator/table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-                <li><a class="treeview-item" href="../administrator/table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
+                <li><a class="treeview-item" href="../../administrator/table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
+                <li><a class="treeview-item" href="../../administrator/table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
             </ul>
         </li>
         <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="../administrator/blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
-                <li><a class="treeview-item" href="../administrator/page-login.html"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
-                <li><a class="treeview-item" href="../administrator/page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
-                <li><a class="treeview-item" href="../administrator/page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
-                <li><a class="treeview-item" href="../administrator/page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
-                <li><a class="treeview-item" href="../administrator/page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
-                <li><a class="treeview-item" href="../administrator/page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
+                <li><a class="treeview-item" href="../../administrator/blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
+                <li><a class="treeview-item" href="../../administrator/page-login.html"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
+                <li><a class="treeview-item" href="../../administrator/page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
+                <li><a class="treeview-item" href="../../administrator/page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
+                <li><a class="treeview-item" href="../../administrator/page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
+                <li><a class="treeview-item" href="../../administrator/page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
+                <li><a class="treeview-item" href="../../administrator/page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
                 <li><a class="treeview-item active" href="page-error.html"><i class="icon fa fa-circle-o"></i> Error Page</a></li>
             </ul>
         </li>

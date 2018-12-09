@@ -27,14 +27,6 @@
             <div class="gs-nav">
                 <ul>
                     <li id="gs_nav_0"><a href="http://you.ctrip.com/"><i class="icon_home"></i></a></li>
-                    <li class="active" id="gs_nav_1"><a href="http://you.ctrip.com/place/">目的地攻略</a></li>
-                    <li id="gs_nav_3"><a href="http://you.ctrip.com/travels/">游记</a></li>
-                    <li id="gs_nav_4"><a href="http://you.ctrip.com/asks/">问答</a></li>
-                    <li id="gs_nav_5"><a href="http://vacations.ctrip.com/tour/static/page/guide/introduction.html"
-                                         target="_blank">当地向导</a></li>
-                    <li id="gs_nav_8"><a href="http://top.ctrip.com/">口碑榜</a></li>
-                    <li id="gs_nav_6"><a href="http://you.ctrip.com/smilin">美食林</a><span class="gs_tipsml"></span></li>
-                    <li id="gs_nav_7"><a href="http://you.ctrip.com/article/?from=ctrip">氢气球</a></li>
                     <li id="my_home"><a href="http://you.ctrip.com/members/">我的主页</a></li>
                 </ul>
             </div>
@@ -95,8 +87,6 @@
 
                 <li class="ttd_first_nav current"><a href="http://you.ctrip.com/place/guilin28.html">主页</a>
                 </li>
-                <li><a href="http://you.ctrip.com/traffic/guilin28.html">交通</a>
-                </li>
                 <li><a href="http://you.ctrip.com/sight/guilin28.html">景点</a>
                 </li>
                 <li style="z-index: 1;"><a href="http://hotels.ctrip.com/hotel/Guilin33">住宿</a>
@@ -109,11 +99,6 @@
                 <li><a href="http://you.ctrip.com/travels/guilin28.html">游记</a>
                 </li>
                 <li><a href="http://you.ctrip.com/journeys/guilin28.html">行程</a>
-                </li>
-                <li><a href="http://vacations.ctrip.com/tour/static/page/guide/introduction.html">当地向导</a>
-                </li>
-                <li style="z-index: 1;"><a href="http://vacations.ctrip.com/whole-2B126/?searchText=%E6%A1%82%E6%9E%97">旅游度假</a>
-                    <span class="gs_newicon ddrnewicon"></span>
                 </li>
             </ul>
         </div>

@@ -30,14 +30,6 @@
             <div class="gs-nav">
                 <ul>
                     <li id="gs_nav_0"><a href="http://you.ctrip.com/"><i class="icon_home"></i></a></li>
-                    <li class="active" id="gs_nav_1"><a href="http://you.ctrip.com/place/">目的地攻略</a></li>
-                    <li id="gs_nav_3"><a href="http://you.ctrip.com/travels/">游记</a></li>
-                    <li id="gs_nav_4"><a href="http://you.ctrip.com/asks/">问答</a></li>
-                    <li id="gs_nav_5"><a href="http://vacations.ctrip.com/tour/static/page/guide/introduction.html"
-                                         target="_blank">当地向导</a></li>
-                    <li id="gs_nav_8"><a href="http://top.ctrip.com/">口碑榜</a></li>
-                    <li id="gs_nav_6"><a href="http://you.ctrip.com/smilin">美食林</a><span class="gs_tipsml"></span></li>
-                    <li id="gs_nav_7"><a href="http://you.ctrip.com/article/?from=ctrip">氢气球</a></li>
                     <li id="my_home"><a href="http://you.ctrip.com/members/">我的主页</a></li>
                 </ul>
             </div>
@@ -49,8 +41,6 @@
         </div>
     </div>
 </div>
-
-<input type="hidden" id="page_id" value="290565">
 <div class="content cf ">
     <div class="dest_toptitle">
         <div class="cf">
@@ -97,8 +87,6 @@
             <ul class="cf">
                 <li class="ttd_first_nav current"><a href="http://you.ctrip.com/place/guangxi100052.html">主页</a>
                 </li>
-                <li><a href="http://you.ctrip.com/traffic/guangxi100052.html">交通</a>
-                </li>
                 <li><a href="http://you.ctrip.com/sight/guangxi100052.html">景点</a>
                 </li>
                 <li><a href="http://hotels.ctrip.com/">住宿</a>
@@ -110,11 +98,6 @@
                 <li><a href="http://you.ctrip.com/travels/guangxi100052.html">游记</a>
                 </li>
                 <li><a href="http://you.ctrip.com/journeys/guangxi100052.html">行程</a>
-                </li>
-                <li><a href="http://vacations.ctrip.com/tour/static/page/guide/introduction.html">当地向导</a>
-                </li>
-                <li style="z-index: 1;"><a href="http://vacations.ctrip.com/whole-2B126/?searchText=%E5%B9%BF%E8%A5%BF">旅游度假</a>
-                    <span class="gs_newicon ddrnewicon"></span>
                 </li>
             </ul>
         </div>
@@ -379,37 +362,6 @@
                     </div>
                 </div>
             </div>
-            <!--旅游报价-->
-            <!--目的地问答-->
-            <div class="normalbox top_askform">
-                <div class="normaltitle cf">
-                    <h1>广西问答</h1>
-                    <span class="rbox"><a href="http://you.ctrip.com/asks/guangxi100052.html" target="_blank"
-                                          class="f_14">更多问题<i class="f14_more_arror"></i></a></span>
-                </div>
-                <div class=" cf">
-                    <div class="asksearch cf">
-                        <input type="text" id="asktop_ssinput" class="askss_input"
-                               placeholder="提问前不妨先搜索下，看看你的问题是否已经有人询问过">
-                        <input type="button" class="askss_button btncommon_blue" value="搜索问题">
-                    </div>
-                    <a target="_blank" id="ttd30_newquestion" title="我要提问"
-                       href="http://you.ctrip.com/asks/newquestion.html" class="asktiwen btncommon_orange"><i
-                            class="icon_tiwen"></i>我要提问</a>
-                </div>
-                <p class="tags">热门问答标签：<a href="http://you.ctrip.com/asks/guangxi100052-t3.html"
-                                          target="_blank">线路</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-guilin28.html" target="_blank">桂林</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-t2.html" target="_blank">住宿</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-nanning166.html" target="_blank">南宁</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-t6.html" target="_blank">交通</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-z458827.html" target="_blank">北海</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-t603.html" target="_blank">旅行</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-yangshuo702.html" target="_blank">阳朔</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-t105341.html" target="_blank">酒店</a><a
-                        href="http://you.ctrip.com/asks/guangxi100052-t525.html" target="_blank">行程</a></p>
-            </div>
-
             <!--目的地游记-->
             <div class="normalbox">
                 <div class="normaltitle cf">

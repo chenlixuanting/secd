@@ -8,6 +8,4 @@ public class ProvinceConstant {
     //省市景点界面
     public static final String PROVINCE_VIEW_SPOT = "province/view-spot";
 
-
-
 }
