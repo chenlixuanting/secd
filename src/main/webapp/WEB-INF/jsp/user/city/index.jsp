@@ -156,7 +156,7 @@
                 </div>
                 <ul>
                     <li><a href="http://you.ctrip.com/members/tour773" rel="nofollow" target="_blank" class="expertpic"><img
-                            width="48" height="48" src="./city_files/30030z000000mj762C053_C_180_180.jpg"></a>
+                            width="48" height="48" src="images/user/30030z000000mj762C053_C_180_180.jpg"></a>
                         <dl>
                             <dt><a target="_blank" rel="nofollow"
                                    href="http://you.ctrip.com/members/tour773">当地向导白小仙</a></dt>
@@ -165,7 +165,7 @@
                     </li>
                     <li><a href="http://you.ctrip.com/members/F8863E256E0E46DBB7535216FFFA75C5" rel="nofollow"
                            target="_blank" class="expertpic"><img width="48" height="48"
-                                                                  src="./city_files/30040q000000g6zj8A751_C_180_180.jpg"></a>
+                                                                  src="images/user/30040q000000g6zj8A751_C_180_180.jpg"></a>
                         <dl>
                             <dt><a target="_blank" rel="nofollow"
                                    href="http://you.ctrip.com/members/F8863E256E0E46DBB7535216FFFA75C5">当地向导桂林小袁</a>
@@ -175,7 +175,7 @@
                     </li>
                     <li><a href="http://you.ctrip.com/members/6A562348B5E04A0894E1A2C55976B557" rel="nofollow"
                            target="_blank" class="expertpic"><img width="48" height="48"
-                                                                  src="./city_files/300m0z000000mr36dE79E_C_180_180.jpg"></a>
+                                                                  src="images/user/300m0z000000mr36dE79E_C_180_180.jpg"></a>
                         <dl>
                             <dt><a target="_blank" rel="nofollow"
                                    href="http://you.ctrip.com/members/6A562348B5E04A0894E1A2C55976B557">当地向导桂林-小芳</a>
@@ -194,35 +194,35 @@
             <!--首页热门照片-->
             <div class="slide_show">
                 <div data-inner="" class="imgbackgbox">
-                    <img data-item="0" src="./city_files/CghzfVWwtayAcRE2ABaIuxjYffE235_C_880_350.jpg" width="880"
+                    <img data-item="0" src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_880_350.jpg" width="880"
                          height="350" class="" alt="" style="display: none;">
-                    <img data-item="1" src="./city_files/10020t000000iop8dE9E1_C_880_350.jpg" width="880" height="350"
+                    <img data-item="1" src="images/user/10020t000000iop8dE9E1_C_880_350.jpg" width="880" height="350"
                          alt="" class="" style="display: none;">
-                    <img data-item="2" src="./city_files/100f0600000015zg903FB_C_880_350.jpg" width="880" height="350"
+                    <img data-item="2" src="images/user/100f0600000015zg903FB_C_880_350.jpg" width="880" height="350"
                          alt="" class="" style="display: none;">
-                    <img data-item="3" src="./city_files/100e0500000010r3xD538_C_880_350.jpg" width="880" height="350"
+                    <img data-item="3" src="images/user/100e0500000010r3xD538_C_880_350.jpg" width="880" height="350"
                          alt="" class="" style="display: none;">
-                    <img data-item="4" src="./city_files/CggYGVZztWeAHWcjADCY2xj_5_8960_C_880_350.jpg" width="880"
+                    <img data-item="4" src="images/user/CggYGVZztWeAHWcjADCY2xj_5_8960_C_880_350.jpg" width="880"
                          height="350" alt="" class="current" style="display: inline;">
                 </div>
                 <div class="tabcover">
                 </div>
                 <ul class="tabpicbox" data-indicators="">
                     <li data-slip-to="0" class="">
-                        <img src="./city_files/CghzfVWwtayAcRE2ABaIuxjYffE235_C_80_50.jpg" width="80" height="50"
+                        <img src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_80_50.jpg" width="80" height="50"
                              alt=""><i></i>
                     </li>
                     <li data-slip-to="1" class="">
-                        <img src="./city_files/10020t000000iop8dE9E1_C_80_50.jpg" width="80" height="50" alt=""><i></i>
+                        <img src="images/user/10020t000000iop8dE9E1_C_80_50.jpg" width="80" height="50" alt=""><i></i>
                     </li>
                     <li data-slip-to="2" class="">
-                        <img src="./city_files/100f0600000015zg903FB_C_80_50.jpg" width="80" height="50" alt=""><i></i>
+                        <img src="images/user/100f0600000015zg903FB_C_80_50.jpg" width="80" height="50" alt=""><i></i>
                     </li>
                     <li data-slip-to="3" class="">
-                        <img src="./city_files/100e0500000010r3xD538_C_80_50.jpg" width="80" height="50" alt=""><i></i>
+                        <img src="images/user/100e0500000010r3xD538_C_80_50.jpg" width="80" height="50" alt=""><i></i>
                     </li>
                     <li data-slip-to="4" class="current">
-                        <img src="./city_files/CggYGVZztWeAHWcjADCY2xj_5_8960_C_80_50.jpg" width="80" height="50"
+                        <img src="images/user/CggYGVZztWeAHWcjADCY2xj_5_8960_C_80_50.jpg" width="80" height="50"
                              alt=""><i></i>
                     </li>
                 </ul>
@@ -316,7 +316,7 @@
                     <ul>
                         <li class=""><span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/CghzfVWwtayAcRE2ABaIuxjYffE235_C_270_170.jpg"
+                                 src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_270_170.jpg"
                                  data-original="https://dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_270_170.jpg"
                                  style="display: block;">
                         </span>
@@ -338,7 +338,7 @@
                             <a href="http://you.ctrip.com/sight/guilin28/2888.html" class="all_link" target="_blank"
                                title="漓江 分数：4.6 点评数：999+"></a></li>
                         <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="./city_files/100f0600000015zg903FB_C_270_170.jpg"
+                            <img width="270" height="170" src="images/user/100f0600000015zg903FB_C_270_170.jpg"
                                  data-original="https://dimg06.c-ctrip.com/images/100f0600000015zg903FB_C_270_170.jpg"
                                  style="display: block;">
                         </span>
@@ -361,7 +361,7 @@
                                title="西街 分数：4.2 点评数：999+"></a></li>
                         <li class=""><span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/CggYHVZztZKAAkONAB7KvIAjXR0912_C_270_170.jpg"
+                                 src="images/user/CggYHVZztZKAAkONAB7KvIAjXR0912_C_270_170.jpg"
                                  data-original="https://dimg06.c-ctrip.com/images/fd/tg/g4/M08/CC/30/CggYHVZztZKAAkONAB7KvIAjXR0912_C_270_170.jpg"
                                  style="display: block;">
                                 <span class="ticket">携程价 <span>¥ <b>60</b> </span></span>
@@ -385,7 +385,7 @@
                                title="两江四湖 分数：4.5 点评数：999+"></a></li>
                         <li class=""><span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/CghzfVWsoq2AWjQvABZtguNMQn0826_C_270_170.jpg"
+                                 src="images/user/CghzfVWsoq2AWjQvABZtguNMQn0826_C_270_170.jpg"
                                  data-original="https://dimg03.c-ctrip.com/images/fd/tg/g1/M09/16/9D/CghzfVWsoq2AWjQvABZtguNMQn0826_C_270_170.jpg"
                                  style="display: block;">
                         </span>
@@ -407,7 +407,7 @@
                             <a href="http://you.ctrip.com/sight/guilin28/22081.html" class="all_link" target="_blank"
                                title="遇龙河 分数：4.5 点评数：999+"></a></li>
                         <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="./city_files/100u070000002rpm8CC4E_C_270_170.jpg"
+                            <img width="270" height="170" src="images/user/100u070000002rpm8CC4E_C_270_170.jpg"
                                  data-original="https://dimg04.c-ctrip.com/images/100u070000002rpm8CC4E_C_270_170.jpg"
                                  style="display: block;">
                                 <span class="ticket">携程价 <span>¥ <b>52</b> </span></span>
@@ -435,7 +435,7 @@
                                title="象山景区 分数：4.3 点评数：999+"></a></li>
                         <li class=""><span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/d97f27e0107044e1a3e992fbb763e027_C_270_170.jpg"
+                                 src="images/user/d97f27e0107044e1a3e992fbb763e027_C_270_170.jpg"
                                  data-original="https://dimg01.c-ctrip.com/images/tg/963/634/210/d97f27e0107044e1a3e992fbb763e027_C_270_170.jpg"
                                  style="display: block;">
                                 <span class="ticket">携程价 <span>¥ <b>60</b> </span></span>
@@ -467,7 +467,7 @@
                 <div class="undis" id="poi_2" style="display: none;">
                     <ul>
                         <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="./city_files/10060900000041p881C7B_R_220_140.jpg"
+                            <img width="270" height="170" src="images/user/10060900000041p881C7B_R_220_140.jpg"
                                  data-original="https://dimg06.c-ctrip.com/images/10060900000041p881C7B_R_220_140.jpg">
                         </span>
                             <dl class="foods_spread">
@@ -487,7 +487,7 @@
                             <a href="http://you.ctrip.com/food/guilin28/126233.html" class="all_link" target="_blank"
                                title="椿记烧鹅(中山店) 分数：4.7 点评数：999+"></a></li>
                         <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="./city_files/100w0v000000jxxuaB59D_R_220_140.jpg"
+                            <img width="270" height="170" src="images/user/100w0v000000jxxuaB59D_R_220_140.jpg"
                                  data-original="https://dimg06.c-ctrip.com/images/100w0v000000jxxuaB59D_R_220_140.jpg">
                         </span>
                             <dl class="foods_spread">
@@ -507,7 +507,7 @@
                             <a href="http://you.ctrip.com/food/guilin28/126103.html" class="all_link" target="_blank"
                                title="阿甘酒家(中山中路店) 分数：4.3 点评数：506"></a></li>
                         <li><span class="ttd_nopic220">
-                            <img width="270" height="170" src="./city_files/10010y000000mh0m12DBE_R_220_140.jpg"
+                            <img width="270" height="170" src="images/user/10010y000000mh0m12DBE_R_220_140.jpg"
                                  data-original="https://dimg04.c-ctrip.com/images/10010y000000mh0m12DBE_R_220_140.jpg">
                         </span>
                             <dl class="foods_spread">
@@ -527,7 +527,7 @@
                             <a href="http://you.ctrip.com/food/guilin28/5578100.html" class="all_link" target="_blank"
                                title="MANGO芒果帮(7号店) 分数：4.7 点评数：51"></a></li>
                         <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="./city_files/100m0n000000eabdv872B_R_220_140.jpg"
+                            <img width="270" height="170" src="images/user/100m0n000000eabdv872B_R_220_140.jpg"
                                  data-original="https://dimg08.c-ctrip.com/images/100m0n000000eabdv872B_R_220_140.jpg">
                         </span>
                             <dl class="foods_spread">
@@ -547,7 +547,7 @@
                             <a href="http://you.ctrip.com/food/guilin28/4926084.html" class="all_link" target="_blank"
                                title="小南国(文明店) 分数：4.5 点评数：631"></a></li>
                         <li><span class="ttd_nopic220">
-                            <img width="270" height="170" src="./city_files/10070k000000coo0b297D_R_220_140.jpg"
+                            <img width="270" height="170" src="images/user/10070k000000coo0b297D_R_220_140.jpg"
                                  data-original="https://dimg12.c-ctrip.com/images/10070k000000coo0b297D_R_220_140.jpg">
                         </span>
                             <dl class="foods_spread">
@@ -567,7 +567,7 @@
                             <a href="http://you.ctrip.com/food/guilin28/5577959.html" class="all_link" target="_blank"
                                title="岚方螺蛳粉(漓江路店) 分数：4.5 点评数：466"></a></li>
                         <li><span class="ttd_nopic220">
-                            <img width="270" height="170" src="./city_files/10010v000000k4wi1B256_R_220_140.jpg"
+                            <img width="270" height="170" src="images/user/10010v000000k4wi1B256_R_220_140.jpg"
                                  data-original="https://dimg01.c-ctrip.com/images/10010v000000k4wi1B256_R_220_140.jpg">
                         </span>
                             <dl class="foods_spread">
@@ -596,7 +596,7 @@
                         <li class="">
                         <span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/15e05f74165d4066af963f0be6c4b39a_C_270_170.jpg"
+                                 src="images/user/15e05f74165d4066af963f0be6c4b39a_C_270_170.jpg"
                                  data-original="https://dimg06.c-ctrip.com/images/tg/640/105/106/15e05f74165d4066af963f0be6c4b39a_C_270_170.jpg">
                         </span>
                             <div class="abiconbox" data-id="108714">
@@ -623,7 +623,7 @@
                         <li class="">
                         <span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/f49e52ab90dc41519573e715c93ab671_C_270_170.jpg"
+                                 src="images/user/f49e52ab90dc41519573e715c93ab671_C_270_170.jpg"
                                  data-original="https://dimg04.c-ctrip.com/images/tg/706/236/250/f49e52ab90dc41519573e715c93ab671_C_270_170.jpg">
                         </span>
                             <div class="abiconbox" data-id="108721">
@@ -650,7 +650,7 @@
                         <li>
                         <span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/de36b75ae9624992bac44ff3cc1285ff_C_270_170.jpg"
+                                 src="images/user/de36b75ae9624992bac44ff3cc1285ff_C_270_170.jpg"
                                  data-original="https://dimg08.c-ctrip.com/images/tg/301/632/212/de36b75ae9624992bac44ff3cc1285ff_C_270_170.jpg">
                         </span>
                             <div class="abiconbox" data-id="108688">
@@ -677,7 +677,7 @@
                         <li class="">
                         <span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/dad7b08c0a6b469293347c5cd580263e_C_270_170.jpg"
+                                 src="images/user/dad7b08c0a6b469293347c5cd580263e_C_270_170.jpg"
                                  data-original="https://dimg07.c-ctrip.com/images/tg/085/838/604/dad7b08c0a6b469293347c5cd580263e_C_270_170.jpg">
                         </span>
                             <div class="abiconbox" data-id="108710">
@@ -704,7 +704,7 @@
                         <li class="">
                         <span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/CggYsFc_vMeAXUNJAAHtXa1kbek331_C_270_170.jpg"
+                                 src="images/user/CggYsFc_vMeAXUNJAAHtXa1kbek331_C_270_170.jpg"
                                  data-original="https://dimg07.c-ctrip.com/images/fd/tg/g5/M09/03/3C/CggYsFc_vMeAXUNJAAHtXa1kbek331_C_270_170.jpg">
                         </span>
                             <div class="abiconbox" data-id="1450526">
@@ -731,7 +731,7 @@
                         <li>
                         <span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="./city_files/a6da1a79639b455da4244e0b1556fe1a_C_270_170.jpg"
+                                 src="images/user/a6da1a79639b455da4244e0b1556fe1a_C_270_170.jpg"
                                  data-original="https://dimg06.c-ctrip.com/images/tg/998/068/621/a6da1a79639b455da4244e0b1556fe1a_C_270_170.jpg">
                         </span>
                             <div class="abiconbox" data-id="108723">
@@ -787,7 +787,7 @@
                                             class="gs2_more_arror"></i></span><span
                                             class="price">¥<em>187.0</em>起</span></dd>
                                 </dl>
-                                <img src="./city_files/200p0y000000lwbjf290E_R_300_225.jpg">
+                                <img src="images/user/200p0y000000lwbjf290E_R_300_225.jpg">
                                 <a href="http://hotels.ctrip.com/hotel/Guilin33/star3star4star5t3b0" class="hoverlink"
                                    target="_blank"></a>
                             </div>
@@ -801,7 +801,7 @@
                                             class="gs2_more_arror"></i></span><span
                                             class="price">¥<em>146.0</em>起</span></dd>
                                 </dl>
-                                <img src="./city_files/200t090000003r6vs46E7_R_130_130.jpg">
+                                <img src="images/user/200t090000003r6vs46E7_R_130_130.jpg">
                                 <a href="http://hotels.ctrip.com/hotel/Guilin33?checkin=2018-12-15" class="hoverlink"
                                    target="_blank"></a>
                             </div>
@@ -815,7 +815,7 @@
                                             class="gs2_more_arror"></i></span><span
                                             class="price">¥<em>188.0</em>起</span></dd>
                                 </dl>
-                                <img src="./city_files/200s0j000000a0gba0A3C_R_300_225.jpg">
+                                <img src="images/user/200s0j000000a0gba0A3C_R_300_225.jpg">
                                 <a href="http://hotels.ctrip.com/hotel/Guilin33/a1?checkin=2018-12-15" class="hoverlink"
                                    target="_blank"></a>
                             </div>
@@ -829,7 +829,7 @@
                                             class="gs2_more_arror"></i></span><span
                                             class="price">¥<em>271.0</em>起</span></dd>
                                 </dl>
-                                <img src="./city_files/200q0s000000hys9m226B_R_300_225.jpg">
+                                <img src="images/user/200q0s000000hys9m226B_R_300_225.jpg">
                                 <a href="http://hotels.ctrip.com/hotel/Guilin33/star4star5?checkin=2018-12-15t1b0"
                                    class="hoverlink" target="_blank"></a>
                             </div>
@@ -865,7 +865,7 @@
                              <span class="item-photo item-nopic">
                                      <span class="pic-tagico-3"></span>
                                  <img style=" display:block;" width="210" height="140"
-                                      src="./city_files/e57a7e7912d84cc1a084089b995a39a6_C_240_140.jpg"
+                                      src="images/user/e57a7e7912d84cc1a084089b995a39a6_C_240_140.jpg"
                                       writing="19419391" alt="">
                              </span>
                             <dl>
@@ -916,7 +916,7 @@
                         <div class="iteminner">
                              <span class="item-photo item-nopic">
                                  <img style=" display:block;" width="210" height="140"
-                                      src="./city_files/10090z000000mlwju20A1_C_240_140.jpg" writing="299452730" alt="">
+                                      src="images/user/10090z000000mlwju20A1_C_240_140.jpg" writing="299452730" alt="">
                              </span>
                             <dl>
                                 <dt class="ellipsis">游记那些事儿~~~活出青春态度</dt>
@@ -962,8 +962,8 @@
         </div>
     </div>
     <!--美食弹出层-->
-    <div class="gsn-layer food_popbox" id="foodPopbox" style="display: block;"><a href="javascript:$.popupbox.close();"
-                                                                            class="close"></a>
+    <div class="gsn-layer food_popbox" id="foodPopbox" style="display: none;"><a href="javascript:$.popupbox.close();"
+                                                                                 class="close"></a>
         <!--轮播效果-统一为线上首页渐隐展现形式-->
         <div class="carousel" id="foodCarousel">
             <ol class="carousel-indicators" style="margin-left: 0px; display: block;">
@@ -999,6 +999,7 @@
         </ul>
     </div>
 </div>
+
 <div class="footgray">
     <div class="footinner cf">
         <dl>
@@ -1036,4 +1037,151 @@
     </div>
 </div>
 </body>
+
+<script src="js/user/jquery-3.3.1.js"></script>
+
+<script>
+
+    var CarouselSlide = function (b, a) {
+        var c = $(b);
+        this.$element = c;
+        this.options = a;
+        var d = this, e = c.find("[data-indicators]"), g = a.eventType;
+        e.find("[data-slip-to]").bind(g, function () {
+            d.slide($(this).index())
+        });
+        this.options.interval && (d.cycle(), e.add(c.find("[data-inner]")).on("mouseenter", $.proxy(this.pause, this)).on("mouseleave", $.proxy(this.cycle, this)))
+    };
+
+    CarouselSlide.prototype = {
+        cycle: function (b) {
+            function a() {
+                c.slide(e)
+            }
+
+            b || (this.paused = !1);
+            this.cycleTimer && clearInterval(this.cycleTimer);
+            var c = this;
+            b = this.$element.find("[data-indicators]:visible").find("[data-slip-to]");
+            var d = b.length, e = b.siblings(".current").index(), e = e === d - 1 ? 0 : ++e;
+            this.options.interval && !this.paused && (this.cycleTimer = setInterval(a, this.options.interval));
+            return this
+        }, pause: function (b) {
+            b || (this.paused = !0);
+            this.cycle(!0);
+            clearInterval(this.cycleTimer);
+            this.cycleTimer = null;
+            return this
+        },
+        slide: function (b) {
+            var a = this.$element.find("[data-indicators]:visible"), c = this.$element.find("[data-inner]"),
+                d = a.find("[data-slip-to]").eq(b), e = this.cycleTimer;
+            if (!d.hasClass("current")) return e && this.pause(), c.each(function () {
+                var c = $(this), e = c.find("[data-item]").eq(b), h = c.find(".current");
+                0 !== e.length && 0 !== d.length && (a.find(".current").removeClass("current"), d.addClass("current"), h.stop(!0, !0), e.stop(!0, !0), h.fadeOut({
+                    duration: 400,
+                    easing: "linear",
+                    complete: function () {
+                        h.removeClass("current")
+                    }
+                }),
+                    e.fadeIn({
+                        duration: 400, easing: "linear", complete: function () {
+                            c.find(".current").css({display: "none"});
+                            c.find(".current").removeClass("current");
+                            e.addClass("current")
+                        }
+                    }))
+            }), e && this.cycle(), this
+        }
+    };
+    $.fn.carouselSlide = function (b) {
+        $.fn.carouselSlide.defaults = {eventType: "mouseover", interval: 3E3};
+        return this.each(function () {
+            b = $.extend({}, $.fn.carouselSlide.defaults, b);
+            new CarouselSlide(this, b)
+        })
+    };
+
+    function e() {
+        if ($(".suggest_poitab li[data-id='#poi_1']").hasClass("current")) {
+            var j = [];
+            var g = 0;
+            for (; g < mapCoords.length; g++) {
+                j.push(new BMap.Point(mapCoords[g].Lng, mapCoords[g].Lat))
+            }
+            var k = staticMap.getViewport(j);
+            var h = k.zoom;
+            var f = k.center;
+            staticMap.centerAndZoom(f, h);
+            staticMap.setZoom()
+        }
+    }
+
+    $(function () {
+
+        /*
+            轮播特效
+        */
+        $(".slide_show").carouselSlide();
+
+        /*
+            必吃，必游，必逛图片特效
+        */
+        $(".card_list").on("mouseenter", ".all_link", function () {
+            $(this).parent().addClass("current")
+        }).on("mouseleave", ".all_link", function () {
+            $(this).parent().removeClass("current")
+        });
+
+        /*
+            酒店榜单推荐特效
+        */
+        $(".piclist").hover(function () {
+            $(this).addClass("sinhoverbg")
+        }, function () {
+            $(this).removeClass("sinhoverbg")
+        });
+
+        $(".suggest_poitab li").mouseenter(function () {
+            $(this).siblings(".current").removeClass("current");
+            $(this).addClass("current");
+            $(".card_list").children().hide();
+            var f = $(this).attr("data-id");
+            $(f).show();
+            setTimeout(e, 300)
+        });
+
+    });
+
+    /*
+    * 游记列表特效
+    * */
+    $(function () {
+        $tabs(".journaltab li", ".journalslist");
+        $(".journaltab a").click(function () {
+            var b = $(this).parents(".normalbox").offset().top - $(".ttd_topnav").height();
+            $("body,html").animate({scrollTop: b}, 800)
+        })
+    });
+
+    function $tabs(b, a, c) {
+        $(b).click(function () {
+            if ($(this).parent().hasClass("scroll-top")) {
+                var d = $(".journalbtn_t").offset().top;
+                $("body,html").animate({scrollTop: d}, 500)
+            }
+            $(this).addClass("current").siblings().removeClass("current");
+            $(a).hide().eq($(b).index(this)).show();
+            "function" == typeof c && c($(this))
+        });
+        $(".journalslistv1 .journal-item").hover(function () {
+            $(this).addClass("itemhover")
+        }, function () {
+            $(this).removeClass("itemhover")
+        })
+    }
+
+</script>
+
 </html>
