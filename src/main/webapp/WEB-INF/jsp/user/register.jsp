@@ -101,7 +101,7 @@
 </div>
 </body>
 <script src="js/user/jquery-3.3.1.js"></script>
-<script src="js/common/layer.js"></script>
+<script src="js/common/layer/layer.js"></script>
 <script src="js/common/constant.js"></script>
 <script>
     $(function () {
@@ -109,7 +109,7 @@
 
             var loginData = {
                 account:$("#account").val(),
-                passowrd:$("#password").val(),
+                password:$("#password").val(),
                 username:$("#username").val(),
                 sex:$("#sex").children("input:radio[name='sex']:checked").val(),
                 birthday:$("#birthday").val(),
@@ -133,14 +133,15 @@
                 success:function (d) {
                     var data = eval(d);
                     layer.close(loadingEffects);
-                    switch (d.statusCode){
+                    switch (data.statusCode){
                         case 200:
                             layer.msg(constant.SUCCESS,{
                                 icon: 1,
                                 time: 1500
                             });
+                            window.location.href="user/login";
                             break;
-                        case 100:
+                        case 110:
                             layer.msg(constant.USER_ACCOUNT_EMPTY,{
                                 icon: 2,
                                 time: 1500
@@ -181,10 +182,22 @@
                                 icon: 2,
                                 time: 1500
                             });
+                            break;
+                        case 180:
+                            layer.msg(constant.USER_USERNAME_EMPTY,{
+                                icon: 2,
+                                time: 1500
+                            });
+                            break;
+                        case 190:
+                            layer.msg(constant.USER_PASSWORD_EMPTY,{
+                                icon: 2,
+                                time: 1500
+                            });
                     }
                 },error:function () {
                     layer.close(loadingEffects);
-                    layer.msg("登录失败!");
+                    layer.msg("请求超时失败!");
                 }
             });
 

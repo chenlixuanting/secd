@@ -8,4 +8,7 @@ public class UserConstant {
     //注册界面
     public static final String USER_REGISTER = "user/register";
 
+    //用户SessionKey
+    public static final String USER = "user";
+
 }

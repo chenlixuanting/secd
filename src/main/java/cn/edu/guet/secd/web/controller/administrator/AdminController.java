@@ -99,7 +99,7 @@ public class AdminController {
                         //将用户保存到session中
                         session.setAttribute(AdminConstant.ADMINISTRATOR,admin);
                         //登录成功
-                        msg.setStatusCode(StatusCodeConstant.SUCCESS);
+                        msg.setStatusCode(StatusCodeConstant.LOGIN_SUCCESS);
                     } else {
                         //密码错误
                         msg.setStatusCode(StatusCodeConstant.PASSWORD_ERROR);

@@ -2,18 +2,6 @@ package cn.edu.guet.secd.web.constant;
 
 public class StatusCodeConstant {
 
-    //服务器内部错误
-    public static final int SERVER_INNER_ERROR = 500;
-
-    //用户不存在
-    public static final int USER_NOT_EXIST = 310;
-
-    //密码错误
-    public static final int PASSWORD_ERROR = 405;
-
-    //成功
-    public static final int SUCCESS = 200;
-
     //账号为空
     public static final int USER_ACCOUNT_EMPTY = 110;
 
@@ -34,5 +22,26 @@ public class StatusCodeConstant {
 
     //用户已注册
     public static final int USER_IS_REGISTERED = 170;
+
+    //用户真实姓名为空
+    public static final int USER_USERNAME_EMPTY = 180;
+
+    //密码为空
+    public static final int USER_PASSWORD_EMPTY = 190;
+
+    //注册成功
+    public static final int REGISTER_SUCCESS = 200;
+
+    //登录成功
+    public static final int LOGIN_SUCCESS = 300;
+
+    //用户不存在
+    public static final int USER_NOT_EXIST = 310;
+
+    //密码错误
+    public static final int PASSWORD_ERROR = 405;
+
+    //服务器内部错误
+    public static final int SERVER_INNER_ERROR = 500;
 
 }

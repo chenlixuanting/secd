@@ -14,5 +14,9 @@ var constant = {
     //电话号码为空
     USER_MOBILE_PHONE_EMPTY:"电话号码为空!",
     //用户已注册
-    USER_IS_REGISTERED:"用户已注册!"
+    USER_IS_REGISTERED:"用户已注册!",
+    //用户真实姓名为空
+    USER_USERNAME_EMPTY:"用户真实姓名为空!",
+    //用户密码为空
+    USER_PASSWORD_EMPTY:"用户密码为空!"
 };
