@@ -13,7 +13,7 @@ public class CityController {
      * @return
      */
     @RequestMapping("/index")
-        public String index(){
+        public String indexPage(){
         return CityConstant.CITY_INDEX;
     }
 
@@ -22,7 +22,7 @@ public class CityController {
      * @return
      */
     @RequestMapping("/view-spot")
-    public String viewSpot(){
+    public String viewSpotPage(){
         return CityConstant.CITY_VIEW_SPOT;
     }
 

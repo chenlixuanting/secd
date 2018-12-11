@@ -13,7 +13,7 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping("/index")
-    public String index() {
+    public String indexPage() {
         return ProvinceConstant.PROVINCE_INDEX;
     }
 
@@ -22,7 +22,7 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping("/view-spot")
-    public String viewSpot(){
+    public String viewSpotPage(){
         return ProvinceConstant.PROVINCE_VIEW_SPOT;
     }
 

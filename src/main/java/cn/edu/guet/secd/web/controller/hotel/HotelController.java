@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HotelController {
 
     @RequestMapping("/index")
-    public String index(){
+    public String indexPage(){
         return HotelConstant.HOTEL_INDEX;
     }
 

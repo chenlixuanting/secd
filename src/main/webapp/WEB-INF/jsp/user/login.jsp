@@ -24,7 +24,7 @@
         <div class="lg_banner_list jmkt-picsroller" id="bannerpic">
             <div class="jmkt-picsroller-pics" id="418a532c-c4de-83a3-b359-0639f23f57a8" style="z-index: 1;"><a
                     href="javascript:void(0);" id="a_418a532c-c4de-83a3-b359-0639f23f57a8"><img
-                    src="images/user/70010x000000lt93kD31F_1920_540_363.jpg" width="1920" height="520"></a></div>
+                    src="images/user/70010x000000lt93kD31F_1920_540_363.jpg" width="1920" height="540"></a></div>
         </div>
     </div>
     <div class="mod-box" style="z-index: 10;">
@@ -38,15 +38,13 @@
                     </dl>
                     <dl>
                         <dd class="r_input input_auth-code"><input type="password" id="npwd" placeholder="登录密码"><a
-                                href="https://passport.ctrip.com/user/resetpwd/verifyIdentity" class="forgotpwd"
+                                href="#" class="forgotpwd"
                                 target="_black">忘记密码</a></dd>
                     </dl>
                     <dl style="display: none;">
                         <dd id="sliderddnormal" style="dlsplay:none">
                             <div class=" cpt-drop-box">
-                                <div class="cpt-loading-box" style="display: block;"><img class="cpt-loading-img"
-                                                                                          src=images/user/loading.gif"
-                                                                                          style="display: none;"><span
+                                <div class="cpt-loading-box" style="display: block;"><span
                                         class="cpt-loading-info-box"
                                         style="position: static; display: inline-block;"><span
                                         class="cpt-loading-icon-content" style="display: inline-block;"><i
@@ -194,7 +192,7 @@
                 </div>
                 <div class="lg_weblogin" id="loginbanner" style="display: block;">
                     <div class="login-about">
-                        <a href="https://passport.ctrip.com/user/reg/home" class="free-regist" target="_black">免费注册</a>
+                        <a href="user/register" class="free-regist" target="_black">免费注册</a>
                     </div>
                 </div>
 

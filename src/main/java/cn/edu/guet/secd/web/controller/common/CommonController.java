@@ -11,7 +11,7 @@ public class CommonController {
      * @return
      */
     @RequestMapping(value = {"","/","/index","/index.html"})
-    public String index(){
+    public String indexPage(){
         return "redirect:province/index";
     }
 

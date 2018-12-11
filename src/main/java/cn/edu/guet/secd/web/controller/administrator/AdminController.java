@@ -34,7 +34,7 @@ public class AdminController {
      * @return
      */
     @RequestMapping("/login")
-    public String login(HttpSession session, HttpServletResponse response) {
+    public String loginPage(HttpSession session, HttpServletResponse response) {
         return AdminConstant.ADMIN_LOGIN;
     }
 
@@ -53,7 +53,7 @@ public class AdminController {
      * @return
      */
     @RequestMapping("/index")
-    public String index() {
+    public String indexPage() {
         return AdminConstant.ADMIN_INDEX;
     }
 

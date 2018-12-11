@@ -20,17 +20,16 @@
 
     <!--注解驱动，自动帮我们注入最新版的处理器映射器和处理器适配器-->
     <!--<mvc:annotation-driven conversion-service="conversionService"/>-->
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven conversion-service="conversionService"/>
 
     <!--配置日期转换器-->
-    <!--<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">-->
-
-        <!--<property name="converters">-->
-            <!--<set>-->
-                <!--<bean class="com.guet.blog.web.converter.DateConverter"/>-->
-            <!--</set>-->
-        <!--</property>-->
-    <!--</bean>-->
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="cn.edu.guet.secd.web.converter.DateConverter"/>
+            </set>
+        </property>
+    </bean>
 
     <!-- 文件上传 -->
     <!--<bean id="multipartResolver"-->
@@ -149,7 +148,7 @@
     <tx:advice id="txAdvice"
                transaction-manager="transactionManager">
         <tx:attributes>
-            <tx:method name="find*" isolation="DEFAULT" read-only="true"/>
+            <tx:method name="get*" isolation="DEFAULT" read-only="true"/>
             <tx:method name="*" isolation="SERIALIZABLE"
                        propagation="REQUIRED"/>
         </tx:attributes>

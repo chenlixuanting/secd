@@ -8,6 +8,4 @@ import cn.edu.guet.secd.web.service.ArticalService;
  */
 public class ArticalServiceImpl implements ArticalService {
 
-
-
 }
