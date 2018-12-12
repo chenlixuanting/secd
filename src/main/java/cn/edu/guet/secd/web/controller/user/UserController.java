@@ -4,6 +4,7 @@ import cn.edu.guet.secd.web.constant.StatusCodeConstant;
 import cn.edu.guet.secd.web.constant.UserConstant;
 import cn.edu.guet.secd.web.pojo.User;
 import cn.edu.guet.secd.web.service.UserService;
+import cn.edu.guet.secd.web.util.GetDefaultHeadPic;
 import cn.edu.guet.secd.web.vo.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.sql.Timestamp;
 
 @Controller
 @RequestMapping("/user")
@@ -89,6 +91,12 @@ public class UserController {
             }else{
                 //查看账号是否被注册
                 if(StringUtils.isEmpty(userService.getByUserAccount(user.getAccount()))){
+                    //根据性别选择默认的头像
+                    user.setHeadPic(GetDefaultHeadPic.choose(user.getSex()));
+                    //填充创建时间和更新时间
+                    Timestamp currentTime = new Timestamp(System.currentTimeMillis());
+                    user.setCreateTime(currentTime);
+                    user.setUpdateTime(currentTime);
                     //未注册则进行注册
                     if(userService.saveUser(user)){
                         msg.setStatusCode(StatusCodeConstant.REGISTER_SUCCESS);

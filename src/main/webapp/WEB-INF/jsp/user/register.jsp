@@ -139,7 +139,9 @@
                                 icon: 1,
                                 time: 1500
                             });
-                            window.location.href="user/login";
+                            setTimeout(function () {
+                                window.location.href="user/login";
+                            },1500);
                             break;
                         case 110:
                             layer.msg(constant.USER_ACCOUNT_EMPTY,{

@@ -18,5 +18,11 @@ var constant = {
     //用户真实姓名为空
     USER_USERNAME_EMPTY:"用户真实姓名为空!",
     //用户密码为空
-    USER_PASSWORD_EMPTY:"用户密码为空!"
+    USER_PASSWORD_EMPTY:"用户密码为空!",
+    //用户登录成功
+    LOGIN_SUCCESS:"用户登录成功!",
+    //用户不存在
+    USER_NOT_EXIST:"用户不存在!",
+    //密码错误
+    PASSWORD_ERROR:"密码错误!",
 };
