@@ -98,13 +98,9 @@
         <div class="innerbox">
             <ul class="cf">
 
-                <li class="ttd_first_nav"><a href="http://you.ctrip.com/place/guangxi100052.html">主页</a>
+                <li class="ttd_first_nav"><a href="http://localhost:8080/secd/province/index">主页</a>
                 </li>
-                <li class="current"><a href="http://you.ctrip.com/sight/guangxi100052.html">景点</a>
-                </li>
-                <li><a href="http://hotels.ctrip.com/">住宿</a>
-                </li>
-                <li><a href="http://you.ctrip.com/restaurant/guangxi100052.html">美食</a>
+                <li class="current"><a href="http://localhost:8080/secd/province/view-spot">景点</a>
                 </li>
                 <li><a href="http://you.ctrip.com/shopping/guangxi100052.html">购物</a>
                 </li>

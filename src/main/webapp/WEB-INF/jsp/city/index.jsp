@@ -89,11 +89,6 @@
                 </li>
                 <li><a href="http://you.ctrip.com/sight/guilin28.html">景点</a>
                 </li>
-                <li style="z-index: 1;"><a href="http://hotels.ctrip.com/hotel/Guilin33">住宿</a>
-                    <span class="gs_newicon"></span>
-                </li>
-                <li><a href="http://you.ctrip.com/restaurant/guilin28.html">美食</a>
-                </li>
                 <li><a href="http://you.ctrip.com/shopping/guilin28.html">购物</a>
                 </li>
                 <li><a href="http://you.ctrip.com/travels/guilin28.html">游记</a>
@@ -752,75 +747,6 @@
                     <div class="gs_list_load"><p><i class="listface"></i>请期待更新！欢迎投稿给我们 <a target="_blank"
                                                                                           href="mailto:support@ctrip.com">support@ctrip.com</a>。
                     </p></div>
-                </div>
-            </div>
-            <!--度假中间产品块Start-->
-
-            <!--度假End-->
-
-            <!--主题内容 住宿-->
-            <div class="normalbox hotelwrap">
-                <div class="all_hotel cf">
-                    <h3 class="h3style">酒店榜单推荐</h3>
-                    <div class="hotel_inner">
-                        <div class="sin_hotel">
-                            <div class="piclist">
-                                <dl>
-                                    <dt><span class="falselink">最佳口碑酒店</span></dt>
-                                    <dd>用户好评共<b>173</b>家</dd>
-                                    <dd><span class="f_right"><span class="falselink">更多</span><i
-                                            class="gs2_more_arror"></i></span><span
-                                            class="price">¥<em>187.0</em>起</span></dd>
-                                </dl>
-                                <img src="images/user/200p0y000000lwbjf290E_R_300_225.jpg">
-                                <a href="http://hotels.ctrip.com/hotel/Guilin33/star3star4star5t3b0" class="hoverlink"
-                                   target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="sin_hotel">
-                            <div class="piclist">
-                                <dl>
-                                    <dt><span class="falselink">入住最多酒店</span></dt>
-                                    <dd>热销精选共<b>1513</b>家</dd>
-                                    <dd><span class="f_right"><span class="falselink">更多</span><i
-                                            class="gs2_more_arror"></i></span><span
-                                            class="price">¥<em>146.0</em>起</span></dd>
-                                </dl>
-                                <img src="images/user/200t090000003r6vs46E7_R_130_130.jpg">
-                                <a href="http://hotels.ctrip.com/hotel/Guilin33?checkin=2018-12-15" class="hoverlink"
-                                   target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="sin_hotel">
-                            <div class="piclist">
-                                <dl>
-                                    <dt><span class="falselink">特价促销酒店</span></dt>
-                                    <dd>超值特惠共<b>1117</b>家</dd>
-                                    <dd><span class="f_right"><span class="falselink">更多</span><i
-                                            class="gs2_more_arror"></i></span><span
-                                            class="price">¥<em>188.0</em>起</span></dd>
-                                </dl>
-                                <img src="images/user/200s0j000000a0gba0A3C_R_300_225.jpg">
-                                <a href="http://hotels.ctrip.com/hotel/Guilin33/a1?checkin=2018-12-15" class="hoverlink"
-                                   target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="sin_hotel">
-                            <div class="piclist">
-                                <dl>
-                                    <dt><span class="falselink">高端豪华酒店</span></dt>
-                                    <dd>奢华享受共<b>95</b>家</dd>
-                                    <dd><span class="f_right"><span class="falselink">更多</span><i
-                                            class="gs2_more_arror"></i></span><span
-                                            class="price">¥<em>271.0</em>起</span></dd>
-                                </dl>
-                                <img src="images/user/200q0s000000hys9m226B_R_300_225.jpg">
-                                <a href="http://hotels.ctrip.com/hotel/Guilin33/star4star5?checkin=2018-12-15t1b0"
-                                   class="hoverlink" target="_blank"></a>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
             <!--主题内容 游玩-->

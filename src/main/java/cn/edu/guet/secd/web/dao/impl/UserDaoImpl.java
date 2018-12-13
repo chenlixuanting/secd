@@ -12,16 +12,13 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao{
     public User getByUserAccount(String account) {
 
         String hql = "from cn.edu.guet.secd.web.pojo.User as u where u.account=:account";
-
         User user = null;
-
         try {
             Query query = getCurrentSession().createQuery(hql).setParameter("account",account);
             user = (User) query.uniqueResult();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return user;
     }
 

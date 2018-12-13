@@ -35,6 +35,12 @@ public class UserController {
         return UserConstant.USER_REGISTER;
     }
 
+    /**
+     * 登录验证
+     * @param user
+     * @param session
+     * @return
+     */
     @RequestMapping("/loginValidate")
     @ResponseBody
     public Message loginValidate(@RequestBody User user, HttpSession session){
@@ -59,14 +65,19 @@ public class UserController {
                     }
                 }
             }
-
         }else{
             msg.setStatusCode(StatusCodeConstant.SERVER_INNER_ERROR);
         }
-
         return msg;
     }
 
+    /**
+     * 注册验证
+     * @param user
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("/registerValidate")
     @ResponseBody
     public Message registerValidate(@RequestBody User user, HttpServletRequest request, HttpServletResponse response){
@@ -110,7 +121,6 @@ public class UserController {
         }else {
             msg.setStatusCode(StatusCodeConstant.SERVER_INNER_ERROR);
         }
-
         return msg;
     }
 
