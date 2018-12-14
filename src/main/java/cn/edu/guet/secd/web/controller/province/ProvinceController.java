@@ -18,12 +18,20 @@ public class ProvinceController {
     }
 
     /**
-     * 省市景点
+     * 省市景区
      * @return
      */
     @RequestMapping("/view-spot")
     public String viewSpotPage(){
         return ProvinceConstant.PROVINCE_VIEW_SPOT;
+    }
+
+    /**
+     * 省市更多景区
+     */
+    @RequestMapping("/more-view-spot")
+    public String moreViewSpotPage(){
+        return ProvinceConstant.PROVINCE_MORE_VIEW_SPOT;
     }
 
 }

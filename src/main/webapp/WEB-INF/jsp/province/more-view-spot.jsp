@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
     <meta name="location" content="province=广西;city=广西">
-    <title>广西旅游景点推荐,广西旅游必去景点,广西景点大全/排名</title>
+    <title>广西旅游景点推荐,广西旅游必去景点,广西景点大全/排名【携程攻略】</title>
     <meta name="keywords" content="广西景点,广西景点推荐,广西旅游景点,广西景点排名,广西景点大全,广西必去景点">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
@@ -20,22 +20,6 @@
     <link type="text/css" rel="stylesheet" href="css/user/pc_flaot.css">
 </head>
 <body>
-<div id="bdshare_s" style="display: block;">
-    <div id="bdshare_m" style="display: none;">
-        <div id="bdshare_m_c"><h6>分享到</h6>
-            <ul>
-                <li><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="bds_mshare mshare">一键分享</a></li>
-                <li><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="bds_qzone qqkj">QQ空间</a></li>
-                <li><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="bds_tsina xlwb">新浪微博</a></li>
-                <li><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="bds_bdysc bdysc">百度云收藏</a></li>
-                <li><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="bds_renren rrw">人人网</a></li>
-                <li><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="bds_tqq txwb">腾讯微博</a></li>
-                <li><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="bds_bdxc bdxc">百度相册</a></li>
-                <li><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="bds_more">更多...</a></li>
-            </ul>
-            <p><a href="http://you.ctrip.com/sight/guangxi100052.html#" class="goWebsite">百度分享</a></p></div>
-    </div>
-</div>
 <div>
     <div class="gs-header cf">
         <div class="content">
@@ -53,8 +37,6 @@
         </div>
     </div>
 </div>
-
-<input type="hidden" id="page_id" value="290547">
 <div class="content cf ">
     <div class="dest_toptitle">
         <div class="cf">
@@ -63,6 +45,7 @@
                     <a title="广西" href="http://you.ctrip.com/place/guangxi100052.html">广西</a>
                 </h1>
                 <p>Guangxi</p>
+
             </div>
             <div class="f_right">
                 <ul>
@@ -86,6 +69,7 @@
             </div>
         </div>
         <div class="sec_line cf">
+
             <p class="c_text_left ellipsis">
                 欢迎您访问广西 </p>
             <a class="c_map_link" href="http://you.ctrip.com/map/guangxi100052.html" target="_blank"><i></i>地图</a>
@@ -112,7 +96,6 @@
         </div>
     </div>
 </div>
-<!--二级导航-->
 <div class="ttd2_background">
     <div class="content cf">
         <div class="des_narrow f_left">
@@ -136,21 +119,6 @@
                     <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/guilin28.html" title="桂林">桂林</a></dd>
                 </dl>
             </div>
-            <!--END新增榜单块-->
-            <!--侧边tab表单切换-->
-            <!--侧边tab表单切换-->
-            <!--侧边特价机票-->
-            <input type="hidden" id="putDistrictId" value="100052">
-            <input type="hidden" id="putInChina" value="True">
-            <!--侧边特价机票-->
-            <div id="specialFlightId" class="special_ticket" style="display:none">
-            </div>
-            <input type="hidden" id="startCityId" name="startCityId" value="28">
-            <input type="hidden" id="endCityId" name="endCityId" value="100052">
-            <input type="hidden" id="dCode" name="dCode" value="">
-            <input type="hidden" id="aCode" name="aCode" value="">
-            <input type="hidden" id="inChina" name="inChina" value="True">
-            <input type="hidden" id="ctmInfo" name="ctmInfo" value="#ctm_ref=gs_ttd_{0}_02_fld_2_100052_undefined">
             <!--侧边热销门票排行-->
             <input type="hidden" id="ctmRmmp" name="ctmRmmp" value="#ctm_ref=gs_ttd_{0}_03_tkt_{1}_100052_undefined">
             <div id="hotTicketDivId" class="hot_ticket" style="display: none">
@@ -162,165 +130,9 @@
                 <ul id="hotTicketId"></ul>
             </div>
             <input type="hidden" id="txtTicketDistrictId" value="100052">
-            <!--侧边问答-->
-            <!--侧边目的地专家-->
-            <div class="narrow_wbox c_expert" id="destexpertId" style="display: none">
-            </div>
-            <input type="hidden" id="txtDistrictId" value="100052">
         </div>
         <div class="des_wide f_right">
-            <!--景点速览，带收缩展开换div-->
-            <!--景点速览-->
-            <div class="normalbox channelspace">
-                <div class="normaltitle cf">
-                    <h1>广西<span>必玩</span></h1>
-                </div>
-                <!--景点速览-->
-                <div class="card_list in_card">
-                    <ul>
-                        <li>
-                        <span class="ttd_nopic220" href="/sight/guilin28/2888.html" target="_blank">
-                            <img src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_220_140.jpg" width="270"
-                                 height="170"></span>
-                            <dl>
-                                <dt><i class="sight"></i><span title="漓江">漓江</span></dt>
-                                <!--星星算法，内层span写入宽度，14px为一颗星,默认一颗星-->
-                                <dd>
-                                    <span class="starlist"><span style="width: 90%;"></span></span><span class="score"> <strong>4.6</strong>分 </span><span
-                                        class="comment_text">10622条点评</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    <p class="ellipsis">都说“桂林山水甲天下，阳朔堪称甲桂林”，…</p>
-                                </dd>
-                                <dd class="fromtext">
-                                    来自<a target="_blank" rel="nofollow"
-                                         href="http://you.ctrip.com/members/10681F78B3A347DC81BADD65C8273075"
-                                         title="M50****634">M50****634</a>的点评
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/2888.html" target="_blank" class="all_link">
-                                <!--上半的整个链接--></a>
-                        </li>
-                        <li>
-                        <span class="ttd_nopic220" href="/sight/yangshuo702/22079.html" target="_blank">
-                            <img src="images/user/100f0600000015zg903FB_C_220_140.jpg" width="270"
-                                 height="170"></span>
-                            <dl>
-                                <dt><i class="sight"></i><span title="西街">西街</span></dt>
-                                <!--星星算法，内层span写入宽度，14px为一颗星,默认一颗星-->
-                                <dd>
-                                    <span class="starlist"><span style="width: 80%;"></span></span><span class="score"> <strong>4.2</strong>分 </span><span
-                                        class="comment_text">4966条点评</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    <p class="ellipsis">每个旅游景点都必有的小吃街的感觉。去的第…</p>
-                                </dd>
-                                <dd class="fromtext">
-                                    来自<a target="_blank" rel="nofollow"
-                                         href="http://you.ctrip.com/members/3524552936144676B1C4F42A2FDE76CB"
-                                         title="咖喱5饭饭">咖喱5饭饭</a>的点评
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/yangshuo702/22079.html" target="_blank"
-                               class="all_link"><!--上半的整个链接--></a>
-                        </li>
-                        <li>
-                        <span class="ttd_nopic220" href="/sight/yangshuo702/22081.html" target="_blank">
-                            <img src="images/user/CghzfVWsoq2AWjQvABZtguNMQn0826_C_220_140.jpg" width="270"
-                                 height="170"></span>
-                            <dl>
-                                <dt><i class="sight"></i><span title="遇龙河">遇龙河</span></dt>
-                                <!--星星算法，内层span写入宽度，14px为一颗星,默认一颗星-->
-                                <dd>
-                                    <span class="starlist"><span style="width: 90%;"></span></span><span class="score"> <strong>4.5</strong>分 </span><span
-                                        class="comment_text">5333条点评</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    <p class="ellipsis">遇龙河竹筏漂流真心值得去！原因看下面：&amp;#…</p>
-                                </dd>
-                                <dd class="fromtext">
-                                    来自<a target="_blank" rel="nofollow"
-                                         href="http://you.ctrip.com/members/A7068CCCEE884D9B91096F601E57F671"
-                                         title="阿果子">阿果子</a>的点评
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/yangshuo702/22081.html" target="_blank"
-                               class="all_link"><!--上半的整个链接--></a>
-                        </li>
-                        <li>
-                        <span class="ttd_nopic220" href="/sight/guilin28/5925.html" target="_blank">
-                            <img src="images/user/CggYHVZztZKAAkONAB7KvIAjXR0912_C_220_140.jpg" width="270"
-                                 height="170"></span>
-                            <dl>
-                                <dt><i class="sight"></i><span title="两江四湖">两江四湖</span></dt>
-                                <!--星星算法，内层span写入宽度，14px为一颗星,默认一颗星-->
-                                <dd>
-                                    <span class="starlist"><span style="width: 90%;"></span></span><span class="score"> <strong>4.5</strong>分 </span><span
-                                        class="comment_text">9912条点评</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    <p class="ellipsis">我们晚上8点上船正好天黑，到处灯也亮了。…</p>
-                                </dd>
-                                <dd class="fromtext">
-                                    来自<a target="_blank" rel="nofollow"
-                                         href="http://you.ctrip.com/members/D4DAF393B8DB4B7C819F3678363A5752"
-                                         title="M22****3663">M22****3663</a>的点评
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/5925.html" target="_blank" class="all_link">
-                                <!--上半的整个链接--></a>
-                        </li>
-                        <li>
-                        <span class="ttd_nopic220" href="/sight/guilin28/107505.html" target="_blank">
-                            <img src="images/user/100u070000002rpm8CC4E_C_220_140.jpg" width="270"
-                                 height="170"></span>
-                            <dl>
-                                <dt><i class="sight"></i><span title="象山景区">象山景区</span></dt>
-                                <!--星星算法，内层span写入宽度，14px为一颗星,默认一颗星-->
-                                <dd>
-                                    <span class="starlist"><span style="width: 90%;"></span></span><span class="score"> <strong>4.3</strong>分 </span><span
-                                        class="comment_text">13295条点评</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    <p class="ellipsis">象山景区地处广西桂林市中心，是一座集山青…</p>
-                                </dd>
-                                <dd class="fromtext">
-                                    来自<a target="_blank" rel="nofollow"
-                                         href="http://you.ctrip.com/members/90CBACE4C4E3499DA620D37403466E25"
-                                         title="365happy">365happy</a>的点评
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/107505.html" target="_blank" class="all_link">
-                                <!--上半的整个链接--></a>
-                        </li>
-                        <li>
-                        <span class="ttd_nopic220" href="/sight/yangshuo702/140484.html" target="_blank">
-                            <img src="images/user/6b16811eafd64fd89a80f590a2d574e4_C_220_140.jpg" width="270"
-                                 height="170"></span>
-                            <dl>
-                                <dt><i class="sight"></i><span title="世外桃源">世外桃源</span></dt>
-                                <!--星星算法，内层span写入宽度，14px为一颗星,默认一颗星-->
-                                <dd>
-                                    <span class="starlist"><span style="width: 90%;"></span></span><span class="score"> <strong>4.5</strong>分 </span><span
-                                        class="comment_text">4737条点评</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    <p class="ellipsis">去世外桃源景区，是因为这里是李冰冰，任泉…</p>
-                                </dd>
-                                <dd class="fromtext">
-                                    来自<a target="_blank" rel="nofollow"
-                                         href="http://you.ctrip.com/members/3479723AF6D64C7B91FBDD116A9161AA"
-                                         title="相请不如偶遇">相请不如偶遇</a>的点评
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/yangshuo702/140484.html" target="_blank"
-                               class="all_link"><!--上半的整个链接--></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <!--各地景点-->
-
             <div class="normalbox">
                 <div class="normaltitle cf">
                     <h1>广西<span> 各地景点</span></h1>
@@ -329,8 +141,8 @@
                     <div class="list_mod1">
                         <div class="cityimg">
                             <a class="ttd_nopic100" href="http://you.ctrip.com/place/guilin28.html" target="_blank"><img
-                                    src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_100_100.jpg" width="100"
-                                    height="100" alt=""></a> <i title="景点"></i><span>桂林</span>
+                                    src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_100_100.jpg"
+                                    width="100" height="100" alt=""></a> <i title="景点"></i><span>桂林</span>
                         </div>
                         <dl>
                             <dt><a target="_blank" href="http://you.ctrip.com/place/guilin28.html">桂林</a></dt>
@@ -441,9 +253,9 @@
                     <div class="list_mod1">
                         <div class="cityimg">
                             <a class="ttd_nopic100" href="http://you.ctrip.com/place/longsheng1445120.html"
-                               target="_blank"><img src="images/user/CggYHlZC0AiAedNMACKFFDgxDsk808_C_100_100.jpg"
-                                                    width="100" height="100" alt=""></a> <i
-                                title="景点"></i><span>龙胜</span>
+                               target="_blank"><img
+                                    src="images/user/CggYHlZC0AiAedNMACKFFDgxDsk808_C_100_100.jpg"
+                                    width="100" height="100" alt=""></a> <i title="景点"></i><span>龙胜</span>
                         </div>
                         <dl>
                             <dt><a target="_blank" href="http://you.ctrip.com/place/longsheng1445120.html">龙胜</a></dt>
@@ -490,8 +302,8 @@
                     <div class="list_mod1">
                         <div class="cityimg">
                             <a class="ttd_nopic100" href="http://you.ctrip.com/place/baise524.html" target="_blank"><img
-                                    src="images/user/CggYHFX7tJ-APZ4SAAvDwVf8iWs425_C_100_100.jpg" width="100"
-                                    height="100" alt=""></a> <i title="景点"></i><span>百色</span>
+                                    src="images/user/CggYHFX7tJ-APZ4SAAvDwVf8iWs425_C_100_100.jpg"
+                                    width="100" height="100" alt=""></a> <i title="景点"></i><span>百色</span>
                         </div>
                         <dl>
                             <dt><a target="_blank" href="http://you.ctrip.com/place/baise524.html">百色</a></dt>
@@ -554,15 +366,24 @@
                             </dd>
                         </dl>
                     </div>
-                    <div class="ttd_pager"><span class="f_right"><a class="f_14"
-                                                                    href="province/more-view-spot">更多广西景点<i
-                            class="f14_more_arror"></i></a></span></div>
+                    <!--翻页控件-->
+                    <div class="ttd_pager cf"><p>1-10 / 74条</p>
+                        <div class="pager_v1"><a class="prevpage disabled">上一页</a><a class="current">1</a><a
+                                href="http://you.ctrip.com/countrysightlist/guangxi100052/p2.html">2</a><a
+                                href="http://you.ctrip.com/countrysightlist/guangxi100052/p3.html">3</a><a
+                                href="http://you.ctrip.com/countrysightlist/guangxi100052/p4.html">4</a><a
+                                href="http://you.ctrip.com/countrysightlist/guangxi100052/p5.html">5</a><a
+                                class="nextpage"
+                                href="http://you.ctrip.com/countrysightlist/guangxi100052/p2.html">下一页</a><span>到 <input
+                                id="gopagetext" value="" type="text"> 页 / <b class="numpage">8</b>页</span><a
+                                class="gopage" href="javascript:;">确定</a></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <input type="hidden" id="page_id" value="290528">
     </div>
 </div>
-
 <div class="footgray">
     <div class="footinner cf">
         <dl>
