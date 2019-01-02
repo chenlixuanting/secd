@@ -372,7 +372,7 @@
         <a href="https://www.ctrip.com/"></a>
         <div class="errorinfo">
             <p>人在旅途，难免迷路，好在你有携程。</p>
-            <a class="goback" href="https://www.ctrip.com/">返回首页</a>
+            <a class="goback" href="http://localhost:8080/secd/">返回首页</a>
         </div>
         <div class="miscbox">
             <div class="tower"></div>
@@ -386,16 +386,10 @@
 </div>
 <div id="footer">
     <p class="copyright">
-        <a href="https://pages.ctrip.com/public/copyright.htm">Copyright©</a>1999-
-        <%--<script type="text/javascript" id="rmsd__script" async="" src="./404_files/d.min.87d7ff17.js.下载"--%>
-        <%--crossorigin="anonymous"></script>--%>
-        <%--<script type="text/javascript" charset="utf-8" async="" defer="defer" crossorigin="anonymous"--%>
-        <%--src="./404_files/marinRedirect.js.下载"></script>--%>
-        <%--<script type="text/javascript" charset="utf-8" async="" defer="defer" crossorigin="anonymous"--%>
-        <%--src="./404_files/rms.js.下载"></script>--%>
+        <a href="">Copyright©</a>1999-
         <script type="text/javascript" charset="utf-8" async="" src="js/user/_bfa.min.js"></script>
         2019,
-        <a href="https://pages.ctrip.com/public/ctripab/abctrip.htm">ctrip.com</a>. all rights reserved.
+        <a href="https://pages.ctrip.com/public/ctripab/abctrip.htm">guet.com</a>. all rights reserved.
     </p>
 </div>
 </body>

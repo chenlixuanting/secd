@@ -38,8 +38,6 @@
         </div>
     </div>
 </div>
-
-<input type="hidden" id="page_id" value="290564">
 <div class="content cf ">
     <div class="dest_toptitle">
         <div class="cf">

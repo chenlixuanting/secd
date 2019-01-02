@@ -81,12 +81,11 @@
          style="position: relative; overflow: visible; top: 0px; left: 0px; right: 0px; width: 100%; height: 39px;">
         <div class="innerbox">
             <ul class="cf">
-
-                <li class="ttd_first_nav"><a href="province/index">主页</a>
+                <li class="ttd_first_nav"><a href="http://localhost:8080/secd/province/index">主页</a>
                 </li>
-                <li class="current"><a href="province/view-spot">景点</a>
+                <li class="current"><a href="http://localhost:8080/secd/province/spot">景点</a>
                 </li>
-                <li><a href="http://you.ctrip.com/shopping/guangxi100052.html">购物</a>
+                <li><a href="http://localhost:8080/secd/province/shopping">购物</a>
                 </li>
                 <li><a href="http://you.ctrip.com/travels/guangxi100052.html">游记</a>
                 </li>

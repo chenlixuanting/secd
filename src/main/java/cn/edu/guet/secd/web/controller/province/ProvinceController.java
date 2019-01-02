@@ -27,17 +27,36 @@ public class ProvinceController {
      *
      * @return
      */
-    @RequestMapping(value = "/view-spot", method = RequestMethod.GET)
+    @RequestMapping(value = "/spot", method = RequestMethod.GET)
     public String viewSpotPage() {
-        return ProvinceConstant.PROVINCE_VIEW_SPOT;
+        return ProvinceConstant.PROVINCE_SPOT;
     }
 
     /**
      * 省市更多景区
      */
-    @RequestMapping(value = "/more-view-spot", method = RequestMethod.GET)
+    @RequestMapping(value = "/more-spot", method = RequestMethod.GET)
     public String moreViewSpotPage() {
-        return ProvinceConstant.PROVINCE_MORE_VIEW_SPOT;
+        return ProvinceConstant.PROVINCE_MORE_SPOT;
     }
 
+    /**
+     * 省市购物地点
+     *
+     * @return
+     */
+    @RequestMapping(value = "/shopping", method = RequestMethod.GET)
+    public String shoppingPlace() {
+        return ProvinceConstant.PROVINCE_SHOPPING;
+    }
+
+    /**
+     * 省市更多购物地点
+     *
+     * @return
+     */
+    @RequestMapping(value = "/more-shopping", method = RequestMethod.GET)
+    public String moreShoppingPlace() {
+        return ProvinceConstant.PROVINCE_MORE_SHOPPING;
+    }
 }
