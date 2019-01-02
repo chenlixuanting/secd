@@ -8,7 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by Administrator on 9/13/2018.
+ * @author Administrator
+ * @date 9/13/2018
  */
 @Service
 public class AdministratorServiceImpl implements AdministratorService {

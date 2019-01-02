@@ -10,7 +10,8 @@ import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 import java.lang.reflect.ParameterizedType;
 
 /**
- * Created by Administrator on 9/13/2018.
+ * @author Administrator
+ * @date 9/13/2018
  */
 public abstract class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
 
@@ -67,7 +68,7 @@ public abstract class BaseDaoImpl<T> extends HibernateDaoSupport implements Base
         try {
             getHibernateTemplate().delete(entity);
             flag = true;
-        }catch (HibernateException e){
+        } catch (HibernateException e) {
             e.printStackTrace();
             flag = false;
         }
@@ -85,7 +86,7 @@ public abstract class BaseDaoImpl<T> extends HibernateDaoSupport implements Base
         try {
             getHibernateTemplate().update(entity);
             flag = true;
-        }catch (HibernateException e){
+        } catch (HibernateException e) {
             e.printStackTrace();
             flag = false;
         }

@@ -11,8 +11,10 @@ import javax.servlet.http.HttpSession;
 
 /**
  * 登录拦截器
+ *
+ * @author Administrator
  */
-public class LoginInterceptor implements HandlerInterceptor{
+public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
@@ -20,7 +22,7 @@ public class LoginInterceptor implements HandlerInterceptor{
         HttpSession session = httpServletRequest.getSession(false);
 
         //登录失效
-        if(StringUtils.isEmpty(session)|| StringUtils.isEmpty(session.getAttribute(AdminConstant.ADMINISTRATOR))){
+        if (StringUtils.isEmpty(session) || StringUtils.isEmpty(session.getAttribute(AdminConstant.ADMINISTRATOR))) {
             //跳转到登录界面
             httpServletResponse.sendRedirect("administrator/errorPage");
             return false;

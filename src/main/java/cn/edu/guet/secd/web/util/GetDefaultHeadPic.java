@@ -4,6 +4,8 @@ import cn.edu.guet.secd.web.constant.CommonConstant;
 
 /**
  * 通过性别为用户分配默认头像
+ *
+ * @author Administrator
  */
 public class GetDefaultHeadPic {
 

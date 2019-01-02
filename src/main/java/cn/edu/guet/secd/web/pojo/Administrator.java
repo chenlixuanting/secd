@@ -6,31 +6,47 @@ import java.sql.Timestamp;
 /**
  * 后台管理员
  * <p>
- * Created by Administrator on 9/10/2018.
+ *
+ * @author Administrator
+ * @date 9/10/2018
  */
 public class Administrator implements Serializable {
 
     private static final long serialVersionUID = -1084540262377757736L;
 
-    //主键
+    /**
+     * 主键
+     */
     private String adminId;
 
-    //用户名
+    /**
+     * 用户名
+     */
     private String account;
 
-    //真实姓名
+    /**
+     * 真实姓名
+     */
     private String username;
 
-    //密码
+    /**
+     * 密码
+     */
     private String password;
 
-    //头像地址
+    /**
+     * 头像地址
+     */
     private String headPic;
 
-    //创建时间
+    /**
+     * 创建时间
+     */
     private Timestamp createTime;
 
-    //更新时间
+    /**
+     * 更新时间
+     */
     private Timestamp updateTime;
 
     public String getAdminId() {
@@ -81,13 +97,6 @@ public class Administrator implements Serializable {
         this.createTime = createTime;
     }
 
-    public Timestamp getUpdateTime() {
-        return updateTime;
+    public Administrator() {
     }
-
-    public void setUpdateTime(Timestamp updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public Administrator() {}
 }

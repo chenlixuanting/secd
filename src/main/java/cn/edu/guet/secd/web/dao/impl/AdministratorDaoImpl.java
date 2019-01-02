@@ -6,7 +6,8 @@ import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 
 /**
- * Created by Administrator on 9/13/2018.
+ * @author Administrator
+ * @date 9/13/2018
  */
 @Repository
 public class AdministratorDaoImpl extends BaseDaoImpl<Administrator> implements AdministratorDao {

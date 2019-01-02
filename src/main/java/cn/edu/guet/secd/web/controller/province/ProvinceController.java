@@ -3,6 +3,7 @@ package cn.edu.guet.secd.web.controller.province;
 import cn.edu.guet.secd.web.constant.ProvinceConstant;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * @author Administrator
@@ -16,7 +17,7 @@ public class ProvinceController {
      *
      * @return
      */
-    @RequestMapping("/index")
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String indexPage() {
         return ProvinceConstant.PROVINCE_INDEX;
     }
@@ -26,7 +27,7 @@ public class ProvinceController {
      *
      * @return
      */
-    @RequestMapping("/view-spot")
+    @RequestMapping(value = "/view-spot", method = RequestMethod.GET)
     public String viewSpotPage() {
         return ProvinceConstant.PROVINCE_VIEW_SPOT;
     }
@@ -34,7 +35,7 @@ public class ProvinceController {
     /**
      * 省市更多景区
      */
-    @RequestMapping("/more-view-spot")
+    @RequestMapping(value = "/more-view-spot", method = RequestMethod.GET)
     public String moreViewSpotPage() {
         return ProvinceConstant.PROVINCE_MORE_VIEW_SPOT;
     }

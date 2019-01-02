@@ -1,7 +1,8 @@
 package cn.edu.guet.secd.web.dao;
 
 /**
- * Created by Administrator on 9/13/2018.
+ * @author Administrator
+ * @date 9/13/2018
  */
 public interface BaseDao<T> {
 
@@ -11,7 +12,7 @@ public interface BaseDao<T> {
      * @param entity
      * @return
      */
-    public Boolean save(T entity);
+     Boolean save(T entity);
 
 
     /**
@@ -20,7 +21,7 @@ public interface BaseDao<T> {
      * @param entity
      * @return
      */
-    public Boolean delete(T entity);
+     Boolean delete(T entity);
 
 
     /**
@@ -29,7 +30,7 @@ public interface BaseDao<T> {
      * @param id
      * @return
      */
-    public T findById(Integer id);
+     T findById(Integer id);
 
     /**
      * 改
@@ -37,5 +38,5 @@ public interface BaseDao<T> {
      * @param entity
      * @return
      */
-    public Boolean update(T entity);
+     Boolean update(T entity);
 }

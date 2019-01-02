@@ -4,20 +4,70 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Date;
 
-public class User implements Serializable{
+/**
+ * @author Administrator
+ */
+public class User implements Serializable {
 
-    private String userId;//主键
-    private String account;//账户
-    private String password;//密码
-    private String username;//真实姓名
-    private String sex;//性别
-    private Date birthday;//出生年月日
-    private String idCardNumber;//身份证号码
-    private String mobilePhone;//电话号码
-    private String address;//详细地址
-    private String headPic;//头像
-    private Timestamp createTime;//创建时间
-    private Timestamp updateTime;//更新时间
+    /**
+     * 主键
+     */
+    private String userId;
+
+    /**
+     * 账户
+     */
+    private String account;
+
+    /**
+     * 密码
+     */
+    private String password;
+
+    /**
+     * 真实姓名
+     */
+    private String username;
+
+    /**
+     * 性别
+     */
+    private String sex;
+
+    /**
+     * 出生年月日
+     */
+    private Date birthday;
+
+    /**
+     * 身份证号码
+     */
+    private String idCardNumber;
+
+    /**
+     * 电话号码
+     */
+    private String mobilePhone;
+
+    /**
+     * 详细地址
+     */
+    private String address;
+
+    /**
+     * 头像
+     */
+    private String headPic;
+
+    /**
+     * 创建时间
+     */
+    private Timestamp createTime;
+
+    /**
+     * 更新时间
+     */
+    private Timestamp updateTime;
 
     public Timestamp getCreateTime() {
         return createTime;

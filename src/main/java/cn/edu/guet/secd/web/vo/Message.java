@@ -6,17 +6,23 @@ import java.util.Map;
 
 /**
  * 返回前台的消息实体
+ *
+ * @author Administrator
  */
-public class Message implements Serializable{
+public class Message implements Serializable {
 
-    //状态码
+    /**
+     * 状态码
+     */
     private int statusCode;
 
-    //数据Map
-    private Map<String,Object>  dataMap = new HashMap<String, Object>();
+    /**
+     * 数据Map
+     */
+    private Map<String, Object> dataMap = new HashMap<String, Object>();
 
-    public void putData(String key,Object obj){
-        dataMap.put(key,obj);
+    public void putData(String key, Object obj) {
+        dataMap.put(key, obj);
     }
 
     public int getStatusCode() {
