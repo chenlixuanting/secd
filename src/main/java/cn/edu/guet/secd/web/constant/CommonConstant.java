@@ -8,7 +8,12 @@ public class CommonConstant {
     /**
      * 错误界面
      */
-    public static final String ERROR_PAGE = "common/error-page";
+    public static final String ERROR_PAGE = "common/error/error-page";
+
+    /**
+     * 404页面
+     */
+    public static final String PAGE_NOT_FOUND = "common/error/404";
 
     /**
      * 本机项目根目录地址

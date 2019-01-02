@@ -13,7 +13,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.sql.Timestamp;
 
 /**
- * Created by Administrator on 9/13/2018.
+ * @author Administrator
+ * @date 9/13/2018
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
@@ -32,7 +33,6 @@ public class HibernateTest {
         administrator.setPassword("123456");
 
         administrator.setCreateTime(new Timestamp(System.currentTimeMillis()));
-        administrator.setUpdateTime(new Timestamp(System.currentTimeMillis()));
 
         Session session = sessionFactory.openSession();
 
@@ -45,7 +45,7 @@ public class HibernateTest {
     }
 
     @Test
-    public void deleteAdministrator(){
+    public void deleteAdministrator() {
 
         int id = 1;
 
@@ -53,7 +53,7 @@ public class HibernateTest {
 
         Transaction tx = session.beginTransaction();
 
-        Administrator administrator = (Administrator) session.get(Administrator.class,1);
+        Administrator administrator = (Administrator) session.get(Administrator.class, 1);
 
         session.delete(administrator);
 

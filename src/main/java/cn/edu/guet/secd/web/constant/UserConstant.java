@@ -25,4 +25,14 @@ public class UserConstant {
      */
     public static final String USER_HOME = "user/home";
 
+    /**
+     * 好友主页
+     */
+    public static final String USER_FRIEND_HOME = "user/friend";
+
+    /**
+     * 游记
+     */
+    public static final String USER_TRAVEL = "user/travels";
+
 }
