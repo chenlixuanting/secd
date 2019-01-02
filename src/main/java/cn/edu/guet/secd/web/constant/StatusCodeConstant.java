@@ -1,5 +1,8 @@
 package cn.edu.guet.secd.web.constant;
 
+/**
+ * @author Administrator
+ */
 public class StatusCodeConstant {
 
     //账号为空

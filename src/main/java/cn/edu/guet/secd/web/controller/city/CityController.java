@@ -13,7 +13,7 @@ public class CityController {
      * @return
      */
     @RequestMapping("/index")
-        public String indexPage(){
+    public String indexPage(){
         return CityConstant.CITY_INDEX;
     }
 

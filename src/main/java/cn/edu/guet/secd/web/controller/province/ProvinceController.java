@@ -4,12 +4,16 @@ import cn.edu.guet.secd.web.constant.ProvinceConstant;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * @author Administrator
+ */
 @Controller
 @RequestMapping("/province")
 public class ProvinceController {
 
     /**
      * 省市首页
+     *
      * @return
      */
     @RequestMapping("/index")
@@ -19,10 +23,11 @@ public class ProvinceController {
 
     /**
      * 省市景区
+     *
      * @return
      */
     @RequestMapping("/view-spot")
-    public String viewSpotPage(){
+    public String viewSpotPage() {
         return ProvinceConstant.PROVINCE_VIEW_SPOT;
     }
 
@@ -30,7 +35,7 @@ public class ProvinceController {
      * 省市更多景区
      */
     @RequestMapping("/more-view-spot")
-    public String moreViewSpotPage(){
+    public String moreViewSpotPage() {
         return ProvinceConstant.PROVINCE_MORE_VIEW_SPOT;
     }
 

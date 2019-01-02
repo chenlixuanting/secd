@@ -1,5 +1,8 @@
 package cn.edu.guet.secd.web.constant;
 
+/**
+ * @author Administrator
+ */
 public class CommonConstant {
 
     //错误界面

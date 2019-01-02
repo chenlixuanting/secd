@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
@@ -29,43 +30,47 @@ public class AdminController {
 
     /**
      * 管理员登录界面
+     *
      * @param session
      * @param response
      * @return
      */
-    @RequestMapping("/login")
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String loginPage(HttpSession session, HttpServletResponse response) {
         return AdminConstant.ADMIN_LOGIN;
     }
 
     /**
      * 错误页面
+     *
      * @param request
      * @return
      */
-    @RequestMapping(value = "/errorPage")
-    public String errorPage( HttpServletRequest request){
+    @RequestMapping(value = "/errorPage", method = RequestMethod.GET)
+    public String errorPage(HttpServletRequest request) {
         return CommonConstant.ERROR_PAGE;
     }
 
     /**
      * 管理员首页
+     *
      * @return
      */
-    @RequestMapping("/index")
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String indexPage() {
         return AdminConstant.ADMIN_INDEX;
     }
 
     /**
      * 验证登录信息
+     *
      * @param administrator
      * @param request
      * @param response
      * @param session
      * @return
      */
-    @RequestMapping("/loginvalidate")
+    @RequestMapping(value = "/login", method = RequestMethod.PUT)
     @ResponseBody
     public Message loginValidate(@RequestBody Administrator administrator, HttpServletRequest request,
                                  HttpServletResponse response, HttpSession session) {
@@ -74,7 +79,7 @@ public class AdminController {
         Message msg = new Message();
 
         //如果administrator为null
-        if(StringUtils.isEmpty(administrator)){
+        if (StringUtils.isEmpty(administrator)) {
 
             //用户输入的账号
             String account = administrator.getAccount();
@@ -97,7 +102,7 @@ public class AdminController {
                         //清除密码
                         admin.setPassword("");
                         //将用户保存到session中
-                        session.setAttribute(AdminConstant.ADMINISTRATOR,admin);
+                        session.setAttribute(AdminConstant.ADMINISTRATOR, admin);
                         //登录成功
                         msg.setStatusCode(StatusCodeConstant.LOGIN_SUCCESS);
                     } else {
@@ -106,8 +111,7 @@ public class AdminController {
                     }
                 }
             }
-
-        }else{
+        } else {
             msg.setStatusCode(StatusCodeConstant.SERVER_INNER_ERROR);
         }
         return msg;

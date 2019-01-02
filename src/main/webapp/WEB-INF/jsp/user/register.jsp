@@ -49,9 +49,12 @@
             <dl>
                 <dt class="label">性别</dt>
                 <dd style="margin-top: 8px;" id="sex">
-                    <input class="r_input" style="width: 30px;height: 20px;margin-left: 40px;" type="radio" value="男" checked="checked" name="sex">男
-                    <input class="r_input" style="width: 30px;height: 20px;margin-left: 40px;" type="radio" value="女" name="sex">女
-                    <input class="r_input" style="width: 30px;height: 20px;margin-left: 40px;" type="radio" value="未知" name="sex">未知
+                    <input class="r_input" style="width: 30px;height: 20px;margin-left: 40px;" type="radio" value="男"
+                           checked="checked" name="sex">男
+                    <input class="r_input" style="width: 30px;height: 20px;margin-left: 40px;" type="radio" value="女"
+                           name="sex">女
+                    <input class="r_input" style="width: 30px;height: 20px;margin-left: 40px;" type="radio" value="未知"
+                           name="sex">未知
                 </dd>
             </dl>
 
@@ -108,14 +111,14 @@
         $("#regBtn").click(function () {
 
             var loginData = {
-                account:$("#account").val(),
-                password:$("#password").val(),
-                username:$("#username").val(),
-                sex:$("#sex").children("input:radio[name='sex']:checked").val(),
-                birthday:$("#birthday").val(),
-                idCardNumber:$("#idCardNumber").val(),
-                mobilePhone:$("#mobilePhone").val(),
-                address:$("#address").val()
+                account: $("#account").val(),
+                password: $("#password").val(),
+                username: $("#username").val(),
+                sex: $("#sex").children("input:radio[name='sex']:checked").val(),
+                birthday: $("#birthday").val(),
+                idCardNumber: $("#idCardNumber").val(),
+                mobilePhone: $("#mobilePhone").val(),
+                address: $("#address").val()
             };
 
             //开始界面loading特效
@@ -125,79 +128,79 @@
              * 请求注册
              */
             $.ajax({
-                url:"user/registerValidate",
-                dataType:"json",
-                contentType:"application/json",
-                method:"post",
-                data:JSON.stringify(loginData),
-                success:function (d) {
+                url: "user/register",
+                dataType: "json",
+                contentType: "application/json",
+                method: "post",
+                data: JSON.stringify(loginData),
+                success: function (d) {
                     var data = eval(d);
                     layer.close(loadingEffects);
-                    switch (data.statusCode){
+                    switch (data.statusCode) {
                         case 200:
-                            layer.msg(constant.SUCCESS,{
+                            layer.msg(constant.SUCCESS, {
                                 icon: 1,
                                 time: 1500
                             });
                             setTimeout(function () {
-                                window.location.href="user/login";
-                            },1500);
+                                window.location.href = "user/login";
+                            }, 1500);
                             break;
                         case 110:
-                            layer.msg(constant.USER_ACCOUNT_EMPTY,{
+                            layer.msg(constant.USER_ACCOUNT_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 120:
-                            layer.msg(constant.USER_SEX_EMPTY,{
+                            layer.msg(constant.USER_SEX_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 130:
-                            layer.msg(constant.USER_ADDRESS_EMPTY,{
+                            layer.msg(constant.USER_ADDRESS_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 140:
-                            layer.msg(constant.USER_BIRTHDAY_EMPTY,{
+                            layer.msg(constant.USER_BIRTHDAY_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 150:
-                            layer.msg(constant.USER_ID_CARD_NUMBER_EMPTY,{
+                            layer.msg(constant.USER_ID_CARD_NUMBER_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 160:
-                            layer.msg(constant.USER_MOBILE_PHONE_EMPTY,{
+                            layer.msg(constant.USER_MOBILE_PHONE_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 170:
-                            layer.msg(constant.USER_IS_REGISTERED,{
+                            layer.msg(constant.USER_IS_REGISTERED, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 180:
-                            layer.msg(constant.USER_USERNAME_EMPTY,{
+                            layer.msg(constant.USER_USERNAME_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 190:
-                            layer.msg(constant.USER_PASSWORD_EMPTY,{
+                            layer.msg(constant.USER_PASSWORD_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                     }
-                },error:function () {
+                }, error: function () {
                     layer.close(loadingEffects);
                     layer.msg("请求超时失败!");
                 }

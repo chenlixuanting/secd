@@ -18,6 +18,9 @@
     <h1 class="ctriplogo_login ctriplogoindex"><a href="#" title="">同程旅行网</a></h1>
     <div class="hhlogo" style="display: none;">鸿鹄逸游</div>
 </div>
+<div class="tips-security"><i class="icon-warn"></i>依据《网络安全法》，为保障您相关功能的正常使用，账号需绑定手机，如您未绑定则登录后会引导您操作绑定。 新版<a
+        href="javascript:void(0);" target="_blank">《隐私政策》</a>已上线，感谢您的支持。
+</div>
 <div class="lg_bd" id="lg_bd">
     <!-- 广告图片区域 -->
     <div class="lg_banner_wrap">
@@ -93,64 +96,62 @@
         $("#loginBtn").click(function () {
 
             var loginData = {
-                account:$("#account").val(),
-                password:$("#password").val()
+                account: $("#account").val(),
+                password: $("#password").val()
             };
 
             //开始界面loading特效
             var loadingEffects = layer.load(2);
 
             $.ajax({
-                url:"user/loginValidate",
-                dataType:"json",
-                contentType:"application/json",
-                method:"post",
-                data:JSON.stringify(loginData),
-                success:function (d) {
+                url: "user/login",
+                dataType: "json",
+                method: "put",
+                contentType: "application/json",
+                data: JSON.stringify(loginData),
+                success: function (d) {
                     var data = eval(d);
                     layer.close(loadingEffects);
-                    switch (data.statusCode){
+                    switch (data.statusCode) {
                         case 300:
-                            layer.msg(constant.LOGIN_SUCCESS,{
+                            layer.msg(constant.LOGIN_SUCCESS, {
                                 icon: 1,
                                 time: 1500
                             });
                             setTimeout(function () {
-                                window.location.href="user";
-                            },1500);
+                                window.location.href = "user";
+                            }, 1500);
                             break;
                         case 310:
-                            layer.msg(constant.USER_NOT_EXIST,{
+                            layer.msg(constant.USER_NOT_EXIST, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 405:
-                            layer.msg(constant.PASSWORD_ERROR,{
+                            layer.msg(constant.PASSWORD_ERROR, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 110:
-                            layer.msg(constant.USER_ACCOUNT_EMPTY,{
+                            layer.msg(constant.USER_ACCOUNT_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                             break;
                         case 190:
-                            layer.msg(constant.USER_PASSWORD_EMPTY,{
+                            layer.msg(constant.USER_PASSWORD_EMPTY, {
                                 icon: 2,
                                 time: 1500
                             });
                     }
-                },error:function () {
+                }, error: function () {
                     layer.close(loadingEffects);
                     layer.msg("请求超时!");
                 }
             });
-
         });
-
     });
 </script>
 </html>
