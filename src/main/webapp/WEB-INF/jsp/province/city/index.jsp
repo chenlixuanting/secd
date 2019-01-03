@@ -83,15 +83,15 @@
         <div class="innerbox">
             <ul class="cf">
 
-                <li class="ttd_first_nav current"><a href="http://you.ctrip.com/place/guilin28.html">主页</a>
+                <li class="ttd_first_nav current"><a href="http://localhost:8080/secd/province/city/index">主页</a>
                 </li>
-                <li><a href="http://you.ctrip.com/sight/guilin28.html">景点</a>
+                <li><a href="http://localhost:8080/secd/province/city/spot">景点</a>
                 </li>
-                <li><a href="http://you.ctrip.com/shopping/guilin28.html">购物</a>
+                <li><a href="http://localhost:8080/secd/province/city/shopping">购物</a>
                 </li>
-                <li><a href="http://you.ctrip.com/travels/guilin28.html">游记</a>
+                <li><a href="http://localhost:8080/secd/province/city/travel">游记</a>
                 </li>
-                <li><a href="http://you.ctrip.com/journeys/guilin28.html">行程</a>
+                <li><a href="http://localhost:8080/secd/province/city/route">行程</a>
                 </li>
             </ul>
         </div>
@@ -123,52 +123,9 @@
                 </div>
                 <ul id="hotTicketId"></ul>
             </div>
-            <input type="hidden" id="txtTicketDistrictId" value="28">
-
-            <!--侧边问答-->
-            <!--侧边目的地专家-->
-            <div class="narrow_wbox c_expert" id="destexpertId" style="">
-                <div class="narrow_title cf">
-                    <h3>目的地专家</h3>
-                    <span><a target="_blank" href="http://you.ctrip.com/asksite/expert">更多<i class="gs2_more_arror"></i></a></span>
-                </div>
-                <ul>
-                    <li><a href="http://you.ctrip.com/members/tour773" rel="nofollow" target="_blank" class="expertpic"><img
-                            width="48" height="48" src="images/user/30030z000000mj762C053_C_180_180.jpg"></a>
-                        <dl>
-                            <dt><a target="_blank" rel="nofollow"
-                                   href="http://you.ctrip.com/members/tour773">当地向导白小仙</a></dt>
-                            <dd>解决了0个问题</dd>
-                        </dl>
-                    </li>
-                    <li><a href="http://you.ctrip.com/members/F8863E256E0E46DBB7535216FFFA75C5" rel="nofollow"
-                           target="_blank" class="expertpic"><img width="48" height="48"
-                                                                  src="images/user/30040q000000g6zj8A751_C_180_180.jpg"></a>
-                        <dl>
-                            <dt><a target="_blank" rel="nofollow"
-                                   href="http://you.ctrip.com/members/F8863E256E0E46DBB7535216FFFA75C5">当地向导桂林小袁</a>
-                            </dt>
-                            <dd>解决了248个问题</dd>
-                        </dl>
-                    </li>
-                    <li><a href="http://you.ctrip.com/members/6A562348B5E04A0894E1A2C55976B557" rel="nofollow"
-                           target="_blank" class="expertpic"><img width="48" height="48"
-                                                                  src="images/user/300m0z000000mr36dE79E_C_180_180.jpg"></a>
-                        <dl>
-                            <dt><a target="_blank" rel="nofollow"
-                                   href="http://you.ctrip.com/members/6A562348B5E04A0894E1A2C55976B557">当地向导桂林-小芳</a>
-                            </dt>
-                            <dd>解决了1061个问题</dd>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
-            <input type="hidden" id="txtDistrictId" value="28">
-            <div id="bd_event_ttd2n1" style="display:none;" class="bd_event_ttd2n"></div>
         </div>
         <div class="des_wide f_right">
             <!--幻灯结构-->
-
             <!--首页热门照片-->
             <div class="slide_show">
                 <div data-inner="" class="imgbackgbox">

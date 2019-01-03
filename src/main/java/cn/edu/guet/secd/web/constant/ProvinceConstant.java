@@ -35,4 +35,9 @@ public class ProvinceConstant {
      */
     public static final String PROVINCE_TRAVEL = "province/travel";
 
+    /**
+     * 省市行程
+     */
+    public static final String PROVINCE_ROUTE = "province/route";
+
 }

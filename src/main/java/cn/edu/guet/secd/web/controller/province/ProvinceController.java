@@ -1,5 +1,6 @@
 package cn.edu.guet.secd.web.controller.province;
 
+import cn.edu.guet.secd.web.constant.CityConstant;
 import cn.edu.guet.secd.web.constant.ProvinceConstant;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,7 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String indexPage() {
+    public String provinceIndexPage() {
         return ProvinceConstant.PROVINCE_INDEX;
     }
 
@@ -30,7 +31,7 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping(value = "/spot", method = RequestMethod.GET)
-    public String viewSpotPage() {
+    public String provinceSpotPage() {
         return ProvinceConstant.PROVINCE_SPOT;
     }
 
@@ -38,7 +39,7 @@ public class ProvinceController {
      * 省市更多景区
      */
     @RequestMapping(value = "/more-spot", method = RequestMethod.GET)
-    public String moreViewSpotPage() {
+    public String provinceMoreSpotPage() {
         return ProvinceConstant.PROVINCE_MORE_SPOT;
     }
 
@@ -48,7 +49,7 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping(value = "/shopping", method = RequestMethod.GET)
-    public String shoppingPlace() {
+    public String provinceShoppingPage() {
         return ProvinceConstant.PROVINCE_SHOPPING;
     }
 
@@ -58,13 +59,77 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping(value = "/more-shopping", method = RequestMethod.GET)
-    public String moreShoppingPlace() {
+    public String provinceMoreShoppingPage() {
         return ProvinceConstant.PROVINCE_MORE_SHOPPING;
     }
 
+    /**
+     * 省市游记
+     *
+     * @return
+     */
     @RequestMapping(value = "/travel", method = RequestMethod.GET)
-    public String travelPage() {
+    public String provinceTravelPage() {
         return ProvinceConstant.PROVINCE_TRAVEL;
     }
 
+    /**
+     * 省市行程
+     *
+     * @return
+     */
+    @RequestMapping(value = "/route", method = RequestMethod.GET)
+    public String provinceRoutePage() {
+        return ProvinceConstant.PROVINCE_ROUTE;
+    }
+
+    /**
+     * 城市首页
+     *
+     * @return
+     */
+    @RequestMapping(value = "/city/index", method = RequestMethod.GET)
+    public String cityIndexPage() {
+        return CityConstant.CITY_INDEX;
+    }
+
+    /**
+     * 城市景点列表
+     *
+     * @return
+     */
+    @RequestMapping(value = "/city/spot", method = RequestMethod.GET)
+    public String citySpotPage() {
+        return CityConstant.CITY_SPOT;
+    }
+
+    /**
+     * 城市购物点
+     *
+     * @return
+     */
+    @RequestMapping(value = "/city/shopping", method = RequestMethod.GET)
+    public String cityShoppingPage() {
+        return CityConstant.CITY_SHOPPING;
+    }
+
+    /**
+     * 城市游记列表
+     *
+     * @return
+     */
+    @RequestMapping(value = "/city/travel", method = RequestMethod.GET)
+    public String cityTravelPage() {
+        return CityConstant.CITY_TRAVEL;
+    }
+
+    /**
+     * 城市行程列表
+     *
+     * @return
+     */
+    @RequestMapping(value = "/city/route")
+    public String cityRoutePage() {
+        return CityConstant.CITY_ROUTE;
+    }
 }

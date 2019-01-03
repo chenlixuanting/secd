@@ -249,9 +249,7 @@
                         <label>
                             收件人：
                         </label><input class="input_con" name="receiver" id="receiver" type="text" readonly="true"
-                                       value="堂堂炒栗子"
-                                       onclick="if(this.value==&#39;请填写收件人昵称&#39;){this.value=&#39;&#39;;};"
-                                       onblur="if(this.value==&#39;&#39;){this.value=&#39;请填写收件人昵称&#39;};">
+                                       value="堂堂炒栗子">
                         &nbsp;<span id="receivererror" style="color: Red;"></span>
                     </li>
                     <li>

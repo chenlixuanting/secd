@@ -101,9 +101,9 @@
                 </li>
                 <li><a href="http://localhost:8080/secd/province/shopping">购物</a>
                 </li>
-                <li><a href="http://you.ctrip.com/travels/guangxi100052.html">游记</a>
+                <li><a href="http://localhost:8080/secd/province/travel">游记</a>
                 </li>
-                <li><a href="http://you.ctrip.com/journeys/guangxi100052.html">行程</a>
+                <li><a href="http://localhost:8080/secd/province/route">行程</a>
                 </li>
             </ul>
         </div>
