@@ -10,11 +10,9 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
     <meta name="location" content="province=广西;city=广西">
-    <meta name="mobile-agent" content="format=html5;url=https://gs.ctrip.com/html5/you/place/100052.html">
     <title>壮瑶文化旅游中心</title>
     <meta name="keywords" content="广西旅游,广西自助游,广西自驾,广西出游,广西自由行,广西旅游攻略,广西游玩攻略,广西自助游攻略">
     <meta name="description">
-    <link rel="canonical" href="http://you.ctrip.com/place/guangxi100052.html">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/continent_s1.v2.0.css">

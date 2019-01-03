@@ -21,6 +21,8 @@ import javax.servlet.http.HttpSession;
 import java.sql.Timestamp;
 
 /**
+ * 用户控制器
+ *
  * @author Administrator
  */
 @Controller

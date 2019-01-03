@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
     <meta name="location" content="province=广西;city=广西">
-    <title>广西旅游景点推荐,广西旅游必去景点,广西景点大全/排名【携程攻略】</title>
+    <title>广西旅游景点推荐,广西旅游必去景点,广西景点大全/排名</title>
     <meta name="keywords" content="广西景点,广西景点推荐,广西旅游景点,广西景点排名,广西景点大全,广西必去景点">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
@@ -45,7 +45,6 @@
                     <a title="广西" href="http://you.ctrip.com/place/guangxi100052.html">广西</a>
                 </h1>
                 <p>Guangxi</p>
-
             </div>
             <div class="f_right">
                 <ul>

@@ -53,8 +53,6 @@
         </div>
     </div>
 </div>
-
-<input type="hidden" id="page_id" value="290547">
 <div class="content cf ">
     <div class="dest_toptitle">
         <div class="cf">
@@ -135,9 +133,6 @@
                     <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/guilin28.html" title="桂林">桂林</a></dd>
                 </dl>
             </div>
-            <!--END新增榜单块-->
-            <!--侧边tab表单切换-->
-            <!--侧边tab表单切换-->
             <!--侧边特价机票-->
             <input type="hidden" id="putDistrictId" value="100052">
             <input type="hidden" id="putInChina" value="True">

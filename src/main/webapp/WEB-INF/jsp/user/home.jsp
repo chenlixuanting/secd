@@ -189,12 +189,39 @@
                 </div>
                 <a class="gs_btn_v3 color_white" href="http://you.ctrip.com/asks/newquestion.html"><i class="twt"></i>提问题</a>
             </div>
-            <div class="favorite mod">
+            <div class="mod hotmember">
                 <div class="hd">
                     我最近的收藏
                 </div>
                 <div class="bd">
-                    还没有收藏。
+                    <ul class="cf">
+                        <li><a href="http://you.ctrip.com/members/3618BE76B2FC4AE5B661525B64ADB1FC">
+                            <img src="images/user/Z8090500000012pcu1655_C_180_180.jpg" title="笑妍日记"></a><a
+                                href="http://you.ctrip.com/members/3618BE76B2FC4AE5B661525B64ADB1FC" class="ellipsis"
+                                title="笑妍日记">笑妍日记</a></li>
+                        <li><a href="http://you.ctrip.com/members/15400600">
+                            <img src="images/user/Z80706000000208nxBAB9_C_180_180.jpg" title="小惑哥nomad"></a><a
+                                href="http://you.ctrip.com/members/15400600" class="ellipsis"
+                                title="小惑哥nomad">小惑哥nomad</a></li>
+                        <li><a href="http://you.ctrip.com/members/rgnh">
+                            <img src="images/user/CghzflV0cbSAG83BAAAYsoTrOMI618_C_180_180.jpg" title="弱冠年华"></a><a
+                                href="http://you.ctrip.com/members/rgnh" class="ellipsis" title="弱冠年华">弱冠年华</a></li>
+                        <li><a href="http://you.ctrip.com/members/sarahontheroad">
+                            <img src="images/user/Z80q0s000000hzfki68C6_C_180_180.jpg" title="sarah一直在路上"></a><a
+                                href="http://you.ctrip.com/members/sarahontheroad" class="ellipsis" title="sarah一直在路上">sarah一直在路上</a>
+                        </li>
+                        <li><a href="http://you.ctrip.com/members/nana945">
+                            <img src="images/user/2a9f5de3428c4ebb8e39271d2cb20927_C_180_180.jpg" title="娜娜酱945"></a><a
+                                href="http://you.ctrip.com/members/nana945" class="ellipsis" title="娜娜酱945">娜娜酱945</a>
+                        </li>
+                        <li><a href="http://you.ctrip.com/members/3494DF968AC5486F8438EFEAE4EBD0F8">
+                            <img src="images/user/Z8040o000000ema492A16_C_180_180.jpg" title="kaka"></a><a
+                                href="http://you.ctrip.com/members/3494DF968AC5486F8438EFEAE4EBD0F8" class="ellipsis"
+                                title="kaka">kaka</a></li>
+                        <li><a href="http://you.ctrip.com/members/youyoujun">
+                            <img src="images/user/f2d6732fe4b144bd997c870ded1c3a15_C_180_180.jpg" title="游游君"></a><a
+                                href="http://you.ctrip.com/members/youyoujun" class="ellipsis" title="游游君">游游君</a></li>
+                    </ul>
                 </div>
             </div>
             <div class=" mod hotmember">
@@ -202,7 +229,34 @@
                     我的关注
                 </div>
                 <div class="bd">
-                    没有关注任何人
+                    <ul class="cf">
+                        <li><a href="http://you.ctrip.com/members/3618BE76B2FC4AE5B661525B64ADB1FC">
+                            <img src="images/user/Z8090500000012pcu1655_C_180_180.jpg" title="笑妍日记"></a><a
+                                href="http://you.ctrip.com/members/3618BE76B2FC4AE5B661525B64ADB1FC" class="ellipsis"
+                                title="笑妍日记">笑妍日记</a></li>
+                        <li><a href="http://you.ctrip.com/members/15400600">
+                            <img src="images/user/Z80706000000208nxBAB9_C_180_180.jpg" title="小惑哥nomad"></a><a
+                                href="http://you.ctrip.com/members/15400600" class="ellipsis"
+                                title="小惑哥nomad">小惑哥nomad</a></li>
+                        <li><a href="http://you.ctrip.com/members/rgnh">
+                            <img src="images/user/CghzflV0cbSAG83BAAAYsoTrOMI618_C_180_180.jpg" title="弱冠年华"></a><a
+                                href="http://you.ctrip.com/members/rgnh" class="ellipsis" title="弱冠年华">弱冠年华</a></li>
+                        <li><a href="http://you.ctrip.com/members/sarahontheroad">
+                            <img src="images/user/Z80q0s000000hzfki68C6_C_180_180.jpg" title="sarah一直在路上"></a><a
+                                href="http://you.ctrip.com/members/sarahontheroad" class="ellipsis" title="sarah一直在路上">sarah一直在路上</a>
+                        </li>
+                        <li><a href="http://you.ctrip.com/members/nana945">
+                            <img src="images/user/2a9f5de3428c4ebb8e39271d2cb20927_C_180_180.jpg" title="娜娜酱945"></a><a
+                                href="http://you.ctrip.com/members/nana945" class="ellipsis" title="娜娜酱945">娜娜酱945</a>
+                        </li>
+                        <li><a href="http://you.ctrip.com/members/3494DF968AC5486F8438EFEAE4EBD0F8">
+                            <img src="images/user/Z8040o000000ema492A16_C_180_180.jpg" title="kaka"></a><a
+                                href="http://you.ctrip.com/members/3494DF968AC5486F8438EFEAE4EBD0F8" class="ellipsis"
+                                title="kaka">kaka</a></li>
+                        <li><a href="http://you.ctrip.com/members/youyoujun">
+                            <img src="images/user/f2d6732fe4b144bd997c870ded1c3a15_C_180_180.jpg" title="游游君"></a><a
+                                href="http://you.ctrip.com/members/youyoujun" class="ellipsis" title="游游君">游游君</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

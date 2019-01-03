@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
     <meta name="location" content="province=广西;city=广西">
-    <title>【携程攻略】广西特产,买什么,广西购物攻略/指南</title>
+    <title>广西特产,买什么,广西购物攻略/指南</title>
     <meta name="keywords" content="广西购物攻略,广西旅游购物,广西购物指南,广西购物中心,广西购物商场">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
@@ -482,7 +482,7 @@
                         </dl>
                     </div>
                     <div class="ttd_pager"><span class="f_right"><a
-                            href="http://localhost:8080/secd/province/more-spot" class="f_14">更多广西购物地<i
+                            href="http://localhost:8080/secd/province/more-shopping" class="f_14">更多广西购物地<i
                             class="f14_more_arror"></i></a></span></div>
                 </div>
             </div>

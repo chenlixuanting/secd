@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
+ * 省市控制器
+ *
  * @author Administrator
  */
 @Controller
@@ -59,4 +61,10 @@ public class ProvinceController {
     public String moreShoppingPlace() {
         return ProvinceConstant.PROVINCE_MORE_SHOPPING;
     }
+
+    @RequestMapping(value = "/travel", method = RequestMethod.GET)
+    public String travelPage() {
+        return ProvinceConstant.PROVINCE_TRAVEL;
+    }
+
 }

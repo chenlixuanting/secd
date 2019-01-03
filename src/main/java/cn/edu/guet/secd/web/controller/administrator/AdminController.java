@@ -19,6 +19,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
+ * 管理员控制器
+ * <p>
  * Created by Administrator on 9/10/2018.
  */
 @Controller

@@ -30,4 +30,9 @@ public class ProvinceConstant {
      */
     public static final String PROVINCE_MORE_SHOPPING = "province/more-shopping";
 
+    /**
+     * 省市游记
+     */
+    public static final String PROVINCE_TRAVEL = "province/travel";
+
 }
