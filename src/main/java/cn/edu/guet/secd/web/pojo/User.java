@@ -57,7 +57,7 @@ public class User implements Serializable {
     /**
      * 头像
      */
-    private String headPic;
+    private Photo headPic;
 
     /**
      * 创建时间
@@ -75,14 +75,6 @@ public class User implements Serializable {
 
     public void setCreateTime(Timestamp createTime) {
         this.createTime = createTime;
-    }
-
-    public Timestamp getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Timestamp updateTime) {
-        this.updateTime = updateTime;
     }
 
     public String getAccount() {
@@ -157,11 +149,11 @@ public class User implements Serializable {
         this.address = address;
     }
 
-    public String getHeadPic() {
+    public Photo getHeadPic() {
         return headPic;
     }
 
-    public void setHeadPic(String headPic) {
+    public void setHeadPic(Photo headPic) {
         this.headPic = headPic;
     }
 

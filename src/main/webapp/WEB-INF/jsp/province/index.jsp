@@ -101,77 +101,7 @@
 <div class="ttd2_background ttd3_media">
     <div class="content cf">
         <div class="des_narrow f_left">
-            <!--侧边下载二维码&攻略轮播-->
-            <!--侧边淘线路-->
-            <div class="narrow_wbox tao_line">
-                <div class="narrow_title cf">
-                    <h3><i class="ico_tao"></i>淘线路</h3>
-                </div>
-                <div class="tabitem">
-                    <div class="sformline">
-                        <label>目的地：</label>
-                        <input id="taoDistrict" class="sformtext" value="广西" type="text">
-                    </div>
-                    <div class="sformline">
-                        <label>类 型：</label>
-                        <div class="fed_select_box sformselect short_s">
-                            <div id="taoType" data-value="2" class="fed_select_txt">跟团游</div>
-                            <ul class="fed_option undis" style="display: none;">
-                                <li><a href="javascript:;" data-value="2">跟团游</a></li>
-                                <li><a href="javascript:;" data-value="1">自由行</a></li>
-                            </ul>
-                            <span class="arrow"></span>
-                        </div>
-                    </div>
-                    <div class="sformline">
-                        <label>人 数：</label>
-                        <div class="fed_select_box sformselect short_s">
-                            <div id="taoPeople" class="fed_select_txt" data-value="2">2</div>
-                            <ul style="display: none;" class="fed_option undis">
-                                <li><a href="javascript:;" data-value="1">1</a></li>
-                                <li><a href="javascript:;" data-value="2">2</a></li>
-                                <li><a href="javascript:;" data-value="3">3</a></li>
-                                <li><a href="javascript:;" data-value="4">4</a></li>
-                                <li><a href="javascript:;" data-value="5">5</a></li>
-                                <li><a href="javascript:;" data-value="6">6</a></li>
-                                <li><a href="javascript:;" data-value="7">7</a></li>
-                                <li><a href="javascript:;" data-value="8">8</a></li>
-                                <li><a href="javascript:;" data-value="9">9</a></li>
-                                <li><a href="javascript:;" data-value="10">10</a></li>
-                            </ul>
-                            <span class="arrow"></span>
-                        </div>
-                        <span class="unit">人</span>
-                    </div>
-                    <div class="sformline">
-                        <label>预 算：</label>
-                        <div class="fed_select_box sformselect short_s">
-                            <div id="taoBudget" class="fed_select_txt" data-value="0">不限</div>
-                            <ul style="display: none;" class="fed_option undis">
-                                <li><a href="javascript:;" data-value="0">不限</a></li>
-                                <li><a href="javascript:;" data-value="3000">3000</a></li>
-                                <li><a href="javascript:;" data-value="5000">5000</a></li>
-                                <li><a href="javascript:;" data-value="10000">10000</a></li>
-                                <li><a href="javascript:;" data-value="30000">30000</a></li>
-                                <li><a href="javascript:;" data-value="50000">50000</a></li>
-                            </ul>
-                            <span class="arrow"></span>
-                        </div>
-                        <span class="unit">元/人</span>
-                    </div>
-                    <div class="sformline"><label>电 话：</label>
-                        <input id="taoTelephone" class="sformtext" type="text" placeholder="旅行顾问会尽快联系您"></div>
-                    <div class="sformline"><a class="b_blue_m" href="javascript:;"><span>为我淘线路</span></a></div>
-                </div>
-                <p class="hotline"><span>咨询热线</span> <em>400-051-7937</em></p>
-            </div>
-            <div class="gsn-layer continent_pbox" id="continentPopbox">
-                <a href="javascript:$.popupbox.close();" class="close"></a>
-                <h3>提交成功</h3>
-                <p>携程旅行顾问将尽快联系您定制私人线路。</p>
-            </div>
-            <!--口碑榜单-->
-            <!--START新增榜单块-->
+
             <div class="country_xclist">
                 <h3>携程旅行口碑榜2017</h3>
                 <dl>
@@ -249,10 +179,10 @@
                 <div class="hot_destlist cf">
                     <ul>
                         <li class="w_220">
-                            <a href="http://you.ctrip.com/place/guilin28.html" target="_blank">
+                            <a href="http://localhost:8080/secd/province/city/index" target="_blank">
                                 <s class="ico_list"></s> <span class="pic_outer"><img
                                     src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_270_170.jpg"
-                                    img-src="https://dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_270_170.jpg"
+                                    img-src=""
                                     width="270" height="170"></span>
                                 <div class="liner_bg" style="height: 40px;">
                                     <dl style="top: 0px; bottom: auto;">

@@ -35,9 +35,9 @@ public class Administrator implements Serializable {
     private String password;
 
     /**
-     * 头像地址
+     * 头像
      */
-    private String headPic;
+    private Photo headPic;
 
     /**
      * 创建时间
@@ -65,11 +65,11 @@ public class Administrator implements Serializable {
         this.account = account;
     }
 
-    public String getHeadPic() {
+    public Photo getHeadPic() {
         return headPic;
     }
 
-    public void setHeadPic(String headPic) {
+    public void setHeadPic(Photo headPic) {
         this.headPic = headPic;
     }
 

@@ -634,4 +634,14 @@
     </div>
 </div>
 </body>
+<script src="js/user/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+        $(".journeyswrap .journeys_v2box").hover(function () {
+            $(this).addClass("jv2boxborder")
+        }, function () {
+            $(this).removeClass("jv2boxborder")
+        });
+    });
+</script>
 </html>

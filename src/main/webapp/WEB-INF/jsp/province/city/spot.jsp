@@ -117,11 +117,10 @@
                     <h1>桂林<span>景点</span></h1>
                 </div>
 
-
                 <div class="list_wide_mod2">
                     <div class="list_mod2">
                         <div class="leftimg">
-                            <a target="_blank" href="http://you.ctrip.com/sight/guilin28/2888.html">
+                            <a target="_blank" href="http://localhost:8080/secd/province/city/spot-detail">
                                 <img src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_220_140.jpg"
                                      width="220" height="140" img-id="23519528">
                             </a>
@@ -130,7 +129,7 @@
                             <dl>
                                 <dt>
                                     <i class="sight"></i>
-                                    <a target="_blank" href="http://you.ctrip.com/sight/guilin28/2888.html" title="漓江">漓江</a>
+                                    <a target="_blank" href="http://localhost:8080/secd/province/city/spot-detail" title="漓江">漓江</a>
                                     <s>第1名</s>
                                 </dt>
                                 <dd class="ellipsis">

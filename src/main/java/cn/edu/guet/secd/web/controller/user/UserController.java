@@ -74,7 +74,6 @@ public class UserController {
     public Message loginValidate(@RequestBody User user, HttpSession session) {
         Message msg = new Message();
         if (!StringUtils.isEmpty(user)) {
-
             if (StringUtils.isEmpty(user.getAccount())) {
                 msg.setStatusCode(StatusCodeConstant.USER_ACCOUNT_EMPTY);
             } else if (StringUtils.isEmpty(user.getPassword())) {
@@ -132,11 +131,10 @@ public class UserController {
                 //查看账号是否被注册
                 if (StringUtils.isEmpty(userService.getByUserAccount(user.getAccount()))) {
                     //根据性别选择默认的头像
-                    user.setHeadPic(GetDefaultHeadPic.choose(user.getSex()));
+//                    user.setHeadPic(GetDefaultHeadPic.choose(user.getSex()));
                     //填充创建时间和更新时间
                     Timestamp currentTime = new Timestamp(System.currentTimeMillis());
                     user.setCreateTime(currentTime);
-                    user.setUpdateTime(currentTime);
                     //未注册则进行注册
                     if (userService.saveUser(user)) {
                         msg.setStatusCode(StatusCodeConstant.REGISTER_SUCCESS);

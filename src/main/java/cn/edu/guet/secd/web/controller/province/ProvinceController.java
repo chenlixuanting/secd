@@ -132,4 +132,16 @@ public class ProvinceController {
     public String cityRoutePage() {
         return CityConstant.CITY_ROUTE;
     }
+
+    /**
+     * 城市景点详情
+     *
+     * @return
+     */
+    @RequestMapping(value = "/city/spot-detail")
+    public String citySpotDetailPage() {
+        return CityConstant.CITY_SPOT_DETAIL;
+    }
+
+
 }
