@@ -3,6 +3,7 @@ package cn.edu.guet.secd.web.pojo;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 景点评论
@@ -29,7 +30,7 @@ public class SpotComment implements Serializable {
     /**
      * 评论图片组
      */
-    private List<Photo> photos;
+    private Set<Photo> photos;
 
     /**
      * 景点
@@ -98,11 +99,11 @@ public class SpotComment implements Serializable {
         this.content = content;
     }
 
-    public List<Photo> getPhotos() {
+    public Set<Photo> getPhotos() {
         return photos;
     }
 
-    public void setPhotos(List<Photo> photos) {
+    public void setPhotos(Set<Photo> photos) {
         this.photos = photos;
     }
 

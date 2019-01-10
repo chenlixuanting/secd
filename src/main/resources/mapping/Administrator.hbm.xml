@@ -14,12 +14,14 @@
 
         <property name="account" type="string" column="account" unique="true"/>
         <property name="username" type="string" column="user_name"/>
-        <property name="headPic" type="string" column="head_pic"/>
         <property name="password" type="string" column="password"/>
 
         <property name="createTime" type="timestamp">
             <column name="create_time" sql-type="datetime"/>
         </property>
+
+        <many-to-one name="headPic" column="admin_id" cascade="save-update" unique="true"
+                     class="cn.edu.guet.secd.web.pojo.Photo"/>
 
     </class>
 

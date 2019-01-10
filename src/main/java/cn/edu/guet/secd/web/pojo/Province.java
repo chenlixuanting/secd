@@ -27,16 +27,6 @@ public class Province implements Serializable {
     private Set<City> cities;
 
     /**
-     * 游记
-     */
-    private Set<Travel> travels;
-
-    /**
-     * 行程
-     */
-    private Set<Route> routes;
-
-    /**
      * 创建时间
      */
     private Timestamp createTime;
@@ -76,22 +66,6 @@ public class Province implements Serializable {
 
     public void setCities(Set<City> cities) {
         this.cities = cities;
-    }
-
-    public Set<Travel> getTravels() {
-        return travels;
-    }
-
-    public void setTravels(Set<Travel> travels) {
-        this.travels = travels;
-    }
-
-    public Set<Route> getRoutes() {
-        return routes;
-    }
-
-    public void setRoutes(Set<Route> routes) {
-        this.routes = routes;
     }
 
     public Province() {

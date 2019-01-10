@@ -53,6 +53,11 @@ public class Spot implements Serializable {
     private Set<Photo> photos;
 
     /**
+     * 购物点
+     */
+    private Set<Shop> shops;
+
+    /**
      * 评分
      */
     private Double score;
@@ -66,6 +71,14 @@ public class Spot implements Serializable {
      * 乐观锁
      */
     private Timestamp updateTime;
+
+    public Set<Shop> getShops() {
+        return shops;
+    }
+
+    public void setShops(Set<Shop> shops) {
+        this.shops = shops;
+    }
 
     public Timestamp getCreateTime() {
         return createTime;

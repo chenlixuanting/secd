@@ -32,19 +32,9 @@ public class City implements Serializable {
     private List<Spot> spots;
 
     /**
-     * 购物地点
-     */
-    private List<Shop> shops;
-
-    /**
      * 游记
      */
     private List<Travel> travels;
-
-    /**
-     * 行程
-     */
-    private List<Route> routes;
 
     /**
      * 城市头像
@@ -109,28 +99,12 @@ public class City implements Serializable {
         this.spots = spots;
     }
 
-    public List<Shop> getShops() {
-        return shops;
-    }
-
-    public void setShops(List<Shop> shops) {
-        this.shops = shops;
-    }
-
     public List<Travel> getTravels() {
         return travels;
     }
 
     public void setTravels(List<Travel> travels) {
         this.travels = travels;
-    }
-
-    public List<Route> getRoutes() {
-        return routes;
-    }
-
-    public void setRoutes(List<Route> routes) {
-        this.routes = routes;
     }
 
     public City() {

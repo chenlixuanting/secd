@@ -33,7 +33,7 @@ public class Travel implements Serializable {
     /**
      * 作者
      */
-    private User author;
+    private User user;
 
     /**
      * 玩法
@@ -64,6 +64,19 @@ public class Travel implements Serializable {
      * 乐观锁
      */
     private Timestamp updateTime;
+
+    /**
+     * 所属城市
+     */
+    private City city;
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
 
     public Timestamp getCreateTime() {
         return createTime;
@@ -105,12 +118,12 @@ public class Travel implements Serializable {
         this.content = content;
     }
 
-    public User getAuthor() {
-        return author;
+    public User getUser() {
+        return user;
     }
 
-    public void setAuthor(User author) {
-        this.author = author;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public String getPlayStyle() {

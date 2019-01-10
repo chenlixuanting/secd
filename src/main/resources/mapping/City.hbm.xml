@@ -23,25 +23,15 @@
             <one-to-many class="cn.edu.guet.secd.web.pojo.Spot"/>
         </set>
 
-        <set name="shops" inverse="true" cascade="save-update">
-            <key column="city_id"/>
-            <one-to-many class="cn.edu.guet.secd.web.pojo.Shop"/>
-        </set>
-
         <set name="travels" inverse="true" cascade="save-update">
             <key column="city_id"/>
             <one-to-many class="cn.edu.guet.secd.web.pojo.Travel"/>
         </set>
 
-        <!--<set name="routes" inverse="true" cascade="save-update">-->
-        <!--<key column="city_id"/>-->
-        <!--<one-to-many class="cn.edu.guet.secd.web.pojo.Route"/>-->
-        <!--</set>-->
-
         <many-to-one name="province" column="province_id" class="cn.edu.guet.secd.web.pojo.Province"
                      cascade="save-update"/>
 
-        <many-to-one name="headPic" column="photo_id" unique="true" cascade="save-update"/>
+        <many-to-one name="headPic" column="city_id" unique="true" cascade="save-update"/>
 
     </class>
 

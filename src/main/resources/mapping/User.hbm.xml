@@ -19,7 +19,28 @@
         <property name="idCardNumber" type="string" column="id_card_number"/>
         <property name="mobilePhone" type="string" column="mobile_phone"/>
         <property name="address" type="string" column="address"/>
-        <property name="headPic" type="string" column="head_pic"/>
+
+        <set name="spotComments" inverse="true" cascade="save-update">
+            <key column="user_id"/>
+            <one-to-many class="cn.edu.guet.secd.web.pojo.SpotComment"/>
+        </set>
+
+        <set name="shopComments" inverse="true" cascade="save-update">
+            <key column="user_id"/>
+            <one-to-many class="cn.edu.guet.secd.web.pojo.ShopComment"/>
+        </set>
+
+        <set name="travelComments" inverse="true" cascade="save-update">
+            <key column="user_id"/>
+            <one-to-many class="cn.edu.guet.secd.web.pojo.TravelComment"/>
+        </set>
+
+        <set name="travels" inverse="true" cascade="save-update">
+            <key column="user_id"/>
+            <one-to-many class="cn.edu.guet.secd.web.pojo.Travel"/>
+        </set>
+
+        <many-to-one name="headPic" column="user_id" class="cn.edu.guet.secd.web.pojo.Photo" cascade="save-update"/>
 
         <property name="createTime" type="timestamp">
             <column name="create_time" sql-type="datetime"/>

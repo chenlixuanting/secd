@@ -3,6 +3,7 @@ package cn.edu.guet.secd.web.pojo;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * @author Administrator
@@ -55,6 +56,26 @@ public class User implements Serializable {
     private String address;
 
     /**
+     * 景点评论
+     */
+    private Set<SpotComment> spotComments;
+
+    /**
+     * 购物点评论
+     */
+    private Set<ShopComment> shopComments;
+
+    /**
+     * 游记评论
+     */
+    private Set<TravelComment> travelComments;
+
+    /**
+     * 游记
+     */
+    private Set<Travel> travels;
+
+    /**
      * 头像
      */
     private Photo headPic;
@@ -68,6 +89,38 @@ public class User implements Serializable {
      * 更新时间
      */
     private Timestamp updateTime;
+
+    public Set<SpotComment> getSpotComments() {
+        return spotComments;
+    }
+
+    public void setSpotComments(Set<SpotComment> spotComments) {
+        this.spotComments = spotComments;
+    }
+
+    public Set<ShopComment> getShopComments() {
+        return shopComments;
+    }
+
+    public void setShopComments(Set<ShopComment> shopComments) {
+        this.shopComments = shopComments;
+    }
+
+    public Set<TravelComment> getTravelComments() {
+        return travelComments;
+    }
+
+    public void setTravelComments(Set<TravelComment> travelComments) {
+        this.travelComments = travelComments;
+    }
+
+    public Set<Travel> getTravels() {
+        return travels;
+    }
+
+    public void setTravels(Set<Travel> travels) {
+        this.travels = travels;
+    }
 
     public Timestamp getCreateTime() {
         return createTime;

@@ -5,11 +5,6 @@
 <hibernate-mapping>
     <class name="cn.edu.guet.secd.web.pojo.Travel" table="s_travel">
 
-        <!--
-            private Photo headPic;
-            private User author;
-        -->
-
         <id name="travelId" column="travel_id">
             <generator class="uuid"/>
         </id>
@@ -30,7 +25,9 @@
 
         <many-to-one name="headPic" column="travel_id" class="cn.edu.guet.secd.web.pojo.Photo" unique="true"/>
 
-        <!--<many-to-one name="author" class="user_id"/>-->
+        <many-to-one name="city" column="city_id" cascade="save-update" class="cn.edu.guet.secd.web.pojo.City"/>
+
+        <many-to-one name="user" column="user_id" class="cn.edu.guet.secd.web.pojo.User" cascade="save-update"/>
 
     </class>
 </hibernate-mapping>

@@ -5,11 +5,7 @@
 <hibernate-mapping>
     <class name="cn.edu.guet.secd.web.pojo.TravelComment" table="s_travel_comment">
 
-        <!--
-            private User user;
-        -->
-
-        <id name="commentId" column="comment_id">
+        <id name="commentId" column="travel_comment_id">
             <generator class="uuid"/>
         </id>
 
