@@ -143,5 +143,14 @@ public class ProvinceController {
         return CityConstant.CITY_SPOT_DETAIL;
     }
 
+    /**
+     * 详细行程
+     *
+     * @return
+     */
+    @RequestMapping(value = "/city/route-detail")
+    public String routeDetailPage() {
+        return "";
+    }
 
 }

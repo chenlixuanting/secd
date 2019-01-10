@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.edu.guet.secd.web.pojo.Travel" table="s_travel">
+
+        <!--
+            private Photo headPic;
+            private User author;
+        -->
+
+        <id name="travelId" column="travel_id">
+            <generator class="uuid"/>
+        </id>
+
+        <timestamp name="updateTime" column="update_time" access="field"/>
+
+        <property name="title" column="title" type="string"/>
+        <property name="content" column="content" type="string"/>
+
+        <property name="playStyle" column="play_style" type="string"/>
+        <property name="spendTime" column="spend_time" type="int"/>
+        <property name="averageMoney" column="average_money" type="int"/>
+        <property name="groupType" column="group_type" type="string"/>
+
+        <property name="createTime" type="timestamp">
+            <column name="create_time" sql-type="datetime"/>
+        </property>
+
+        <many-to-one name="headPic" column="travel_id" class="cn.edu.guet.secd.web.pojo.Photo" unique="true"/>
+
+        <!--<many-to-one name="author" class="user_id"/>-->
+
+    </class>
+</hibernate-mapping>

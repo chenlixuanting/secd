@@ -3,6 +3,7 @@ package cn.edu.guet.secd.web.pojo;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 景点详情
@@ -24,7 +25,7 @@ public class Spot implements Serializable {
     /**
      * 景点评论
      */
-    private List<SpotComment> spotComments;
+    private Set<SpotComment> spotComments;
 
     /**
      * 所属城市
@@ -49,7 +50,7 @@ public class Spot implements Serializable {
     /**
      * 景点图片组
      */
-    private List<Photo> photos;
+    private Set<Photo> photos;
 
     /**
      * 评分
@@ -90,14 +91,6 @@ public class Spot implements Serializable {
         this.spotName = spotName;
     }
 
-    public List<SpotComment> getSpotComments() {
-        return spotComments;
-    }
-
-    public void setSpotComments(List<SpotComment> spotComments) {
-        this.spotComments = spotComments;
-    }
-
     public City getCity() {
         return city;
     }
@@ -130,20 +123,28 @@ public class Spot implements Serializable {
         this.specialHint = specialHint;
     }
 
-    public List<Photo> getPhotos() {
-        return photos;
-    }
-
-    public void setPhotos(List<Photo> photos) {
-        this.photos = photos;
-    }
-
     public Double getScore() {
         return score;
     }
 
     public void setScore(Double score) {
         this.score = score;
+    }
+
+    public Set<SpotComment> getSpotComments() {
+        return spotComments;
+    }
+
+    public void setSpotComments(Set<SpotComment> spotComments) {
+        this.spotComments = spotComments;
+    }
+
+    public Set<Photo> getPhotos() {
+        return photos;
+    }
+
+    public void setPhotos(Set<Photo> photos) {
+        this.photos = photos;
     }
 
     public Spot() {

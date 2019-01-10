@@ -33,20 +33,20 @@
 
     <!-- 文件上传 -->
     <!--<bean id="multipartResolver"-->
-          <!--class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
-        <!--&lt;!&ndash; 设置上传文件的最大尺寸为5MB &ndash;&gt;-->
-        <!--<property name="maxUploadSize">-->
-            <!--<value>5242880</value>-->
-        <!--</property>-->
+    <!--class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+    <!--&lt;!&ndash; 设置上传文件的最大尺寸为5MB &ndash;&gt;-->
+    <!--<property name="maxUploadSize">-->
+    <!--<value>5242880</value>-->
+    <!--</property>-->
     <!--</bean>-->
 
     <!--注册登录拦截器-->
     <!--<mvc:interceptors>-->
-        <!--<mvc:interceptor>-->
-            <!--<mvc:mapping path="/administrator/**"/>-->
-            <!--<mvc:exclude-mapping path="/administrator/login"/>-->
-            <!--<bean class="cn.edu.guet.secd.web.interceptor.LoginInterceptor"/>-->
-        <!--</mvc:interceptor>-->
+    <!--<mvc:interceptor>-->
+    <!--<mvc:mapping path="/administrator/**"/>-->
+    <!--<mvc:exclude-mapping path="/administrator/login"/>-->
+    <!--<bean class="cn.edu.guet.secd.web.interceptor.LoginInterceptor"/>-->
+    <!--</mvc:interceptor>-->
     <!--</mvc:interceptors>-->
 
     <!--加载config.properties配置文件-->
@@ -136,7 +136,7 @@
             </props>
         </property>
 
-        <property name="mappingLocations" value="classpath:*.hbm.xml"/>
+        <property name="mappingLocations" value="classpath:mapping/*.hbm.xml"/>
     </bean>
 
     <!--配置事务管理器-->

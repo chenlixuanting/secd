@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.edu.guet.secd.web.pojo.TravelComment" table="s_travel_comment">
+
+        <!--
+            private User user;
+        -->
+
+        <id name="commentId" column="comment_id">
+            <generator class="uuid"/>
+        </id>
+
+        <timestamp name="updateTime" column="update_time" access="field"/>
+
+        <property name="content" column="content" type="string"/>
+
+        <property name="createTime" type="timestamp">
+            <column name="create_time" sql-type="datetime"/>
+        </property>
+
+        <many-to-one name="user" column="user_id" class="cn.edu.guet.secd.web.pojo.User" cascade="save-update"/>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.edu.guet.secd.web.pojo.Photo" table="s_photo">
+
+        <id name="photoId" column="photo_id">
+            <generator class="uuid"/>
+        </id>
+
+        <timestamp name="updateTime" column="update_time" access="field"/>
+
+        <property name="url" type="string"/>
+
+        <property name="createTime" type="timestamp">
+            <column name="create_time" sql-type="datetime"/>
+        </property>
+
+    </class>
+</hibernate-mapping>

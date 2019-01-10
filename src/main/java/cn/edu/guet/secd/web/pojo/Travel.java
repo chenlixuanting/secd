@@ -23,7 +23,7 @@ public class Travel implements Serializable {
     /**
      * 游记背景图片
      */
-    private String backgroundPic;
+    private Photo headPic;
 
     /**
      * 游记内容
@@ -89,12 +89,12 @@ public class Travel implements Serializable {
         this.title = title;
     }
 
-    public String getBackgroundPic() {
-        return backgroundPic;
+    public Photo getHeadPic() {
+        return headPic;
     }
 
-    public void setBackgroundPic(String backgroundPic) {
-        this.backgroundPic = backgroundPic;
+    public void setHeadPic(Photo headPic) {
+        this.headPic = headPic;
     }
 
     public String getContent() {

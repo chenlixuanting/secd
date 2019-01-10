@@ -2,7 +2,7 @@ package cn.edu.guet.secd.web.pojo;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.List;
+import java.util.Set;
 
 /**
  * 省份
@@ -24,17 +24,17 @@ public class Province implements Serializable {
     /**
      * 城市
      */
-    private List<City> cities;
+    private Set<City> cities;
 
     /**
      * 游记
      */
-    private List<Travel> travels;
+    private Set<Travel> travels;
 
     /**
      * 行程
      */
-    private List<Route> routes;
+    private Set<Route> routes;
 
     /**
      * 创建时间
@@ -70,27 +70,27 @@ public class Province implements Serializable {
         this.provinceName = provinceName;
     }
 
-    public List<City> getCities() {
+    public Set<City> getCities() {
         return cities;
     }
 
-    public void setCities(List<City> cities) {
+    public void setCities(Set<City> cities) {
         this.cities = cities;
     }
 
-    public List<Travel> getTravels() {
+    public Set<Travel> getTravels() {
         return travels;
     }
 
-    public void setTravels(List<Travel> travels) {
+    public void setTravels(Set<Travel> travels) {
         this.travels = travels;
     }
 
-    public List<Route> getRoutes() {
+    public Set<Route> getRoutes() {
         return routes;
     }
 
-    public void setRoutes(List<Route> routes) {
+    public void setRoutes(Set<Route> routes) {
         this.routes = routes;
     }
 

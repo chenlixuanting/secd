@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.edu.guet.secd.web.pojo.ShopComment" table="s_shop_comment">
+
+        <id name="commentId" column="comment_id">
+            <generator class="uuid"/>
+        </id>
+
+        <timestamp name="updateTime" column="update_time" access="field"/>
+
+        <property name="content" column="content" type="string"/>
+        <property name="envScore" column="env_score" type="double"/>
+        <property name="productScore" column="product_score" type="double"/>
+        <property name="serverScore" column="server_score" type="double"/>
+        <property name="overallComment" column="overall_comment" type="string"/>
+
+        <property name="createTime" type="timestamp">
+            <column name="create_time" sql-type="datetime"/>
+        </property>
+
+        <set name="photos" inverse="true" cascade="save-update">
+            <key column="comment_id"/>
+            <one-to-many class="cn.edu.guet.secd.web.pojo.Photo"/>
+        </set>
+
+        <many-to-one name="shop" column="shop_id" class="cn.edu.guet.secd.web.pojo.Shop" cascade="save-update"/>
+        <many-to-one name="user" column="user_id" class="cn.edu.guet.secd.web.pojo.User" cascade="save-update"/>
+
+    </class>
+</hibernate-mapping>

@@ -35,4 +35,9 @@ public class CityConstant {
      */
     public static final String CITY_SPOT_DETAIL = "province/city/spot-detail";
 
+    /**
+     * 游记
+     */
+    public static final String ROUTE_DETAIL = "province/";
+
 }

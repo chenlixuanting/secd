@@ -32,6 +32,11 @@ public class SpotComment implements Serializable {
     private List<Photo> photos;
 
     /**
+     * 景点
+     */
+    private Spot spot;
+
+    /**
      * 景色评分
      */
     private Double sceneryScore;
@@ -60,6 +65,14 @@ public class SpotComment implements Serializable {
      * 乐观锁
      */
     private Timestamp updateTime;
+
+    public Spot getSpot() {
+        return spot;
+    }
+
+    public void setSpot(Spot spot) {
+        this.spot = spot;
+    }
 
     public String getCommentId() {
         return commentId;

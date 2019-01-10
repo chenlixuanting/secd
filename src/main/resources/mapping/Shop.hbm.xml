@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.edu.guet.secd.web.pojo.Shop" table="s_shop">
+
+        <!--
+            private Set<ShopComment> shopComments;
+        -->
+
+        <id name="shopId" column="shop_id">
+            <generator class="uuid"/>
+        </id>
+
+        <timestamp name="updateTime" column="update_time" access="field"/>
+
+        <property name="shopName" column="shop_name" type="string"/>
+
+        <property name="score" column="score" type="double"/>
+
+        <property name="introduce" column="introduce" type="string"/>
+
+        <property name="createTime">
+            <column name="create_time" sql-type="datetime"/>
+        </property>
+
+        <many-to-one name="spot" column="shop_id" class="cn.edu.guet.secd.web.pojo.Spot" cascade="save-update"/>
+
+        <set name="shopComments" inverse="true" cascade="save-update">
+            <key column="comment_id"/>
+            <one-to-many class="cn.edu.guet.secd.web.pojo.ShopComment"/>
+        </set>
+
+    </class>
+</hibernate-mapping>

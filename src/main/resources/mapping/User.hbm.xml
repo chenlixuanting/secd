@@ -3,24 +3,27 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
+    <class name="cn.edu.guet.secd.web.pojo.User" table="s_user">
 
-    <class name="cn.edu.guet.secd.web.pojo.Administrator" table="s_administrator">
-
-        <id name="adminId" column="admin_id">
+        <id name="userId" column="user_id">
             <generator class="uuid"/>
         </id>
 
-        <timestamp name="updateTime" access="field"/>
+        <timestamp name="updateTime" column="update_time" access="field"/>
 
         <property name="account" type="string" column="account" unique="true"/>
-        <property name="username" type="string" column="user_name"/>
-        <property name="headPic" type="string" column="head_pic"/>
         <property name="password" type="string" column="password"/>
+        <property name="username" type="string" column="user_name"/>
+        <property name="sex" type="string" column="sex"/>
+        <property name="birthday" type="date" column="birthday"/>
+        <property name="idCardNumber" type="string" column="id_card_number"/>
+        <property name="mobilePhone" type="string" column="mobile_phone"/>
+        <property name="address" type="string" column="address"/>
+        <property name="headPic" type="string" column="head_pic"/>
 
         <property name="createTime" type="timestamp">
             <column name="create_time" sql-type="datetime"/>
         </property>
 
     </class>
-
 </hibernate-mapping>
