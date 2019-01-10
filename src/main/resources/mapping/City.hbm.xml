@@ -31,7 +31,7 @@
         <many-to-one name="province" column="province_id" class="cn.edu.guet.secd.web.pojo.Province"
                      cascade="save-update"/>
 
-        <many-to-one name="headPic" column="city_id" unique="true" cascade="save-update"/>
+        <many-to-one name="headPic" column="head_pic_id" unique="true" cascade="save-update"/>
 
     </class>
 

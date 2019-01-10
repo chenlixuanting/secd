@@ -20,7 +20,7 @@
             <column name="create_time" sql-type="datetime"/>
         </property>
 
-        <many-to-one name="headPic" column="admin_id" cascade="save-update" unique="true"
+        <many-to-one name="headPic" column="head_pic_id" cascade="save-update" unique="true"
                      class="cn.edu.guet.secd.web.pojo.Photo"/>
 
     </class>

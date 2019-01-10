@@ -40,7 +40,7 @@
             <one-to-many class="cn.edu.guet.secd.web.pojo.Travel"/>
         </set>
 
-        <many-to-one name="headPic" column="user_id" class="cn.edu.guet.secd.web.pojo.Photo" cascade="save-update"/>
+        <many-to-one name="headPic" column="head_pic_id" class="cn.edu.guet.secd.web.pojo.Photo" cascade="save-update"/>
 
         <property name="createTime" type="timestamp">
             <column name="create_time" sql-type="datetime"/>

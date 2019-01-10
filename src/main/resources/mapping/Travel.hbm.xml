@@ -23,7 +23,7 @@
             <column name="create_time" sql-type="datetime"/>
         </property>
 
-        <many-to-one name="headPic" column="travel_id" class="cn.edu.guet.secd.web.pojo.Photo" unique="true"/>
+        <many-to-one name="headPic" column="head_pic_id" class="cn.edu.guet.secd.web.pojo.Photo" unique="true"/>
 
         <many-to-one name="city" column="city_id" cascade="save-update" class="cn.edu.guet.secd.web.pojo.City"/>
 
