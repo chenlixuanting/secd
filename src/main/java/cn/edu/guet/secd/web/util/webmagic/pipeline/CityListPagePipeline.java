@@ -1,10 +1,12 @@
 package cn.edu.guet.secd.web.util.webmagic.pipeline;
 
+import cn.edu.guet.secd.web.constant.CommonConstant;
 import cn.edu.guet.secd.web.pojo.City;
 import cn.edu.guet.secd.web.pojo.Photo;
 import cn.edu.guet.secd.web.pojo.Province;
 import cn.edu.guet.secd.web.service.CityService;
 import cn.edu.guet.secd.web.service.ProvinceService;
+import cn.edu.guet.secd.web.util.UrlFileDownloadUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import us.codecraft.webmagic.ResultItems;
@@ -13,6 +15,7 @@ import us.codecraft.webmagic.pipeline.Pipeline;
 
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * 程序列表
@@ -42,9 +45,17 @@ public class CityListPagePipeline implements Pipeline {
 
             Province province = provinceService.findByProvinceName("广西");
 
+            String headPicUrl = cityHeadPicUrlList.get(x);
+
+            String newPicName = UUID.randomUUID().toString() + headPicUrl.substring(headPicUrl.lastIndexOf("."));
+
+            String newPicUrl = CommonConstant.LOCAL_HOST_ADDRESS + newPicName;
+
             Photo headPic = new Photo();
-            headPic.setUrl(cityHeadPicUrlList.get(x));
+            headPic.setUrl(newPicUrl);
             headPic.setCreateTime(new Timestamp(System.currentTimeMillis()));
+
+            UrlFileDownloadUtil.downloadPicture(headPicUrl, newPicName, CommonConstant.CITY_HEAD_PIC_BASE_DIR);
 
             City city = new City();
             city.setProvince(province);
