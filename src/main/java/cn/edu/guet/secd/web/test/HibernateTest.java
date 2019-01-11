@@ -1,6 +1,7 @@
 package cn.edu.guet.secd.web.test;
 
 import cn.edu.guet.secd.web.pojo.Administrator;
+import cn.edu.guet.secd.web.pojo.Province;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -25,40 +26,35 @@ public class HibernateTest {
 
     @Test
     public void insertAdministrator() {
-
         Administrator administrator = new Administrator();
-
         administrator.setUsername("chenxuanjin");
-
         administrator.setPassword("123456");
-
         administrator.setCreateTime(new Timestamp(System.currentTimeMillis()));
-
         Session session = sessionFactory.openSession();
-
         Transaction tx = session.beginTransaction();
-
         session.save(administrator);
-
         tx.commit();
-
     }
 
     @Test
     public void deleteAdministrator() {
-
         int id = 1;
-
         Session session = sessionFactory.openSession();
-
         Transaction tx = session.beginTransaction();
-
         Administrator administrator = (Administrator) session.get(Administrator.class, 1);
-
         session.delete(administrator);
-
         tx.commit();
+    }
 
+    @Test
+    public void insertProvince(){
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        Province province = new Province();
+        province.setProvinceName("广西");
+        province.setCreateTime(new Timestamp(System.currentTimeMillis()));
+        session.save(province);
+        tx.commit();
     }
 
 }

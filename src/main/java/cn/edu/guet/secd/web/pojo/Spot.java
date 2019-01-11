@@ -2,7 +2,6 @@ package cn.edu.guet.secd.web.pojo;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -38,6 +37,11 @@ public class Spot implements Serializable {
     private String brightPoint;
 
     /**
+     * 地址
+     */
+    private String address;
+
+    /**
      * 景点介绍
      */
     private String introduce;
@@ -51,6 +55,11 @@ public class Spot implements Serializable {
      * 景点图片组
      */
     private Set<Photo> photos;
+
+    /**
+     * 排名
+     */
+    private Integer rank;
 
     /**
      * 购物点
@@ -71,6 +80,22 @@ public class Spot implements Serializable {
      * 乐观锁
      */
     private Timestamp updateTime;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Integer getRank() {
+        return rank;
+    }
+
+    public void setRank(Integer rank) {
+        this.rank = rank;
+    }
 
     public Set<Shop> getShops() {
         return shops;

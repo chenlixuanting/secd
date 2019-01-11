@@ -15,9 +15,13 @@
 
         <property name="score" column="score" type="double"/>
 
+        <property name="rank" column="rank" type="int"/>
+
         <property name="createTime" type="timestamp">
             <column name="create_time" sql-type="datetime"/>
         </property>
+
+        <property name="address" column="address" type="string"/>
 
         <property name="specialHint" column="special_hint" type="string"/>
 

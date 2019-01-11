@@ -55,4 +55,16 @@ public class CommonConstant {
      */
     public static final String UNKNOW_SEX = "未知";
 
+    /**
+     * 城市头像存储路径
+     */
+    public static final String CITY_HEAD_PIC_BASE_DIR = "C:\\Users\\Administrator\\IdeaProjects\\secd\\src\\main\\webapp\\images\\city\\headpic\\";
+
+    /**
+     * 城市头像访问路径
+     */
+    public static final String CITY_HEAD_PIC_VISIT_DIR = "http://localhost:8080/secd/";
+
+
+
 }

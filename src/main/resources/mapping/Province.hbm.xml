@@ -11,7 +11,7 @@
 
         <timestamp name="updateTime" column="update_time" access="field"/>
 
-        <property name="provinceName" type="string"/>
+        <property name="provinceName" type="string" unique="true"/>
 
         <property name="createTime" type="timestamp">
             <column name="create_time" sql-type="datetime"/>

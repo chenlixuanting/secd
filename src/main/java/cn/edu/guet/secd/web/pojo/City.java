@@ -3,6 +3,7 @@ package cn.edu.guet.secd.web.pojo;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 城市
@@ -42,6 +43,11 @@ public class City implements Serializable {
     private Photo headPic;
 
     /**
+     * 城市图片组
+     */
+    private Set<Photo> photos;
+
+    /**
      * 创建时间
      */
     private Timestamp createTime;
@@ -50,6 +56,14 @@ public class City implements Serializable {
      * 乐观锁
      */
     private Timestamp updateTime;
+
+    public Set<Photo> getPhotos() {
+        return photos;
+    }
+
+    public void setPhotos(Set<Photo> photos) {
+        this.photos = photos;
+    }
 
     public Photo getHeadPic() {
         return headPic;

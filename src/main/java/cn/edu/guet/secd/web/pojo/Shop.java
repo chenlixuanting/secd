@@ -28,6 +28,11 @@ public class Shop implements Serializable {
     private Double score;
 
     /**
+     * 排名
+     */
+    private Integer rank;
+
+    /**
      * 商店简介
      */
     private String introduce;
@@ -51,6 +56,14 @@ public class Shop implements Serializable {
      * 乐观锁
      */
     private Timestamp updateTime;
+
+    public Integer getRank() {
+        return rank;
+    }
+
+    public void setRank(Integer rank) {
+        this.rank = rank;
+    }
 
     public String getShopId() {
         return shopId;

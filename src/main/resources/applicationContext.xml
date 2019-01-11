@@ -128,6 +128,9 @@
                 <!--格式化SQL语句-->
                 <prop key="format_sql">${hibernate.format_sql}</prop>
 
+                <!--<prop key="order_inserts">${hibernate.order_inserts}</prop>-->
+                <!--<prop key="order_updates">${hibernate.order_updates}</prop>-->
+
                 <!--配置hbm2ddl-->
                 <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl}</prop>
 

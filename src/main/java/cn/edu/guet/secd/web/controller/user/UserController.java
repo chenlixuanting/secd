@@ -4,7 +4,6 @@ import cn.edu.guet.secd.web.constant.StatusCodeConstant;
 import cn.edu.guet.secd.web.constant.UserConstant;
 import cn.edu.guet.secd.web.pojo.User;
 import cn.edu.guet.secd.web.service.UserService;
-import cn.edu.guet.secd.web.util.GetDefaultHeadPic;
 import cn.edu.guet.secd.web.vo.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
