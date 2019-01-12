@@ -52,12 +52,12 @@ public class Master implements Serializable {
         /**
          * 爬取省份主页信息生成province实体
          */
-//        Spider.create(provincePageProcessor).addPipeline(provincePagePipeline).addUrl(ProvincePageProcessor.BASE_URL).thread(1).run();
+        Spider.create(provincePageProcessor).addPipeline(provincePagePipeline).addUrl(ProvincePageProcessor.BASE_URL).thread(1).run();
 
         /**
          * 爬取省份城市列表生成city实体
          */
-//        Spider.create(cityListPageProcessor).addPipeline(cityListPagePipeline).addUrl(CityListPageProcessor.BASE_URL).thread(5).run();
+        Spider.create(cityListPageProcessor).addPipeline(cityListPagePipeline).addUrl(CityListPageProcessor.BASE_URL).thread(5).run();
 
         /**
          * 爬取城市景点列表信息

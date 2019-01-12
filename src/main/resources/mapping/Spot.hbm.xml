@@ -11,7 +11,7 @@
 
         <timestamp name="updateTime" column="update_time" access="field"/>
 
-        <property name="spotName" column="spot_name" unique="true" type="string"/>
+        <property name="spotName" column="spot_name" type="string"/>
 
         <property name="score" column="score" type="double"/>
 

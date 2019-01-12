@@ -48,28 +48,31 @@ public class CityListPagePipeline implements Pipeline {
 
             synchronized (CityListPagePipeline.class){
 
-                Province province = provinceService.findByProvinceName("广西");
+                if(!set.contains(cityNameList.get(x))){
+                    set.add(cityNameList.get(x));
+                    Province province = provinceService.findByProvinceName("广西");
+                    Photo headPic = new Photo();
 
-                Photo headPic = new Photo();
+                    try {
+                        String headPicUrl = cityHeadPicUrlList.get(x);
+                        String newPicName = UUID.randomUUID().toString() + headPicUrl.substring(headPicUrl.lastIndexOf("."));
+                        String newPicUrl = CommonConstant.LOCAL_HOST_ADDRESS + CommonConstant.CITY_HEAD_PIC_ADDRESS+newPicName;
+                        headPic.setUrl(newPicUrl);
+                        headPic.setCreateTime(new Timestamp(System.currentTimeMillis()));
+                        UrlFileDownloadUtil.downloadPicture(headPicUrl, newPicName, CommonConstant.CITY_HEAD_PIC_BASE_DIR);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
 
-                try {
-                    String headPicUrl = cityHeadPicUrlList.get(x);
-                    String newPicName = UUID.randomUUID().toString() + headPicUrl.substring(headPicUrl.lastIndexOf("."));
-                    String newPicUrl = CommonConstant.LOCAL_HOST_ADDRESS + newPicName;
-                    headPic.setUrl(newPicUrl);
-                    headPic.setCreateTime(new Timestamp(System.currentTimeMillis()));
-                    UrlFileDownloadUtil.downloadPicture(headPicUrl, newPicName, CommonConstant.CITY_HEAD_PIC_BASE_DIR);
-                } catch (Exception e) {
+                    City city = new City();
+                    city.setProvince(province);
+                    city.setHeadPic(headPic);
+                    city.setCreateTime(new Timestamp(System.currentTimeMillis()));
+                    city.setCityName(cityNameList.get(x));
 
+                    cityService.saveCity(city);
                 }
 
-                City city = new City();
-                city.setProvince(province);
-                city.setHeadPic(headPic);
-                city.setCreateTime(new Timestamp(System.currentTimeMillis()));
-                city.setCityName(cityNameList.get(x));
-
-                cityService.saveCity(city);
             }
 
         }

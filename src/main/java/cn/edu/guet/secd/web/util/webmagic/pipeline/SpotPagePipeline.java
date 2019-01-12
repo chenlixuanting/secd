@@ -69,7 +69,7 @@ public class SpotPagePipeline implements Serializable,Pipeline {
                     try {
                         String newPicName = UUID.randomUUID().toString() + headPicUrl.substring(headPicUrl.lastIndexOf("."));
                         UrlFileDownloadUtil.downloadPicture(headPicUrl, newPicName, CommonConstant.SPOT_HEAD_PIC_BASE_DIR);
-                        String newPicUrl = CommonConstant.LOCAL_HOST_ADDRESS + newPicName;
+                        String newPicUrl = CommonConstant.LOCAL_HOST_ADDRESS +CommonConstant.SPOT_HEAD_PIC_ADDRESS+ newPicName;
                         headPic.setUrl(newPicUrl);
                     }catch (Exception e){
                         headPic.setUrl(CommonConstant.LOCAL_HOST_ADDRESS+CommonConstant.SPOT_DEFAULT_HEAD_PIC_ADDRESS);

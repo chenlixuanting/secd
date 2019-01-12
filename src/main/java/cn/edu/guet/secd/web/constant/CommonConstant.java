@@ -26,9 +26,19 @@ public class CommonConstant {
     public static final String USER_DEFAULT_HEAD_PIC_ADDRESS = "images/user/headPic/default/";
 
     /**
+     * 城市头像地址
+     */
+    public static final String CITY_HEAD_PIC_ADDRESS = "images/city/headpic/";
+
+    /**
      * 景点默认头像
      */
-    public static final String SPOT_DEFAULT_HEAD_PIC_ADDRESS = "images/city/default/spot_default.jpg";
+    public static final String SPOT_DEFAULT_HEAD_PIC_ADDRESS = "images/spot/default/spot_default.jpg";
+
+    /**
+     * 景点头像地址
+     */
+    public static final String SPOT_HEAD_PIC_ADDRESS = "images/spot/";
 
     /**
      * 男士默认头像名称
