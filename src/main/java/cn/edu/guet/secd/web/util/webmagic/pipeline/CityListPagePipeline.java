@@ -14,7 +14,9 @@ import us.codecraft.webmagic.Task;
 import us.codecraft.webmagic.pipeline.Pipeline;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -31,9 +33,10 @@ public class CityListPagePipeline implements Pipeline {
 
     @Autowired
     private CityService cityService;
-
     @Autowired
     private ProvinceService provinceService;
+
+    public static Set<String> set = new HashSet<String>();
 
     @Override
     public void process(ResultItems resultItems, Task task) {
@@ -43,27 +46,32 @@ public class CityListPagePipeline implements Pipeline {
 
         for (int x = 0; x < cityNameList.size(); x++) {
 
-            Province province = provinceService.findByProvinceName("广西");
+            synchronized (CityListPagePipeline.class){
 
-            String headPicUrl = cityHeadPicUrlList.get(x);
+                Province province = provinceService.findByProvinceName("广西");
 
-            String newPicName = UUID.randomUUID().toString() + headPicUrl.substring(headPicUrl.lastIndexOf("."));
+                Photo headPic = new Photo();
 
-            String newPicUrl = CommonConstant.LOCAL_HOST_ADDRESS + newPicName;
+                try {
+                    String headPicUrl = cityHeadPicUrlList.get(x);
+                    String newPicName = UUID.randomUUID().toString() + headPicUrl.substring(headPicUrl.lastIndexOf("."));
+                    String newPicUrl = CommonConstant.LOCAL_HOST_ADDRESS + newPicName;
+                    headPic.setUrl(newPicUrl);
+                    headPic.setCreateTime(new Timestamp(System.currentTimeMillis()));
+                    UrlFileDownloadUtil.downloadPicture(headPicUrl, newPicName, CommonConstant.CITY_HEAD_PIC_BASE_DIR);
+                } catch (Exception e) {
 
-            Photo headPic = new Photo();
-            headPic.setUrl(newPicUrl);
-            headPic.setCreateTime(new Timestamp(System.currentTimeMillis()));
+                }
 
-            UrlFileDownloadUtil.downloadPicture(headPicUrl, newPicName, CommonConstant.CITY_HEAD_PIC_BASE_DIR);
+                City city = new City();
+                city.setProvince(province);
+                city.setHeadPic(headPic);
+                city.setCreateTime(new Timestamp(System.currentTimeMillis()));
+                city.setCityName(cityNameList.get(x));
 
-            City city = new City();
-            city.setProvince(province);
-            city.setHeadPic(headPic);
-            city.setCreateTime(new Timestamp(System.currentTimeMillis()));
-            city.setCityName(cityNameList.get(x));
+                cityService.saveCity(city);
+            }
 
-            cityService.saveCity(city);
         }
 
     }

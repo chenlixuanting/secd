@@ -26,6 +26,11 @@ public class CommonConstant {
     public static final String USER_DEFAULT_HEAD_PIC_ADDRESS = "images/user/headPic/default/";
 
     /**
+     * 景点默认头像
+     */
+    public static final String SPOT_DEFAULT_HEAD_PIC_ADDRESS = "images/city/default/spot_default.jpg";
+
+    /**
      * 男士默认头像名称
      */
     public static final String MALE_DEFAULT_HEAD_PIC_NAME = "female_default.png";
@@ -61,10 +66,8 @@ public class CommonConstant {
     public static final String CITY_HEAD_PIC_BASE_DIR = "C:\\Users\\Administrator\\IdeaProjects\\secd\\src\\main\\webapp\\images\\city\\headpic\\";
 
     /**
-     * 城市头像访问路径
+     * 景点头像存储
      */
-    public static final String CITY_HEAD_PIC_VISIT_DIR = "http://localhost:8080/secd/";
-
-
+    public static final String SPOT_HEAD_PIC_BASE_DIR = "C:\\Users\\Administrator\\IdeaProjects\\secd\\src\\main\\webapp\\images\\spot\\";
 
 }

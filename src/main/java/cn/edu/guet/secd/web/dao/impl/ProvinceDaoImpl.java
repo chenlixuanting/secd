@@ -16,7 +16,6 @@ public class ProvinceDaoImpl extends BaseDaoImpl<Province> implements ProvinceDa
         String hql = "from cn.edu.guet.secd.web.pojo.Province";
         try {
             Query query = getCurrentSession().createQuery(hql);
-//            query.setParameter("provinceName", provinceName);
             return (Province) query.uniqueResult();
         } catch (Exception e) {
             e.printStackTrace();

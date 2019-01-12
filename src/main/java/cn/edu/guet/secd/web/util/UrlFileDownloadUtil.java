@@ -1,9 +1,6 @@
 package cn.edu.guet.secd.web.util;
 
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -21,12 +18,11 @@ public class UrlFileDownloadUtil {
      * @param urlList
      * @param names
      */
-    public static void downloadPictures(List<String> urlList, List<String> names, String baseDir) {
+    public static void downloadPictures(List<String> urlList, List<String> names, String baseDir) throws IOException {
 //        String baseDir = "E:\\spider\\";
         URL url = null;
 
         for (int i = 0; i < urlList.size(); i++) {
-            try {
                 url = new URL(urlList.get(i));
                 DataInputStream dataInputStream = new DataInputStream(url.openStream());
                 FileOutputStream fileOutputStream = new FileOutputStream(new File(baseDir + names.get(i)));
@@ -40,12 +36,8 @@ public class UrlFileDownloadUtil {
                 System.out.println("已经下载：" + baseDir + names.get(i));
                 dataInputStream.close();
                 fileOutputStream.close();
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
+
     }
 
     /**
@@ -86,11 +78,10 @@ public class UrlFileDownloadUtil {
      * @param u
      * @param name
      */
-    public static void downloadPicture(String u, String name, String baseDir) {
+    public static void downloadPicture(String u, String name, String baseDir) throws IOException {
 //        String baseDir = "E:\\spider\\";
         URL url = null;
 
-        try {
             url = new URL(u);
             DataInputStream dataInputStream = new DataInputStream(url.openStream());
             FileOutputStream fileOutputStream = new FileOutputStream(new File(baseDir + name));
@@ -105,11 +96,6 @@ public class UrlFileDownloadUtil {
             System.out.println("已经下载：" + baseDir + name);
             dataInputStream.close();
             fileOutputStream.close();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     /**

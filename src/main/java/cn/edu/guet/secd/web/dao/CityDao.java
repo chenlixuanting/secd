@@ -9,4 +9,6 @@ public interface CityDao {
 
     Boolean save(City city);
 
+    City findByCityName(String cityName);
+
 }

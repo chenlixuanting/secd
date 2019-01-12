@@ -20,4 +20,9 @@ public class CityServiceImpl implements CityService {
         return cityDao.save(city);
     }
 
+    @Override
+    public City findByCityName(String cityName) {
+        return cityDao.findByCityName(cityName);
+    }
+
 }

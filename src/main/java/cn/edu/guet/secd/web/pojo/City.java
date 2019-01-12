@@ -30,12 +30,12 @@ public class City implements Serializable {
     /**
      * 景点
      */
-    private List<Spot> spots;
+    private Set<Spot> spots;
 
     /**
      * 游记
      */
-    private List<Travel> travels;
+    private Set<Travel> travels;
 
     /**
      * 城市头像
@@ -105,19 +105,19 @@ public class City implements Serializable {
         this.province = province;
     }
 
-    public List<Spot> getSpots() {
+    public Set<Spot> getSpots() {
         return spots;
     }
 
-    public void setSpots(List<Spot> spots) {
+    public void setSpots(Set<Spot> spots) {
         this.spots = spots;
     }
 
-    public List<Travel> getTravels() {
+    public Set<Travel> getTravels() {
         return travels;
     }
 
-    public void setTravels(List<Travel> travels) {
+    public void setTravels(Set<Travel> travels) {
         this.travels = travels;
     }
 

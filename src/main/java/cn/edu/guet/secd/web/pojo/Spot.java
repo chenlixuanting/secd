@@ -32,6 +32,11 @@ public class Spot implements Serializable {
     private City city;
 
     /**
+     * 背景
+     */
+    private Photo headPic;
+
+    /**
      * 景点亮点
      */
     private String brightPoint;
@@ -59,7 +64,7 @@ public class Spot implements Serializable {
     /**
      * 排名
      */
-    private Integer rank;
+    private Integer spotRank;
 
     /**
      * 购物点
@@ -81,6 +86,14 @@ public class Spot implements Serializable {
      */
     private Timestamp updateTime;
 
+    public Photo getHeadPic() {
+        return headPic;
+    }
+
+    public void setHeadPic(Photo headPic) {
+        this.headPic = headPic;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -89,12 +102,12 @@ public class Spot implements Serializable {
         this.address = address;
     }
 
-    public Integer getRank() {
-        return rank;
+    public Integer getSpotRank() {
+        return spotRank;
     }
 
-    public void setRank(Integer rank) {
-        this.rank = rank;
+    public void setSpotRank(Integer spotRank) {
+        this.spotRank = spotRank;
     }
 
     public Set<Shop> getShops() {

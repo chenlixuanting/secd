@@ -138,8 +138,22 @@
                 <prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop>
             </props>
         </property>
-
         <property name="mappingLocations" value="classpath:mapping/*.hbm.xml"/>
+        <!--<property name="mappingResources">-->
+            <!--<list>-->
+                <!--<value>mapping/Photo.hbm.xml</value>-->
+                <!--<value>mapping/Spot.hbm.xml</value>-->
+                <!--<value>mapping/Shop.hbm.xml</value>-->
+                <!--<value>mapping/ShopComment.hbm.xml</value>-->
+                <!--<value>mapping/User.hbm.xml</value>-->
+                <!--<value>mapping/City.hbm.xml</value>-->
+                <!--<value>mapping/Travel.hbm.xml</value>-->
+                <!--<value>mapping/Administrator.hbm.xml</value>-->
+                <!--<value>mapping/SpotComment.hbm.xml</value>-->
+                <!--<value>mapping/Province.hbm.xml</value>-->
+                <!--<value>mapping/TravelComment.hbm.xml</value>-->
+            <!--</list>-->
+        <!--</property>-->
     </bean>
 
     <!--配置事务管理器-->

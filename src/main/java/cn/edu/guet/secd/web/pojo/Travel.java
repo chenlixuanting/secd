@@ -2,6 +2,7 @@ package cn.edu.guet.secd.web.pojo;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.Set;
 
 /**
  * 游记
@@ -69,6 +70,16 @@ public class Travel implements Serializable {
      * 所属城市
      */
     private City city;
+
+    private Set<TravelComment> travelComments;
+
+    public Set<TravelComment> getTravelComments() {
+        return travelComments;
+    }
+
+    public void setTravelComments(Set<TravelComment> travelComments) {
+        this.travelComments = travelComments;
+    }
 
     public City getCity() {
         return city;

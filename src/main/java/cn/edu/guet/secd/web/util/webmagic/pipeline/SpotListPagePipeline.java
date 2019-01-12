@@ -1,6 +1,5 @@
 package cn.edu.guet.secd.web.util.webmagic.pipeline;
 
-import cn.edu.guet.secd.web.constant.CommonConstant;
 import cn.edu.guet.secd.web.util.webmagic.processor.SpotPageProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -31,8 +30,8 @@ public class SpotListPagePipeline implements Serializable,Pipeline{
         List<String> citySpotUrlList = resultItems.get(CITY_SPOT_URL);
 
         for (int x=0;x<citySpotUrlList.size();x++){
-            citySpotUrlList.set(x, CommonConstant.LOCAL_HOST_ADDRESS+citySpotUrlList.get(x).replaceFirst("place","sight"));
-            Spider.create(spotPageProcessor).addPipeline(spotPagePipeline).addUrl(citySpotUrlList.get(x)).thread(1).run();
+            citySpotUrlList.set(x, "http://you.ctrip.com"+citySpotUrlList.get(x).replaceFirst("place","sight"));
+            Spider.create(spotPageProcessor).addPipeline(spotPagePipeline).addUrl(citySpotUrlList.get(x)).thread(10).run();
         }
 
     }

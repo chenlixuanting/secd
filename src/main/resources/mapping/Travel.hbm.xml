@@ -23,6 +23,11 @@
             <column name="create_time" sql-type="datetime"/>
         </property>
 
+        <set name="travelComments" cascade="save-update">
+            <key column="travel_id"/>
+            <one-to-many class="cn.edu.guet.secd.web.pojo.TravelComment"/>
+        </set>
+
         <many-to-one name="headPic" column="head_pic_id" class="cn.edu.guet.secd.web.pojo.Photo" unique="true"/>
 
         <many-to-one name="city" column="city_id" cascade="save-update" class="cn.edu.guet.secd.web.pojo.City"/>

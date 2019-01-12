@@ -9,4 +9,6 @@ public interface CityService {
 
     Boolean saveCity(City city);
 
+    City findByCityName(String cityName);
+
 }

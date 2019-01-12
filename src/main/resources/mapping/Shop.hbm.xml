@@ -17,7 +17,7 @@
 
         <property name="introduce" column="introduce" type="string"/>
 
-        <property name="rank" column="rank" type="int"/>
+        <property name="shopRank" column="shop_rank" type="integer"/>
 
         <property name="createTime">
             <column name="create_time" sql-type="datetime"/>
