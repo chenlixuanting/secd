@@ -1,7 +1,9 @@
 package cn.edu.guet.secd.web.dao.impl;
 
 import cn.edu.guet.secd.web.dao.SpotDao;
+import cn.edu.guet.secd.web.pojo.City;
 import cn.edu.guet.secd.web.pojo.Spot;
+import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,4 +11,20 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class SpotDaoImpl extends BaseDaoImpl<Spot> implements SpotDao{
+
+    @Override
+    public Spot findBySpotName(String spotName) {
+
+        String hql = "from cn.edu.guet.secd.web.pojo.Spot as s where s.spotName=:spotName";
+
+        try {
+            Query query = getCurrentSession().createQuery(hql).setParameter("spotName",spotName);
+            return (Spot) query.uniqueResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 }

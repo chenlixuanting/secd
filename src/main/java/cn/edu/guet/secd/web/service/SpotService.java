@@ -9,4 +9,8 @@ public interface SpotService {
 
     Boolean saveSpot(Spot spot);
 
+    Spot findBySpotName(String spotName);
+
+    Boolean updateSpot(Spot spot);
+
 }

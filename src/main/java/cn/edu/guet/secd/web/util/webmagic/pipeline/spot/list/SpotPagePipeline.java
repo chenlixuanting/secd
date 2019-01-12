@@ -1,4 +1,4 @@
-package cn.edu.guet.secd.web.util.webmagic.pipeline;
+package cn.edu.guet.secd.web.util.webmagic.pipeline.spot.list;
 
 import cn.edu.guet.secd.web.constant.CommonConstant;
 import cn.edu.guet.secd.web.pojo.City;

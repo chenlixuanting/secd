@@ -11,7 +11,7 @@
 
         <timestamp name="updateTime" column="update_time" access="field"/>
 
-        <property name="spotName" column="spot_name" type="string"/>
+        <property name="spotName" column="spot_name" unique="true" type="string"/>
 
         <property name="score" column="score" type="double"/>
 
@@ -23,11 +23,17 @@
 
         <property name="address" column="address" type="string"/>
 
-        <property name="specialHint" column="special_hint" type="string"/>
+        <property name="specialHint" type="string">
+            <column name="special_hint" sql-type="longtext"/>
+        </property>
 
-        <property name="introduce" column="introduce" type="string"/>
+        <property name="introduce" type="string">
+            <column name="introduce" sql-type="longtext"/>
+        </property>
 
-        <property name="brightPoint" column="bright_point" type="string"/>
+        <property name="brightPoint" type="string">
+            <column name="bright_point" sql-type="longtext"/>
+        </property>
 
         <set name="shops" inverse="true" cascade="save-update">
             <key column="spot_id"/>

@@ -93,7 +93,7 @@ public class UrlFileDownloadUtil {
                 fileOutputStream.write(buffer, 0, length);
             }
 
-            System.out.println("已经下载：" + baseDir + name);
+//            System.out.println("已经下载：" + baseDir + name);
             dataInputStream.close();
             fileOutputStream.close();
     }

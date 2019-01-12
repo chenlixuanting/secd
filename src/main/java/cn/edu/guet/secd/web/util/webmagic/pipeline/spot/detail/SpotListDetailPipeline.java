@@ -1,6 +1,6 @@
-package cn.edu.guet.secd.web.util.webmagic.pipeline;
+package cn.edu.guet.secd.web.util.webmagic.pipeline.spot.detail;
 
-import cn.edu.guet.secd.web.util.webmagic.processor.SpotPageProcessor;
+import cn.edu.guet.secd.web.util.webmagic.processor.spot.detail.SpotDetailProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import us.codecraft.webmagic.ResultItems;
@@ -15,14 +15,14 @@ import java.util.List;
  * @author Administrator
  */
 @Repository
-public class SpotListPagePipeline implements Serializable,Pipeline{
+public class SpotListDetailPipeline implements Serializable,Pipeline{
 
     public static final String CITY_SPOT_URL = "citySpotUrl";
 
     @Autowired
-    private SpotPageProcessor spotPageProcessor;
+    private SpotDetailProcessor spotDetailProcessor;
     @Autowired
-    private SpotPagePipeline spotPagePipeline;
+    private SpotDetailPipeline spotDetailPipeline;
 
     @Override
     public void process(ResultItems resultItems, Task task) {
@@ -31,7 +31,7 @@ public class SpotListPagePipeline implements Serializable,Pipeline{
 
         for (int x=0;x<citySpotUrlList.size();x++){
             citySpotUrlList.set(x, "http://you.ctrip.com"+citySpotUrlList.get(x).replaceFirst("place","sight"));
-            Spider.create(spotPageProcessor).addPipeline(spotPagePipeline).addUrl(citySpotUrlList.get(x)).thread(10).run();
+            Spider.create(spotDetailProcessor).addPipeline(spotDetailPipeline).addUrl(citySpotUrlList.get(x)).thread(10).run();
         }
 
     }

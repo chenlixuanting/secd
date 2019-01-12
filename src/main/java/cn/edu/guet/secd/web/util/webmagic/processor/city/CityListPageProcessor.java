@@ -1,6 +1,6 @@
-package cn.edu.guet.secd.web.util.webmagic.processor;
+package cn.edu.guet.secd.web.util.webmagic.processor.city;
 
-import cn.edu.guet.secd.web.util.webmagic.pipeline.SpotListPagePipeline;
+import cn.edu.guet.secd.web.util.webmagic.pipeline.city.CityListPagePipeline;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import us.codecraft.webmagic.Page;
@@ -11,17 +11,19 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
+ * 抓取广西所有城市
+ *
  * @author Administrator
  */
 @Component
-public class SpotListPageProcessor implements Serializable, PageProcessor {
+public class CityListPageProcessor implements Serializable, PageProcessor {
 
     /**
-     * 广西省城市列表页          
+     * 广西省城市列表页
      */
     public static final String BASE_URL = "http://you.ctrip.com/countrysightlist/guangxi100052.html";
 
-    private Site site = Site.me().setRetryTimes(3).setSleepTime(100);
+    private Site site = Site.me().setRetryTimes(3).setSleepTime(100).setTimeOut(3000);
 
     @Override
     public void process(Page page) {
@@ -32,12 +34,14 @@ public class SpotListPageProcessor implements Serializable, PageProcessor {
             urlList.set(x, new StringBuilder(urlList.get(x)).insert(0, "http://you.ctrip.com").toString());
         }
 
-        List<String> citySpotUrl = page.getHtml().xpath("//div[@class='cityimg']/a/@href").all();
+        List<String> cityNameList = page.getHtml().xpath("//div[@class='cityimg']/span/text()").all();
+        List<String> cityHeadPicUrlList = page.getHtml().xpath("//a[@class='ttd_nopic100']/img/@src").all();
 
-        if(StringUtils.isEmpty(citySpotUrl)){
+        if (StringUtils.isEmpty(cityNameList) || StringUtils.isEmpty(cityHeadPicUrlList)) {
             page.setSkip(true);
-        }else{
-            page.putField(SpotListPagePipeline.CITY_SPOT_URL,citySpotUrl);
+        } else {
+            page.putField(CityListPagePipeline.RES_KEY_CITY_NAME_LIST, cityNameList);
+            page.putField(CityListPagePipeline.RES_KEY_CITY_HEAD_PIC_URL_LIST, cityHeadPicUrlList);
         }
 
         //更新待爬取队列
@@ -47,7 +51,7 @@ public class SpotListPageProcessor implements Serializable, PageProcessor {
 
     @Override
     public Site getSite() {
-        return this.site;
+        return site;
     }
-    
+
 }

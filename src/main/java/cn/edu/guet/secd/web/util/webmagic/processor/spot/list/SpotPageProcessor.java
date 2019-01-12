@@ -1,6 +1,6 @@
-package cn.edu.guet.secd.web.util.webmagic.processor;
+package cn.edu.guet.secd.web.util.webmagic.processor.spot.list;
 
-import cn.edu.guet.secd.web.util.webmagic.pipeline.SpotPagePipeline;
+import cn.edu.guet.secd.web.util.webmagic.pipeline.spot.list.SpotPagePipeline;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import us.codecraft.webmagic.Page;
@@ -8,7 +8,6 @@ import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;
 
 import java.io.Serializable;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -17,7 +16,7 @@ import java.util.List;
 @Component
 public class SpotPageProcessor implements Serializable, PageProcessor {
 
-    private Site site = Site.me().setRetryTimes(3).setSleepTime(100);
+    private Site site = Site.me().setRetryTimes(15).setSleepTime(100).setTimeOut(3000);
 
     @Override
     public void process(Page page) {

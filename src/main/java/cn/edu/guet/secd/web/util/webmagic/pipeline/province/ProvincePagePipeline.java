@@ -1,4 +1,4 @@
-package cn.edu.guet.secd.web.util.webmagic.pipeline;
+package cn.edu.guet.secd.web.util.webmagic.pipeline.province;
 
 import cn.edu.guet.secd.web.pojo.Province;
 import cn.edu.guet.secd.web.service.ProvinceService;

@@ -20,4 +20,14 @@ public class SpotServiceImpl implements SpotService{
         return spotDao.save(spot);
     }
 
+    @Override
+    public Spot findBySpotName(String spotName) {
+        return spotDao.findBySpotName(spotName);
+    }
+
+    @Override
+    public Boolean updateSpot(Spot spot) {
+        return spotDao.update(spot);
+    }
+
 }
