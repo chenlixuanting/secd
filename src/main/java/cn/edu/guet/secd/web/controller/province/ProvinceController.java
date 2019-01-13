@@ -4,6 +4,7 @@ import cn.edu.guet.secd.web.constant.CityConstant;
 import cn.edu.guet.secd.web.constant.ProvinceConstant;
 import cn.edu.guet.secd.web.pojo.City;
 import cn.edu.guet.secd.web.pojo.HotDestination;
+import cn.edu.guet.secd.web.pojo.Photo;
 import cn.edu.guet.secd.web.pojo.Spot;
 import cn.edu.guet.secd.web.service.CityService;
 import cn.edu.guet.secd.web.service.HotDestinationService;
@@ -23,7 +24,9 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 省市控制器
@@ -210,8 +213,41 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping(value = "/city/index/{cityId}", method = RequestMethod.GET)
-    public String cityIndexPage(@PathVariable String cityId) {
-        return CityConstant.CITY_INDEX;
+    public ModelAndView cityIndexPage(@PathVariable String cityId, ModelAndView modelAndView) {
+
+        //轮播图片
+        City city = cityService.getById(cityId);
+        Set<Photo> photoSet = city.getPhotos();
+        Iterator<Photo> photoIterator = photoSet.iterator();
+        CityVo cityVo = new CityVo();
+        while (photoIterator.hasNext()) {
+            cityVo.getPhotos().add(photoIterator.next().getUrl());
+        }
+        cityVo.setCityName(city.getCityName());
+        cityVo.setCityId(city.getCityId());
+        modelAndView.addObject("cityVo", cityVo);
+
+        //必游
+        List<Spot> spots = spotService.listByCityOrderByRankAscLimit(city, 1, 6);
+        List<SpotVo> spotVos = new ArrayList<SpotVo>();
+        for (Spot spot : spots) {
+            SpotVo spotVo = new SpotVo();
+            spotVo.setSpotId(spot.getSpotId());
+            spotVo.setSpotRank(spot.getSpotRank());
+            spotVo.setSpotName(spot.getSpotName());
+            spotVo.setTotalComment(spot.getSpotComments().size());
+            spotVo.setTextdetail(spot.getIntroduce() == null ? "" : spot.getIntroduce().substring(0, 20));
+            spotVo.setScore(spot.getScore());
+            spotVo.setHeadPicUrl(spot.getHeadPic().getUrl());
+            spotVo.setScoreCss((int) (spot.getScore() / 5.0 * 100));
+            spotVos.add(spotVo);
+        }
+        modelAndView.addObject("spotVos", spotVos);
+
+        //必逛
+
+        modelAndView.setViewName(CityConstant.CITY_INDEX);
+        return modelAndView;
     }
 
     /**
@@ -219,9 +255,40 @@ public class ProvinceController {
      *
      * @return
      */
-    @RequestMapping(value = "/city/spot/{cityId}", method = RequestMethod.GET)
-    public String citySpotPage(@PathVariable String cityId) {
-        return CityConstant.CITY_SPOT;
+    @RequestMapping(value = "/city/spot/{cityId}/{currentPage}", method = RequestMethod.GET)
+    public ModelAndView citySpotPage(@PathVariable String cityId, @PathVariable Integer currentPage, ModelAndView modelAndView) {
+
+        if (currentPage <= 0) {
+            currentPage = 1;
+        }
+
+        City city = cityService.getById(cityId);
+        CityVo cityVo = new CityVo();
+        cityVo.setCityId(city.getCityId());
+        cityVo.setCityName(city.getCityName());
+
+        List<Spot> spots = spotService.listSpotByCityPage(city, currentPage, 15);
+        List<SpotVo> spotVos = new ArrayList<SpotVo>();
+        for (Spot spot : spots) {
+            SpotVo spotVo = new SpotVo();
+            spotVo.setSpotId(spot.getSpotId());
+            spotVo.setIntroduce(spot.getIntroduce());
+            spotVo.setSpotRank(spot.getSpotRank());
+            spotVo.setSpotName(spot.getSpotName());
+            spotVo.setAddress(spot.getAddress());
+            spotVo.setScore(spot.getScore());
+            spotVo.setTextdetail(spot.getIntroduce() == null ? "" : spot.getIntroduce().substring(0, 40));
+            spotVo.setTotalComment(spot.getSpotComments().size());
+            spotVo.setScoreCss((int) (spot.getScore() / 5.0 * 100));
+            spotVo.setSpotId(spot.getSpotId());
+            spotVo.setHeadPicUrl(spot.getHeadPic().getUrl());
+            spotVos.add(spotVo);
+        }
+
+        modelAndView.addObject("spotVos", spotVos);
+        modelAndView.addObject("cityVo", cityVo);
+        modelAndView.setViewName(CityConstant.CITY_SPOT);
+        return modelAndView;
     }
 
     /**

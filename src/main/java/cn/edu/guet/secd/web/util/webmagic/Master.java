@@ -1,9 +1,12 @@
 package cn.edu.guet.secd.web.util.webmagic;
 
+import cn.edu.guet.secd.web.util.webmagic.pipeline.city.CityDetailPagePipeline;
+import cn.edu.guet.secd.web.util.webmagic.pipeline.city.CityDetailPipeline;
 import cn.edu.guet.secd.web.util.webmagic.pipeline.city.CityListPagePipeline;
 import cn.edu.guet.secd.web.util.webmagic.pipeline.province.ProvincePagePipeline;
 import cn.edu.guet.secd.web.util.webmagic.pipeline.spot.detail.SpotListDetailPipeline;
 import cn.edu.guet.secd.web.util.webmagic.pipeline.spot.list.SpotListPagePipeline;
+import cn.edu.guet.secd.web.util.webmagic.processor.city.CityDetailPageProcessor;
 import cn.edu.guet.secd.web.util.webmagic.processor.city.CityListPageProcessor;
 import cn.edu.guet.secd.web.util.webmagic.processor.province.ProvincePageProcessor;
 import cn.edu.guet.secd.web.util.webmagic.processor.spot.detail.SpotListDetailProcessor;
@@ -58,13 +61,21 @@ public class Master implements Serializable {
     @Autowired
     private SpotListDetailPipeline spotListDetailPipeline;
 
+    /**
+     * 爬取城市详细信息
+     */
+    @Autowired
+    private CityDetailPageProcessor cityDetailPageProcessor;
+    @Autowired
+    private CityDetailPagePipeline cityDetailPagePipeline;
+
     @Test
     public void masterProcessor() {
 
         /**
          * 爬取省份主页信息生成province实体
          */
-        Spider.create(provincePageProcessor).addPipeline(provincePagePipeline).addUrl(ProvincePageProcessor.BASE_URL).thread(1).run();
+//        Spider.create(provincePageProcessor).addPipeline(provincePagePipeline).addUrl(ProvincePageProcessor.BASE_URL).thread(1).run();
 
         /**
          * 爬取省份城市列表生成city实体
@@ -80,6 +91,11 @@ public class Master implements Serializable {
          * 爬取景点详细信息
          */
 //        Spider.create(spotListDetailProcessor).addPipeline(spotListDetailPipeline).addUrl(SpotListDetailProcessor.BASE_URL).thread(1).run();
+
+        /**
+         * 爬取城市详细信息
+         */
+        Spider.create(cityDetailPageProcessor).addPipeline(cityDetailPagePipeline).addUrl(SpotListDetailProcessor.BASE_URL).thread(1).run();
 
     }
 

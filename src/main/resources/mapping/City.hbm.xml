@@ -28,7 +28,7 @@
             <one-to-many class="cn.edu.guet.secd.web.pojo.Travel"/>
         </set>
 
-        <set name="photos" cascade="save-update">
+        <set name="photos" lazy="false" fetch="join" cascade="save-update">
             <key column="city_id"/>
             <one-to-many class="cn.edu.guet.secd.web.pojo.Photo"/>
         </set>

@@ -87,4 +87,17 @@ public class CityDaoImpl extends BaseDaoImpl<City> implements CityDao {
         return null;
     }
 
+    @Override
+    public City getById(String id) {
+        String hql = "from cn.edu.guet.secd.web.pojo.City as c where c.cityId=:cityId";
+        try {
+            Query query = getCurrentSession().createQuery(hql);
+            query.setParameter("cityId", id);
+            return (City) query.uniqueResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }

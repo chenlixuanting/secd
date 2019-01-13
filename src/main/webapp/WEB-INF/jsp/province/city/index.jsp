@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath() + "/";
@@ -9,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
-    <title>桂林</title>
+    <title>${cityVo.cityName}</title>
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/city.v2.0.css">
@@ -24,8 +25,9 @@
         <div class="content">
             <div class="gs-nav">
                 <ul>
-                    <li id="gs_nav_0"><a href="http://you.ctrip.com/"><i class="icon_home"></i></a></li>
-                    <li id="my_home"><a href="http://you.ctrip.com/members/">我的主页</a></li>
+                    <li id="gs_nav_0"><a href="http://localhost:8080/secd/province/index"><i class="icon_home"></i></a>
+                    </li>
+                    <li id="my_home"><a href="http://localhost:8080/secd/user/home">我的主页</a></li>
                 </ul>
             </div>
             <div class="gs-search-2"><input id="gsSearch" type="text" placeholder="搜索城市/景点/游记/问答/住宿/用户" class="sgtgray">
@@ -40,9 +42,8 @@
         <div class="cf">
             <div class="f_left">
                 <h1>
-                    <a title="桂林" href="http://you.ctrip.com/place/guilin28.html">桂林</a>
+                    <a title="${cityVo.cityName}" href="http://you.ctrip.com/place/guilin28.html">${cityVo.cityName}</a>
                 </h1>
-                <p>Guilin</p>
             </div>
             <div class="f_right">
                 <ul>
@@ -67,7 +68,7 @@
         </div>
         <div class="sec_line cf">
             <p class="c_text_left ellipsis">
-                欢迎您访问桂林 </p>
+                欢迎您访问${cityVo.cityName} </p>
         </div>
     </div>
 </div>
@@ -77,15 +78,14 @@
          style="position: relative; overflow: visible; top: 0px; left: 0px; right: 0px; width: 100%; height: 39px;">
         <div class="innerbox">
             <ul class="cf">
-                <li class="ttd_first_nav current"><a href="http://localhost:8080/secd/province/city/index">主页</a>
+                <li class="ttd_first_nav current"><a
+                        href="http://localhost:8080/secd/province/city/index/${cityVo.cityId}">主页</a>
                 </li>
-                <li><a href="http://localhost:8080/secd/province/city/spot">景点</a>
+                <li><a href="http://localhost:8080/secd/province/city/spot/${cityVo.cityId}/1">景点</a>
                 </li>
-                <li><a href="http://localhost:8080/secd/province/city/shopping">购物</a>
+                <li><a href="http://localhost:8080/secd/province/city/shopping/${cityVo.cityId}">购物</a>
                 </li>
-                <li><a href="http://localhost:8080/secd/province/city/travel">游记</a>
-                </li>
-                <li><a href="http://localhost:8080/secd/province/city/route">行程</a>
+                <li><a href="http://localhost:8080/secd/province/city/travel/${cityVo.cityId}">游记</a>
                 </li>
             </ul>
         </div>
@@ -95,425 +95,107 @@
 <!--二级导航-->
 <div class="ttd2_background">
     <div class="content cf dest_city">
+
         <div class="des_narrow f_left">
             <div class="country_xclist">
                 <h3>携程旅行口碑榜2017</h3>
                 <dl>
-                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/zijiayou.html" title="2017十佳自驾游目的地">2017十佳自驾游目的地</a>
-                    </dt>
-                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/hezhou707.html" title="贺州">贺州</a>
+                    <dt><a target="_blank" href="http://localhost:8080/secd/destinationsite/top"
+                           title="2017十佳自驾游目的地">2017十佳自驾游目的地</a></dt>
+                    <dd><i></i><a target="_blank" href="javascript:void(0)" title="贺州">贺州</a>
                     </dd>
                 </dl>
                 <dl>
-                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/niandusheying.html" title="2017年度十大摄影目的地">2017年度十大摄影目的地</a></dt>
-                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/guilin28.html" title="桂林">桂林</a></dd>
+                    <dt><a target="_blank" href="http://localhost:8080/secd/destinationsite/top"
+                           title="2017年度十大摄影目的地">2017年度十大摄影目的地</a></dt>
+                    <dd><i></i><a target="_blank" href="javascript:void(0)" title="桂林">桂林</a></dd>
                 </dl>
                 <dl>
-                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/yazhoulvxing.html" title="2017亚洲十大旅行目的地">2017亚洲十大旅行目的地</a></dt>
-                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/guilin28.html" title="桂林">桂林</a></dd>
+                    <dt><a target="_blank" href="http://localhost:8080/secd/destinationsite/top"
+                           title="2017亚洲十大旅行目的地">2017亚洲十大旅行目的地</a></dt>
+                    <dd><i></i><a target="_blank" href="javascript:void(0)" title="桂林">桂林</a></dd>
                 </dl>
             </div>
         </div>
+
         <div class="des_wide f_right">
-            <!--幻灯结构-->
             <!--首页热门照片-->
             <div class="slide_show">
                 <div data-inner="" class="imgbackgbox">
-                    <img data-item="0" src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_880_350.jpg" width="880"
-                         height="350" class="" alt="" style="display: none;">
-                    <img data-item="1" src="images/user/10020t000000iop8dE9E1_C_880_350.jpg" width="880" height="350"
-                         alt="" class="" style="display: none;">
-                    <img data-item="2" src="images/user/100f0600000015zg903FB_C_880_350.jpg" width="880" height="350"
-                         alt="" class="" style="display: none;">
-                    <img data-item="3" src="images/user/100e0500000010r3xD538_C_880_350.jpg" width="880" height="350"
-                         alt="" class="" style="display: none;">
-                    <img data-item="4" src="images/user/CggYGVZztWeAHWcjADCY2xj_5_8960_C_880_350.jpg" width="880"
-                         height="350" alt="" class="current" style="display: inline;">
+                    <c:forEach var="city" items="${cityVo.photos}" varStatus="status">
+                        <c:if test="${status.index == 0}">
+                            <img data-item="${status.index}" src="${city}" width="880"
+                                 height="350" alt="" class="none current" style="display: inline;">
+                        </c:if>
+                        <c:if test="${status.index != 0}">
+                            <img data-item="${status.index}" src="${city}" width="880"
+                                 height="350" alt="" class="none" style="display: none;">
+                        </c:if>
+                    </c:forEach>
                 </div>
                 <div class="tabcover">
                 </div>
                 <ul class="tabpicbox" data-indicators="">
-                    <li data-slip-to="0" class="">
-                        <img src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_80_50.jpg" width="80" height="50"
-                             alt=""><i></i>
-                    </li>
-                    <li data-slip-to="1" class="">
-                        <img src="images/user/10020t000000iop8dE9E1_C_80_50.jpg" width="80" height="50" alt=""><i></i>
-                    </li>
-                    <li data-slip-to="2" class="">
-                        <img src="images/user/100f0600000015zg903FB_C_80_50.jpg" width="80" height="50" alt=""><i></i>
-                    </li>
-                    <li data-slip-to="3" class="">
-                        <img src="images/user/100e0500000010r3xD538_C_80_50.jpg" width="80" height="50" alt=""><i></i>
-                    </li>
-                    <li data-slip-to="4" class="current">
-                        <img src="images/user/CggYGVZztWeAHWcjADCY2xj_5_8960_C_80_50.jpg" width="80" height="50"
-                             alt=""><i></i>
-                    </li>
+                    <c:forEach var="city" items="${cityVo.photos}" varStatus="status">
+                        <c:if test="${status.index == 0}">
+                            <li data-slip-to="0" class="none current">
+                                <img src="${city}" width="80" height="50"
+                                     alt=""><i></i>
+                            </li>
+                        </c:if>
+                        <c:if test="${status.index != 0}">
+                            <li data-slip-to="0" class="none">
+                                <img src="${city}" width="80" height="50"
+                                     alt=""><i></i>
+                            </li>
+                        </c:if>
+                    </c:forEach>
                 </ul>
-                <div class="alllinkbox" data-inner="">
-                    <div data-item="0" class="linkbox" style="display: none;">
-                        <a target="_blank" href="http://you.ctrip.com/photos/guilin28/r28-23519528.html"
-                           class="imglink"></a>
-                        <span class="linkcover"></span>
-                        <span class="linkline">
-                                    <a href="http://you.ctrip.com/place/guilin28.html">桂林</a>
-
-                                        &nbsp;by&nbsp;
-                                            <a href="http://you.ctrip.com/members/0BB6A1CACA194BE48C5FFD74C5B7A869"
-                                               target="_blank">克克克里斯</a>
-                                </span>
-                    </div>
-                    <div data-item="1" class="linkbox" style="display: none;">
-                        <a target="_blank" href="http://you.ctrip.com/photos/guilin28/r28-272758102.html"
-                           class="imglink"></a>
-                        <span class="linkcover"></span>
-                        <span class="linkline">
-                                    <a href="http://you.ctrip.com/place/guilin28.html">桂林</a>
-
-                                        &nbsp;by&nbsp;
-                                            <a href="http://you.ctrip.com/members/18A257D4E4424781B611E6EA44FFBEF6"
-                                               target="_blank">C_image</a>
-                                </span>
-                    </div>
-                    <div data-item="2" class="linkbox" style="display: none;">
-                        <a target="_blank" href="http://you.ctrip.com/photos/guilin28/r28-73805877.html"
-                           class="imglink"></a>
-                        <span class="linkcover"></span>
-                        <span class="linkline">
-                                    <a href="http://you.ctrip.com/place/guilin28.html">桂林</a>
-
-                                        &nbsp;by&nbsp;
-                                            <a href="http://you.ctrip.com/members/18A257D4E4424781B611E6EA44FFBEF6"
-                                               target="_blank">C_image</a>
-                                </span>
-                    </div>
-                    <div data-item="3" class="linkbox" style="display: none;">
-                        <a target="_blank" href="http://you.ctrip.com/photos/guilin28/r28-72444498.html"
-                           class="imglink"></a>
-                        <span class="linkcover"></span>
-                        <span class="linkline">
-                                    <a href="http://you.ctrip.com/place/guilin28.html">桂林</a>
-
-                                        &nbsp;by&nbsp;
-                                            <a href="http://you.ctrip.com/members/18A257D4E4424781B611E6EA44FFBEF6"
-                                               target="_blank">C_image</a>
-                                </span>
-                    </div>
-                    <div data-item="4" class="linkbox current" style="display: block;">
-                        <a target="_blank" href="http://you.ctrip.com/photos/guilin28/r28-62885216.html"
-                           class="imglink"></a>
-                        <span class="linkcover"></span>
-                        <span class="linkline">
-                                    <a href="http://you.ctrip.com/place/guilin28.html">桂林</a>
-
-                                        &nbsp;by&nbsp;
-                                            <a href="http://you.ctrip.com/members/18A257D4E4424781B611E6EA44FFBEF6"
-                                               target="_blank">C_image</a>
-                                </span>
-                    </div>
-                </div>
             </div>
             <!--度假End-->
             <!--poitab切换-->
             <ul id="otherSuggest" class="suggest_poitab cf">
                 <li class="current" data-id="#poi_0"><a class="sight" href="javascript:;" data-id="#poi_0"><i
                         class="sight"></i>必游</a></li>
-                <li class="" data-id="#poi_2">
-                    <a class="restaurant" href="javascript:;" data-id="#poi_2">
-                        <i class="restaurant"></i>必吃
-                    </a>
-                </li>
                 <li class="" data-id="#poi_3"><a class="shopping" href="javascript:;" data-id="#poi_3"><i
                         class="shopping"></i>必逛</a></li>
-
-                <li style="display:none">
-                    <a class="journey" href="javascript:;" data-id="#poi_5">
-                        <i class="journey"></i>周边短途
-                    </a>
-                </li>
-
             </ul>
+
             <div class="card_list">
                 <div id="poi_0" style="display: block;">
                     <ul>
-                        <li class=""><span class="ttd_nopic220">
+                        <c:forEach var="spotVo" items="${spotVos}">
+                            <li class="">
+                            <span class="ttd_nopic220">
                             <img width="270" height="170"
-                                 src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_270_170.jpg"
-                                 data-original="https://dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_270_170.jpg"
+                                 src="${spotVo.headPicUrl}"
+                                 data-original="${spotVo.headPicUrl}"
                                  style="display: block;">
                         </span>
-                            <dl>
-                                <dt>
-                                    <s>第1名</s>
-                                    <i class="sight"></i>
-                                    <span class="ellipsis">漓江</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist"><span style="width: 90%;">
+                                <dl>
+                                    <dt>
+                                        <s>第${spotVo.spotRank}名</s>
+                                        <i class="sight"></i>
+                                        <span class="ellipsis">${spotVo.spotName}</span>
+                                    </dt>
+                                    <dd>
+                                <span class="starlist"><span style="width: ${spotVo.scoreCss}%;">
                                                        </span></span><span
-                                        class="score"><strong>4.6</strong>分 </span><span
-                                        class="comment_text">(999+条点评)</span>
-                                </dd>
-                                <dd class="textdetail">小学语文课本有篇“桂林山水甲天下”指的就是游漓江。漓...</dd>
-
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/2888.html" class="all_link" target="_blank"
-                               title="漓江 分数：4.6 点评数：999+"></a></li>
-                        <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="images/user/100f0600000015zg903FB_C_270_170.jpg"
-                                 data-original="https://dimg06.c-ctrip.com/images/100f0600000015zg903FB_C_270_170.jpg"
-                                 style="display: block;">
-                        </span>
-                            <dl>
-                                <dt>
-                                    <s>第2名</s>
-                                    <i class="sight"></i>
-                                    <span class="ellipsis">西街</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist"><span style="width: 80%;">
-                                                       </span></span><span
-                                        class="score"><strong>4.2</strong>分 </span><span
-                                        class="comment_text">(999+条点评)</span>
-                                </dd>
-                                <dd class="textdetail">西街是一条有着1400多年历史的老街，沿街的建筑至今保留...</dd>
-
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/22079.html" class="all_link" target="_blank"
-                               title="西街 分数：4.2 点评数：999+"></a></li>
-                        <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170"
-                                 src="images/user/CggYHVZztZKAAkONAB7KvIAjXR0912_C_270_170.jpg"
-                                 data-original="https://dimg06.c-ctrip.com/images/fd/tg/g4/M08/CC/30/CggYHVZztZKAAkONAB7KvIAjXR0912_C_270_170.jpg"
-                                 style="display: block;">
-                                <span class="ticket">携程价 <span>¥ <b>60</b> </span></span>
-                        </span>
-                            <dl>
-                                <dt>
-                                    <s>第3名</s>
-                                    <i class="sight"></i>
-                                    <span class="ellipsis">两江四湖</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist"><span style="width: 90%;">
-                                                       </span></span><span
-                                        class="score"><strong>4.5</strong>分 </span><span
-                                        class="comment_text">(999+条点评)</span>
-                                </dd>
-                                <dd class="textdetail">两江四湖包括了桂林市中心区的漓江、桃花江以及杉湖、榕...</dd>
-
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/5925.html" class="all_link" target="_blank"
-                               title="两江四湖 分数：4.5 点评数：999+"></a></li>
-                        <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170"
-                                 src="images/user/CghzfVWsoq2AWjQvABZtguNMQn0826_C_270_170.jpg"
-                                 data-original="https://dimg03.c-ctrip.com/images/fd/tg/g1/M09/16/9D/CghzfVWsoq2AWjQvABZtguNMQn0826_C_270_170.jpg"
-                                 style="display: block;">
-                        </span>
-                            <dl>
-                                <dt>
-                                    <s>第4名</s>
-                                    <i class="sight"></i>
-                                    <span class="ellipsis">遇龙河</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist"><span style="width: 90%;">
-                                                       </span></span><span
-                                        class="score"><strong>4.5</strong>分 </span><span
-                                        class="comment_text">(999+条点评)</span>
-                                </dd>
-                                <dd class="textdetail">遇龙河是漓江在阳朔境内的一条支流，河水清澈如镜，随手...</dd>
-
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/22081.html" class="all_link" target="_blank"
-                               title="遇龙河 分数：4.5 点评数：999+"></a></li>
-                        <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="images/user/100u070000002rpm8CC4E_C_270_170.jpg"
-                                 data-original="https://dimg04.c-ctrip.com/images/100u070000002rpm8CC4E_C_270_170.jpg"
-                                 style="display: block;">
-                                <span class="ticket">携程价 <span>¥ <b>52</b> </span></span>
-                        </span>
-                            <s class="ico_list"></s>
-                            <dl>
-                                <dt>
-                                    <s>第5名</s>
-                                    <i class="sight"></i>
-                                    <span class="ellipsis">象山景区</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist"><span style="width: 90%;">
-                                                       </span></span><span
-                                        class="score"><strong>4.3</strong>分 </span><span
-                                        class="comment_text">(999+条点评)</span>
-                                </dd>
-                                <dd class="textdetail">象山景区位于桂林市中心，景区内的象鼻山山形酷似一头伸...</dd>
-
-                                <dd class="xclistdd"><a target="_blank"
-                                                        href="http://top.ctrip.com/2017/sight/zuimeiziran.html"
-                                                        title="2017最美自然景区">2017最美自然景区</a></dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/107505.html" class="all_link" target="_blank"
-                               title="象山景区 分数：4.3 点评数：999+"></a></li>
-                        <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170"
-                                 src="images/user/d97f27e0107044e1a3e992fbb763e027_C_270_170.jpg"
-                                 data-original="https://dimg01.c-ctrip.com/images/tg/963/634/210/d97f27e0107044e1a3e992fbb763e027_C_270_170.jpg"
-                                 style="display: block;">
-                                <span class="ticket">携程价 <span>¥ <b>60</b> </span></span>
-                        </span>
-                            <dl>
-                                <dt>
-                                    <s>第6名</s>
-                                    <i class="sight"></i>
-                                    <span class="ellipsis">银子岩</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist"><span style="width: 90%;">
-                                                       </span></span><span
-                                        class="score"><strong>4.5</strong>分 </span><span
-                                        class="comment_text">(999+条点评)</span>
-                                </dd>
-                                <dd class="textdetail">银子岩是典型的喀斯特地貌，整个溶洞贯穿十二座山峰，汇...</dd>
-
-                            </dl>
-                            <a href="http://you.ctrip.com/sight/guilin28/18147.html" class="all_link" target="_blank"
-                               title="银子岩 分数：4.5 点评数：999+"></a></li>
+                                            class="score"><strong>${spotVo.score}</strong>分 </span><span
+                                            class="comment_text">(${spotVo.totalComment}条点评)</span>
+                                    </dd>
+                                    <dd class="textdetail">${spotVo.textdetail}...</dd>
+                                </dl>
+                                <a href="/province/city/spot-detail/${spotVo.spotId}" class="all_link"
+                                   target="_blank"></a>
+                            </li>
+                        </c:forEach>
                     </ul>
                     <p class="nolinemore">
-                        <a href="http://you.ctrip.com/sight/guilin28.html" target="_blank">更多景点<i
+                        <a href="province/city/spot/${cityVo.cityId}/1" target="_blank">更多景点<i
                                 class="f14_more_arror"></i></a></p>
                 </div>
 
-
-                <div class="undis" id="poi_2" style="display: none;">
-                    <ul>
-                        <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="images/user/10060900000041p881C7B_R_220_140.jpg"
-                                 data-original="https://dimg06.c-ctrip.com/images/10060900000041p881C7B_R_220_140.jpg">
-                        </span>
-                            <dl class="foods_spread">
-                                <dt>
-                                    <i class="restaurant"></i>
-                                    <span class="ellipsis">椿记烧鹅(中山店)</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:90%;">
-                                    </span>
-                                </span><span class="score"><strong>4.7</strong>分 </span>
-                                    <span class="comment_text">(999+条点评)</span>
-                                </dd>
-                                <dd class="textdetail">椿记是桂林非常有名的餐馆，这里的菜揉合了湘粤菜系及桂...</dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/food/guilin28/126233.html" class="all_link" target="_blank"
-                               title="椿记烧鹅(中山店) 分数：4.7 点评数：999+"></a></li>
-                        <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="images/user/100w0v000000jxxuaB59D_R_220_140.jpg"
-                                 data-original="https://dimg06.c-ctrip.com/images/100w0v000000jxxuaB59D_R_220_140.jpg">
-                        </span>
-                            <dl class="foods_spread">
-                                <dt>
-                                    <i class="restaurant"></i>
-                                    <span class="ellipsis">阿甘酒家(中山中路店)</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:90%;">
-                                    </span>
-                                </span><span class="score"><strong>4.3</strong>分 </span>
-                                    <span class="comment_text">(506条点评)</span>
-                                </dd>
-                                <dd class="textdetail">桂林很有名气的当地菜馆，在市内有许多连锁店，饭菜量很...</dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/food/guilin28/126103.html" class="all_link" target="_blank"
-                               title="阿甘酒家(中山中路店) 分数：4.3 点评数：506"></a></li>
-                        <li><span class="ttd_nopic220">
-                            <img width="270" height="170" src="images/user/10010y000000mh0m12DBE_R_220_140.jpg"
-                                 data-original="https://dimg04.c-ctrip.com/images/10010y000000mh0m12DBE_R_220_140.jpg">
-                        </span>
-                            <dl class="foods_spread">
-                                <dt>
-                                    <i class="restaurant"></i>
-                                    <span class="ellipsis">MANGO芒果帮(7号店)</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:90%;">
-                                    </span>
-                                </span><span class="score"><strong>4.7</strong>分 </span>
-                                    <span class="comment_text">(51条点评)</span>
-                                </dd>
-                                <dd class="textdetail">位于阳朔的饮品连锁店，所有的饮料都有芒果成分，店内环...</dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/food/guilin28/5578100.html" class="all_link" target="_blank"
-                               title="MANGO芒果帮(7号店) 分数：4.7 点评数：51"></a></li>
-                        <li class=""><span class="ttd_nopic220">
-                            <img width="270" height="170" src="images/user/100m0n000000eabdv872B_R_220_140.jpg"
-                                 data-original="https://dimg08.c-ctrip.com/images/100m0n000000eabdv872B_R_220_140.jpg">
-                        </span>
-                            <dl class="foods_spread">
-                                <dt>
-                                    <i class="restaurant"></i>
-                                    <span class="ellipsis">小南国(文明店)</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:90%;">
-                                    </span>
-                                </span><span class="score"><strong>4.5</strong>分 </span>
-                                    <span class="comment_text">(631条点评)</span>
-                                </dd>
-                                <dd class="textdetail">小南国是桂林颇有名气的当地菜馆，这里能吃到比较正宗的...</dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/food/guilin28/4926084.html" class="all_link" target="_blank"
-                               title="小南国(文明店) 分数：4.5 点评数：631"></a></li>
-                        <li><span class="ttd_nopic220">
-                            <img width="270" height="170" src="images/user/10070k000000coo0b297D_R_220_140.jpg"
-                                 data-original="https://dimg12.c-ctrip.com/images/10070k000000coo0b297D_R_220_140.jpg">
-                        </span>
-                            <dl class="foods_spread">
-                                <dt>
-                                    <i class="restaurant"></i>
-                                    <span class="ellipsis">岚方螺蛳粉(漓江路店)</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:90%;">
-                                    </span>
-                                </span><span class="score"><strong>4.5</strong>分 </span>
-                                    <span class="comment_text">(466条点评)</span>
-                                </dd>
-                                <dd class="textdetail">一家永远在排队的人气小店，这里的螺蛳粉口味地道，粉的...</dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/food/guilin28/5577959.html" class="all_link" target="_blank"
-                               title="岚方螺蛳粉(漓江路店) 分数：4.5 点评数：466"></a></li>
-                        <li><span class="ttd_nopic220">
-                            <img width="270" height="170" src="images/user/10010v000000k4wi1B256_R_220_140.jpg"
-                                 data-original="https://dimg01.c-ctrip.com/images/10010v000000k4wi1B256_R_220_140.jpg">
-                        </span>
-                            <dl class="foods_spread">
-                                <dt>
-                                    <i class="restaurant"></i>
-                                    <span class="ellipsis">黄记玉米汁(叠翠路店)</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:90%;">
-                                    </span>
-                                </span><span class="score"><strong>4.3</strong>分 </span>
-                                    <span class="comment_text">(56条点评)</span>
-                                </dd>
-                                <dd class="textdetail">阳朔有名的饮品连锁店之一，这里的金牌玉米汁是用当地新...</dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/food/guilin28/453327.html" class="all_link" target="_blank"
-                               title="黄记玉米汁(叠翠路店) 分数：4.3 点评数：56"></a></li>
-                    </ul>
-                    <p class="nolinemore">
-                        <a href="http://you.ctrip.com/restaurant/guilin28.html" target="_blank">更多美食<i
-                                class="f14_more_arror"></i></a></p>
-                </div>
                 <div class="undis" id="poi_3" style="display: none;">
                     <ul>
                         <li class="">
@@ -543,158 +225,15 @@
                             <a href="http://you.ctrip.com/shopping/guilin28/108714.html" class="all_link"
                                target="_blank" title="西城步行街 分数：4.1 点评数：358"></a>
                         </li>
-                        <li class="">
-                        <span class="ttd_nopic220">
-                            <img width="270" height="170"
-                                 src="images/user/f49e52ab90dc41519573e715c93ab671_C_270_170.jpg"
-                                 data-original="https://dimg04.c-ctrip.com/images/tg/706/236/250/f49e52ab90dc41519573e715c93ab671_C_270_170.jpg">
-                        </span>
-                            <div class="abiconbox" data-id="108721">
-                            </div>
-                            <dl>
-                                <dt>
-                                    <s>第2名</s>
-                                    <i class="shopping"></i>
-                                    <span class="ellipsis">正阳步行街</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:80%;">
-                                    </span>
-                                </span><span class="score"><strong>4.2</strong>分 </span><span class="comment_text">(170条点评)</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    与中山中路平行，距离不过500米，往东越过中心广场即是...
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/shopping/guilin28/108721.html" class="all_link"
-                               target="_blank" title="正阳步行街 分数：4.2 点评数：170"></a>
-                        </li>
-                        <li>
-                        <span class="ttd_nopic220">
-                            <img width="270" height="170"
-                                 src="images/user/de36b75ae9624992bac44ff3cc1285ff_C_270_170.jpg"
-                                 data-original="https://dimg08.c-ctrip.com/images/tg/301/632/212/de36b75ae9624992bac44ff3cc1285ff_C_270_170.jpg">
-                        </span>
-                            <div class="abiconbox" data-id="108688">
-                            </div>
-                            <dl>
-                                <dt>
-                                    <s>第3名</s>
-                                    <i class="shopping"></i>
-                                    <span class="ellipsis">联达商业购物广场</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:90%;">
-                                    </span>
-                                </span><span class="score"><strong>4.3</strong>分 </span><span class="comment_text">(72条点评)</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    桂林联达商业广场座落于桂林市象山区环城西一路，紧临桂...
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/shopping/guilin28/108688.html" class="all_link"
-                               target="_blank" title="联达商业购物广场 分数：4.3 点评数：72"></a>
-                        </li>
-                        <li class="">
-                        <span class="ttd_nopic220">
-                            <img width="270" height="170"
-                                 src="images/user/dad7b08c0a6b469293347c5cd580263e_C_270_170.jpg"
-                                 data-original="https://dimg07.c-ctrip.com/images/tg/085/838/604/dad7b08c0a6b469293347c5cd580263e_C_270_170.jpg">
-                        </span>
-                            <div class="abiconbox" data-id="108710">
-                            </div>
-                            <dl>
-                                <dt>
-                                    <s>第4名</s>
-                                    <i class="shopping"></i>
-                                    <span class="ellipsis">微笑堂商厦</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:80%;">
-                                    </span>
-                                </span><span class="score"><strong>4.2</strong>分 </span><span class="comment_text">(78条点评)</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    桂林的老牌商场，位于市中心，购物环境舒适优雅，服饰鞋...
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/shopping/guilin28/108710.html" class="all_link"
-                               target="_blank" title="微笑堂商厦 分数：4.2 点评数：78"></a>
-                        </li>
-                        <li class="">
-                        <span class="ttd_nopic220">
-                            <img width="270" height="170"
-                                 src="images/user/CggYsFc_vMeAXUNJAAHtXa1kbek331_C_270_170.jpg"
-                                 data-original="https://dimg07.c-ctrip.com/images/fd/tg/g5/M09/03/3C/CggYsFc_vMeAXUNJAAHtXa1kbek331_C_270_170.jpg">
-                        </span>
-                            <div class="abiconbox" data-id="1450526">
-                            </div>
-                            <dl>
-                                <dt>
-                                    <s>第5名</s>
-                                    <i class="shopping"></i>
-                                    <span class="ellipsis">桂林万达广场</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:90%;">
-                                    </span>
-                                </span><span class="score"><strong>4.5</strong>分 </span><span class="comment_text">(51条点评)</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    桂林万达广场于2015年9月12日开业，是全国第124座万达广...
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/shopping/guilin28/1450526.html" class="all_link"
-                               target="_blank" title="桂林万达广场 分数：4.5 点评数：51"></a>
-                        </li>
-                        <li>
-                        <span class="ttd_nopic220">
-                            <img width="270" height="170"
-                                 src="images/user/a6da1a79639b455da4244e0b1556fe1a_C_270_170.jpg"
-                                 data-original="https://dimg06.c-ctrip.com/images/tg/998/068/621/a6da1a79639b455da4244e0b1556fe1a_C_270_170.jpg">
-                        </span>
-                            <div class="abiconbox" data-id="108723">
-                            </div>
-                            <dl>
-                                <dt>
-                                    <s>第6名</s>
-                                    <i class="shopping"></i>
-                                    <span class="ellipsis">中心广场</span>
-                                </dt>
-                                <dd>
-                                <span class="starlist">
-                                    <span style="width:80%;">
-                                    </span>
-                                </span><span class="score"><strong>4.2</strong>分 </span><span class="comment_text">(43条点评)</span>
-                                </dd>
-                                <dd class="textdetail">
-                                    位于桂林市中心，这里卖很多东西，价格相较于其他地方较...
-                                </dd>
-                            </dl>
-                            <a href="http://you.ctrip.com/shopping/guilin28/108723.html" class="all_link"
-                               target="_blank" title="中心广场 分数：4.2 点评数：43"></a>
-                        </li>
                     </ul>
                     <p class="nolinemore">
                         <a href="http://you.ctrip.com/shopping/guilin28.html" target="_blank">更多购物点<i
                                 class="f14_more_arror"></i></a>
                     </p>
                 </div>
-
-
-                <div class="undis" id="poi_5" style="display: none;">
-                    <div class="gs_list_load"><p><i class="listface"></i>请期待更新！欢迎投稿给我们 <a target="_blank"
-                                                                                          href="mailto:support@ctrip.com">support@ctrip.com</a>。
-                    </p></div>
-                </div>
             </div>
 
             <!--主题内容 游玩-->
-            <div class="wide_eventspic" id="AdMiddleBotton" style="display: none;"></div>
             <div class="normalbox">
                 <div class="normaltitle cf">
                     <h1>桂林游记</h1><span class="t_archives"><i></i><a
@@ -816,43 +355,6 @@
             </div>
         </div>
     </div>
-    <!--美食弹出层-->
-    <div class="gsn-layer food_popbox" id="foodPopbox" style="display: none;"><a href="javascript:$.popupbox.close();"
-                                                                                 class="close"></a>
-        <!--轮播效果-统一为线上首页渐隐展现形式-->
-        <div class="carousel" id="foodCarousel">
-            <ol class="carousel-indicators" style="margin-left: 0px; display: block;">
-            </ol>
-            <div class="carousel-inner">
-            </div>
-            <a data-slide="prev" href="http://you.ctrip.com/place/guilin28.html#foodCarousel"
-               class="carousel-control left">‹</a> <a data-slide="next"
-                                                      href="http://you.ctrip.com/place/guilin28.html#foodCarousel"
-                                                      class="carousel-control right">›</a></div>
-        <!--更新结构-->
-        <h3 class="boxtitle">
-            <span class="f_left">
-                <!--<strong>蔬菜饼</strong>东南亚料理-->
-            </span>
-            <span class="f_right">
-                <a rel="nofollow" href="javascript:;" class="icon_slike">
-                    <i></i>
-                    <span></span>
-                </a>
-            </span>
-        </h3>
-        <ul class="toplinedl">
-            <li>
-                <!--香港迪士尼乐园（Hong Kong Disneyland）是全球第五个迪士尼乐园模式兴建、迪士尼全球的第十一个主题乐园，及首个根据加州迪士尼香港迪士尼乐园（Hong Kong Disneyland）是全球第五个迪士尼乐园模式兴建、迪士尼全球的第十一个主题乐园，及首个根据加州迪士尼香港迪士尼乐园（Hong Kong Disneyland）是全球第五个迪士尼乐园模式兴建、迪士尼全球的第十一个主题乐园，及首个根据加州迪士尼香港迪士尼乐园（Hong Kong Disneyland）是全球第五个迪士尼乐园模式兴建、迪士尼全球的第十一个主题乐园，及首个根据加州迪士尼香港迪士尼乐园（Hong Kong Disneyland）是全球第五个迪士尼乐园模式兴建、迪士尼全球的第十一个主题乐园，及首个根据加州迪士尼香港迪士尼乐园（Hong Kong Disneyland）是全球第五个迪士尼乐园模式兴建、迪士尼全球的第十一个主题乐园，及首个根据加州迪士尼香港迪士尼乐园（Hong Kong Disneyland）是全球第五个迪士尼乐园模式兴建、迪士尼全球的第十一个主题乐园，及首个根据加州迪士尼-->
-            </li>
-            <li class="topline">
-                <strong>相关目的地：</strong>
-            </li>
-            <li class="ellipsis">
-                <!--<a href="#">香港迪士尼</a>、<a href="#">香港迪士尼</a>、<a href="#">新加坡</a>-->
-            </li>
-        </ul>
-    </div>
 </div>
 
 <div class="footgray">
@@ -886,7 +388,7 @@
             <dd><a href="" target="_blank">智慧旅游</a></dd>
         </dl>
         <dl class="ftguanzhu">
-            <dt>关注携程攻略社区</dt>
+            <dt>关注攻略社区</dt>
             <dd class="youguanzhu cf"><span class="ftweixin"></span></dd>
         </dl>
     </div>

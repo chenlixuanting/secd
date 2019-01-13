@@ -13,7 +13,7 @@ public class CityConstant {
     /**
      * 城市景点界面
      */
-    public static final String CITY_SPOT = "province/city/spot";
+    public static final String CITY_SPOT = "province/city/spot/spot";
 
     /**
      * 城市购物点

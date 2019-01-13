@@ -18,4 +18,6 @@ public interface SpotService {
 
     List<Spot> listByCityOrderByRankAscLimit(City city, int firstRank, int endRank);
 
+    List<Spot> listSpotByCityPage(City city, int currentPage, int number);
+
 }

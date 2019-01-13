@@ -38,4 +38,9 @@ public class SpotServiceImpl implements SpotService {
         return spotDao.listByCityOrderByRankAscLimit(city, firstRank, endRank);
     }
 
+    @Override
+    public List<Spot> listSpotByCityPage(City city, int currentPage, int number) {
+        return spotDao.listSpotByCityPage(city, currentPage, number);
+    }
+
 }

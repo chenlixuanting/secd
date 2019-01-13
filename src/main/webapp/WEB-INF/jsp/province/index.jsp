@@ -85,9 +85,9 @@
                 </li>
                 <li><a href="http://localhost:8080/secd/province/spot">景点</a>
                 </li>
-                <li><a href="http://localhost:8080/secd/province/shopping/1">购物</a>
+                <li><a href="http://localhost:8080/secd/province/shopping">购物</a>
                 </li>
-                <li><a href="http://localhost:8080/secd/province/travel/1">游记</a>
+                <li><a href="http://localhost:8080/secd/province/travel">游记</a>
                 </li>
             </ul>
         </div>

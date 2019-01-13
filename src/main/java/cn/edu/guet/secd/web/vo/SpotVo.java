@@ -13,7 +13,34 @@ public class SpotVo implements Serializable {
     private String spotName;
     private String headPicUrl;
     private Integer totalComment;
+    private Integer spotRank;
     private String textdetail;
+    private String introduce;
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getIntroduce() {
+        return introduce;
+    }
+
+    public void setIntroduce(String introduce) {
+        this.introduce = introduce;
+    }
+
+    public Integer getSpotRank() {
+        return spotRank;
+    }
+
+    public void setSpotRank(Integer spotRank) {
+        this.spotRank = spotRank;
+    }
 
     public Integer getTotalComment() {
         return totalComment;

@@ -13,6 +13,15 @@ public class CityVo implements Serializable {
     private String cityName;
     private String headPic;
     private List<SpotVo> recommendSpots = new ArrayList<SpotVo>();
+    private List<String> photos = new ArrayList<String>();
+
+    public List<String> getPhotos() {
+        return photos;
+    }
+
+    public void setPhotos(List<String> photos) {
+        this.photos = photos;
+    }
 
     public String getCityId() {
         return cityId;

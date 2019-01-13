@@ -47,4 +47,14 @@ public class CityServiceImpl implements CityService {
         return cityDao.countAllCity();
     }
 
+    @Override
+    public Boolean updateCity(City city) {
+        return cityDao.update(city);
+    }
+
+    @Override
+    public City getById(String id) {
+        return cityDao.getById(id);
+    }
+
 }

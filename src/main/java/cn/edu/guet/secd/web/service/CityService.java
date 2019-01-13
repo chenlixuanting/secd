@@ -21,4 +21,8 @@ public interface CityService {
 
     Long countAllCity();
 
+    Boolean updateCity(City city);
+
+    City getById(String id);
+
 }

@@ -23,17 +23,17 @@ public class ProvinceConstant {
     /**
      * 省市购物地点
      */
-    public static final String PROVINCE_SHOPPING = "province/shopping";
+    public static final String PROVINCE_SHOPPING = "province/shop/shopping";
 
     /**
      * 省市更多购物地点
      */
-    public static final String PROVINCE_MORE_SHOPPING = "province/more-shopping";
+    public static final String PROVINCE_MORE_SHOPPING = "province/shop/more-shopping";
 
     /**
      * 省市游记
      */
-    public static final String PROVINCE_TRAVEL = "province/travel";
+    public static final String PROVINCE_TRAVEL = "province/travel/travel";
 
     /**
      * 省市行程

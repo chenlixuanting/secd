@@ -21,4 +21,7 @@ public interface CityDao {
 
     Long countAllCity();
 
+    Boolean update(City city);
+
+    City getById(String id);
 }
