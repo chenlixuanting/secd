@@ -31,7 +31,7 @@ public class SpotListDetailPipeline implements Serializable,Pipeline{
 
         for (int x=0;x<citySpotUrlList.size();x++){
             citySpotUrlList.set(x, "http://you.ctrip.com"+citySpotUrlList.get(x).replaceFirst("place","sight"));
-            Spider.create(spotDetailProcessor).addPipeline(spotDetailPipeline).addUrl(citySpotUrlList.get(x)).thread(10).run();
+            Spider.create(spotDetailProcessor).addPipeline(spotDetailPipeline).addUrl(citySpotUrlList.get(x)).thread(1).run();
         }
 
     }

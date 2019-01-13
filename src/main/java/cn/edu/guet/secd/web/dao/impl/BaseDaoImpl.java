@@ -76,7 +76,7 @@ public abstract class BaseDaoImpl<T> extends HibernateDaoSupport implements Base
     }
 
     @Override
-    public T findById(Integer id) {
+    public T getById(Integer id) {
         return getHibernateTemplate().load(tClass, id);
     }
 

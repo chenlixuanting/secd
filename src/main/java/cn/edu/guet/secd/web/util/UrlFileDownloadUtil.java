@@ -23,19 +23,19 @@ public class UrlFileDownloadUtil {
         URL url = null;
 
         for (int i = 0; i < urlList.size(); i++) {
-                url = new URL(urlList.get(i));
-                DataInputStream dataInputStream = new DataInputStream(url.openStream());
-                FileOutputStream fileOutputStream = new FileOutputStream(new File(baseDir + names.get(i)));
+            url = new URL(urlList.get(i));
+            DataInputStream dataInputStream = new DataInputStream(url.openStream());
+            FileOutputStream fileOutputStream = new FileOutputStream(new File(baseDir + names.get(i)));
 
-                byte[] buffer = new byte[1024 * 50];
-                int length;
+            byte[] buffer = new byte[1024 * 50];
+            int length;
 
-                while ((length = dataInputStream.read(buffer)) > 0) {
-                    fileOutputStream.write(buffer, 0, length);
-                }
-                System.out.println("已经下载：" + baseDir + names.get(i));
-                dataInputStream.close();
-                fileOutputStream.close();
+            while ((length = dataInputStream.read(buffer)) > 0) {
+                fileOutputStream.write(buffer, 0, length);
+            }
+            System.out.println("已经下载：" + baseDir + names.get(i));
+            dataInputStream.close();
+            fileOutputStream.close();
         }
 
     }
@@ -82,20 +82,20 @@ public class UrlFileDownloadUtil {
 //        String baseDir = "E:\\spider\\";
         URL url = null;
 
-            url = new URL(u);
-            DataInputStream dataInputStream = new DataInputStream(url.openStream());
-            FileOutputStream fileOutputStream = new FileOutputStream(new File(baseDir + name));
+        url = new URL(u);
+        DataInputStream dataInputStream = new DataInputStream(url.openStream());
+        FileOutputStream fileOutputStream = new FileOutputStream(new File(baseDir + name));
 
-            byte[] buffer = new byte[1024 * 50];
-            int length;
+        byte[] buffer = new byte[1024 * 50];
+        int length;
 
-            while ((length = dataInputStream.read(buffer)) > 0) {
-                fileOutputStream.write(buffer, 0, length);
-            }
+        while ((length = dataInputStream.read(buffer)) > 0) {
+            fileOutputStream.write(buffer, 0, length);
+        }
 
 //            System.out.println("已经下载：" + baseDir + name);
-            dataInputStream.close();
-            fileOutputStream.close();
+        dataInputStream.close();
+        fileOutputStream.close();
     }
 
     /**

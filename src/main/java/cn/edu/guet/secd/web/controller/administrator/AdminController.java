@@ -95,7 +95,7 @@ public class AdminController {
                 msg.setStatusCode(StatusCodeConstant.SERVER_INNER_ERROR);
             } else {
                 //从数据中查询管理员账号
-                Administrator admin = administratorService.findByAdminAccount(account);
+                Administrator admin = administratorService.getByAdminAccount(account);
                 //判断用户是否存在
                 if (StringUtils.isEmpty(admin)) {
                     msg.setStatusCode(StatusCodeConstant.USER_NOT_EXIST);

@@ -6,20 +6,34 @@ import cn.edu.guet.secd.web.pojo.Spot;
 import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @author Administrator
  */
 @Repository
-public class SpotDaoImpl extends BaseDaoImpl<Spot> implements SpotDao{
+public class SpotDaoImpl extends BaseDaoImpl<Spot> implements SpotDao {
 
     @Override
-    public Spot findBySpotName(String spotName) {
-
+    public Spot getBySpotName(String spotName) {
         String hql = "from cn.edu.guet.secd.web.pojo.Spot as s where s.spotName=:spotName";
+        try {
+            Query query = getCurrentSession().createQuery(hql).setParameter("spotName", spotName);
+            return (Spot) query.uniqueResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<Spot> listByCityOrderByRankAscLimit(City city, int firstRank, int endRank) {
+
+        String hql = "from cn.edu.guet.secd.web.pojo.Spot as s where s.city=? and s.spotRank between ? and ? order by s.spotRank asc";
 
         try {
-            Query query = getCurrentSession().createQuery(hql).setParameter("spotName",spotName);
-            return (Spot) query.uniqueResult();
+            Query query = getCurrentSession().createQuery(hql).setParameter(0, city).setParameter(1, firstRank).setParameter(2, endRank);
+            return query.list();
         } catch (Exception e) {
             e.printStackTrace();
         }

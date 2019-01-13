@@ -36,4 +36,16 @@ public class CommonController {
         return modelAndView;
     }
 
+    /**
+     * 十大旅游目的地界面
+     *
+     * @param modelAndView
+     * @return
+     */
+    @RequestMapping(value = "/destinationsite/top", method = RequestMethod.GET)
+    public ModelAndView topPage(ModelAndView modelAndView) {
+        modelAndView.setViewName(CommonConstant.TOP_PAGE);
+        return modelAndView;
+    }
+
 }

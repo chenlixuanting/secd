@@ -9,10 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
-    <meta name="location" content="province=广西;city=桂林;coord=110.30255,25.281292">
-    <meta name="mobile-agent" content="format=html5;url=https://gs.ctrip.com/html5/you/place/28.html">
-    <title>2018桂林旅游攻略,12月桂林自助游/周边自驾/出游/自由行/游玩攻略【携程攻略】</title>
-    <meta name="keywords" content="桂林旅游,桂林自助游,桂林自驾,桂林出游,桂林自由行,桂林旅游攻略,桂林游玩攻略,桂林自助游攻略">
+    <title>桂林</title>
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/city.v2.0.css">
@@ -21,6 +18,7 @@
     <link type="text/css" rel="stylesheet" href="css/user/pc_flaot.css">
 </head>
 <body>
+
 <div>
     <div class="gs-header cf">
         <div class="content">
@@ -32,12 +30,11 @@
             </div>
             <div class="gs-search-2"><input id="gsSearch" type="text" placeholder="搜索城市/景点/游记/问答/住宿/用户" class="sgtgray">
                 <button type="button" class="btn-search"></button>
-                <div class="gs-notice" id="gsNotice"></div>
-                <a class="gs_write_link" id="gsWriteLink" href="http://you.ctrip.com/add-travel/Guide.html"><i></i></a>
             </div>
         </div>
     </div>
 </div>
+
 <div class="content cf ">
     <div class="dest_toptitle">
         <div class="cf">
@@ -46,7 +43,6 @@
                     <a title="桂林" href="http://you.ctrip.com/place/guilin28.html">桂林</a>
                 </h1>
                 <p>Guilin</p>
-
             </div>
             <div class="f_right">
                 <ul>
@@ -70,19 +66,17 @@
             </div>
         </div>
         <div class="sec_line cf">
-
             <p class="c_text_left ellipsis">
                 欢迎您访问桂林 </p>
-            <a class="c_map_link" href="http://you.ctrip.com/map/guilin28.html" target="_blank"><i></i>地图</a>
         </div>
     </div>
 </div>
+
 <div class="ttd_topnav_box">
     <div class="ttd_topnav"
          style="position: relative; overflow: visible; top: 0px; left: 0px; right: 0px; width: 100%; height: 39px;">
         <div class="innerbox">
             <ul class="cf">
-
                 <li class="ttd_first_nav current"><a href="http://localhost:8080/secd/province/city/index">主页</a>
                 </li>
                 <li><a href="http://localhost:8080/secd/province/city/spot">景点</a>
@@ -97,31 +91,27 @@
         </div>
     </div>
 </div>
+
 <!--二级导航-->
 <div class="ttd2_background">
     <div class="content cf dest_city">
         <div class="des_narrow f_left">
-            <!--侧边榜单-->
-            <div class="city_xclist">
+            <div class="country_xclist">
                 <h3>携程旅行口碑榜2017</h3>
-                <ul>
-                    <li><a target="_blank" href="http://top.ctrip.com/2017/place/yazhoulvxing.html">2017亚洲十大旅行目的地</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="cityStrategyPartner" class="strategic" style="display:none;"></div>
-            <div id="CityBannerLeftHtml" class="gs_event_ttdn" style="display: none;"></div>
-
-            <!--度假End-->
-            <!--侧边热销门票排行-->
-            <input type="hidden" id="ctmRmmp" name="ctmRmmp" value="#ctm_ref=gs_ttd_{0}_03_tkt_{1}_28_undefined">
-            <div id="hotTicketDivId" class="hot_ticket" style="display: none">
-                <div class="narrow_title cf">
-                    <h3>热销门票排行</h3>
-                    <span><a target="_blank" href="http://piao.ctrip.com/dest/d-Guilin-28/s-tickets/" class="ticketpic"
-                             data-id="ctm_gs_rmmp" data-type="2">更多<i class="gs2_more_arror"></i></a></span>
-                </div>
-                <ul id="hotTicketId"></ul>
+                <dl>
+                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/zijiayou.html" title="2017十佳自驾游目的地">2017十佳自驾游目的地</a>
+                    </dt>
+                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/hezhou707.html" title="贺州">贺州</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/niandusheying.html" title="2017年度十大摄影目的地">2017年度十大摄影目的地</a></dt>
+                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/guilin28.html" title="桂林">桂林</a></dd>
+                </dl>
+                <dl>
+                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/yazhoulvxing.html" title="2017亚洲十大旅行目的地">2017亚洲十大旅行目的地</a></dt>
+                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/guilin28.html" title="桂林">桂林</a></dd>
+                </dl>
             </div>
         </div>
         <div class="des_wide f_right">
@@ -223,8 +213,6 @@
                                 </span>
                     </div>
                 </div>
-                <a href="http://you.ctrip.com/photos/guilin28/r28.html" class="slide_more"
-                   target="_blank">查看更多照片&gt;</a>
             </div>
             <!--度假End-->
             <!--poitab切换-->
@@ -704,6 +692,7 @@
                     </p></div>
                 </div>
             </div>
+
             <!--主题内容 游玩-->
             <div class="wide_eventspic" id="AdMiddleBotton" style="display: none;"></div>
             <div class="normalbox">
@@ -870,31 +859,31 @@
     <div class="footinner cf">
         <dl>
             <dt>社区必读</dt>
-            <dd><a href="http://you.ctrip.com/htmlpages/eula.html" target="_blank">用户协议</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/guide.html" target="_blank">社区指南</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/exp.html" target="_blank">经验与等级</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/help.html" target="_blank">新手导航</a></dd>
-            <dd><a href="http://you.ctrip.com/thematic/marketing/mianze" target="_blank">网络信息侵权保障</a></dd>
+            <dd><a href="" target="_blank">用户协议</a></dd>
+            <dd><a href="" target="_blank">社区指南</a></dd>
+            <dd><a href="" target="_blank">经验与等级</a></dd>
+            <dd><a href="" target="_blank">新手导航</a></dd>
+            <dd><a href="" target="_blank">网络信息侵权保障</a></dd>
         </dl>
         <dl>
             <dt>发现你的旅行</dt>
-            <dd><a href="http://you.ctrip.com/place" target="_blank">了解目的地</a></dd>
-            <dd><a href="http://you.ctrip.com/travels" target="_blank">阅读精彩游记</a></dd>
-            <dd><a href="http://you.ctrip.com/guides" target="_blank">下载精品攻略</a></dd>
-            <dd><a href="http://you.ctrip.com/asks" target="_blank">请教旅行达人</a></dd>
-            <dd><a href="http://you.ctrip.com/events" target="_blank">发起结伴</a></dd>
+            <dd><a href="" target="_blank">了解目的地</a></dd>
+            <dd><a href="" target="_blank">阅读精彩游记</a></dd>
+            <dd><a href="" target="_blank">下载精品攻略</a></dd>
+            <dd><a href="" target="_blank">请教旅行达人</a></dd>
+            <dd><a href="" target="_blank">发起结伴</a></dd>
         </dl>
         <dl>
             <dt>分享你的旅行</dt>
-            <dd><a href="http://you.ctrip.com/add-travel/guide.html" target="_blank">发表游记大作</a></dd>
-            <dd><a href="http://you.ctrip.com/dianping/" target="_blank">点评去过的景点</a></dd>
+            <dd><a href="" target="_blank">发表游记大作</a></dd>
+            <dd><a href="" target="_blank">点评去过的景点</a></dd>
         </dl>
         <dl class="ftabout">
             <dt>关于我们</dt>
-            <dd><a href="http://you.ctrip.com/htmlpages/about.html" target="_blank">社区简介</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/contact.html" target="_blank">联系我们</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/job.html" target="_blank">加入我们</a></dd>
-            <dd><a href="http://you.ctrip.com/intelligence.html" target="_blank">智慧旅游</a></dd>
+            <dd><a href="" target="_blank">社区简介</a></dd>
+            <dd><a href="" target="_blank">联系我们</a></dd>
+            <dd><a href="" target="_blank">加入我们</a></dd>
+            <dd><a href="" target="_blank">智慧旅游</a></dd>
         </dl>
         <dl class="ftguanzhu">
             <dt>关注携程攻略社区</dt>
@@ -905,9 +894,7 @@
 </body>
 
 <script src="js/user/jquery-3.3.1.js"></script>
-
 <script>
-
     var CarouselSlide = function (b, a) {
         var c = $(b);
         this.$element = c;
@@ -1047,7 +1034,6 @@
             $(this).removeClass("itemhover")
         })
     }
-
 </script>
 
 </html>

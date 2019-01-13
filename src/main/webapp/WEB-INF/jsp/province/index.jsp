@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath() + "/";
@@ -10,9 +11,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
     <meta name="location" content="province=广西;city=广西">
-    <title>壮瑶文化旅游中心</title>
-    <meta name="keywords" content="广西旅游,广西自助游,广西自驾,广西出游,广西自由行,广西旅游攻略,广西游玩攻略,广西自助游攻略">
-    <meta name="description">
+    <title>壮瑶文化信息采集和分类系统</title>
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/continent_s1.v2.0.css">
@@ -22,6 +21,7 @@
 </head>
 
 <body>
+
 <div>
     <div class="gs-header cf">
         <div class="content">
@@ -34,21 +34,19 @@
             </div>
             <div class="gs-search-2"><input id="gsSearch" type="text" placeholder="搜索城市/景点/游记/问答/住宿/用户" class="sgtgray">
                 <button type="button" class="btn-search"></button>
-                <div class="gs-notice" id="gsNotice"></div>
-                <a class="gs_write_link" id="gsWriteLink" href="http://you.ctrip.com/add-travel/Guide.html"><i></i></a>
             </div>
         </div>
     </div>
 </div>
+
 <div class="content cf ">
     <div class="dest_toptitle">
         <div class="cf">
             <div class="f_left">
                 <h1>
-                    <a title="广西" href="http://you.ctrip.com/place/guangxi100052.html">广西</a>
+                    <a title="广西" href="http://localhost:8080/secd/province/index">广西</a>
                 </h1>
                 <p>Guangxi</p>
-
             </div>
             <div class="f_right">
                 <ul>
@@ -74,7 +72,6 @@
         <div class="sec_line cf">
             <p class="c_text_left ellipsis">
                 欢迎您访问广西 </p>
-            <a class="c_map_link" href="http://you.ctrip.com/map/guangxi100052.html" target="_blank"><i></i>地图</a>
         </div>
     </div>
 </div>
@@ -88,211 +85,79 @@
                 </li>
                 <li><a href="http://localhost:8080/secd/province/spot">景点</a>
                 </li>
-                <li><a href="http://localhost:8080/secd/province/shopping">购物</a>
+                <li><a href="http://localhost:8080/secd/province/shopping/1">购物</a>
                 </li>
-                <li><a href="http://localhost:8080/secd/province/travel">游记</a>
-                </li>
-                <li><a href="http://localhost:8080/secd/province/route">行程</a>
+                <li><a href="http://localhost:8080/secd/province/travel/1">游记</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+
 <div class="ttd2_background ttd3_media">
     <div class="content cf">
-        <div class="des_narrow f_left">
 
+        <div class="des_narrow f_left">
             <div class="country_xclist">
                 <h3>携程旅行口碑榜2017</h3>
                 <dl>
-                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/zijiayou.html" title="2017十佳自驾游目的地">2017十佳自驾游目的地</a>
-                    </dt>
-                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/hezhou707.html" title="贺州">贺州</a>
+                    <dt><a target="_blank" href="http://localhost:8080/secd/destinationsite/top"
+                           title="2017十佳自驾游目的地">2017十佳自驾游目的地</a></dt>
+                    <dd><i></i><a target="_blank" href="javascript:void(0)" title="贺州">贺州</a>
                     </dd>
                 </dl>
                 <dl>
-                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/niandusheying.html"
+                    <dt><a target="_blank" href="http://localhost:8080/secd/destinationsite/top"
                            title="2017年度十大摄影目的地">2017年度十大摄影目的地</a></dt>
-                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/guilin28.html" title="桂林">桂林</a></dd>
+                    <dd><i></i><a target="_blank" href="javascript:void(0)" title="桂林">桂林</a></dd>
                 </dl>
                 <dl>
-                    <dt><a target="_blank" href="http://top.ctrip.com/2017/place/yazhoulvxing.html"
+                    <dt><a target="_blank" href="http://localhost:8080/secd/destinationsite/top"
                            title="2017亚洲十大旅行目的地">2017亚洲十大旅行目的地</a></dt>
-                    <dd><i></i><a target="_blank" href="http://you.ctrip.com/place/guilin28.html" title="桂林">桂林</a></dd>
+                    <dd><i></i><a target="_blank" href="javascript:void(0)" title="桂林">桂林</a></dd>
                 </dl>
             </div>
-            <!--END新增榜单块-->
-            <!--侧边查看大地图-->
-
-            <!--侧边当地达人-->
-            <div class="narrow_wbox c_expert" id="destexpertId" style="display: none">
-            </div>
-            <input type="hidden" id="txtDistrictId" value="100052">
-            <!--侧边游友动态-->
-            <div class="narrow_wbox c_dynamic">
-                <div class="narrow_title cf">
-                    <h3>游友动态</h3>
-                </div>
-                <div class="rollbox">
-                    <ul>
-                        <li style="display: list-item;">
-                            <dl>
-                                <dt><span class="username">暗黑法师</span>
-                                    <text>发表了问题</text>
-                                </dt>
-                                <dd><a href="http://you.ctrip.com/asks/guangxi100052/4373079.html" target="_blank">#桂林沐兰坊客栈#昨天看新闻，说广西这里被淹了，想问下现在的情况，还下雨么？是个出游吗？</a>
-                                </dd>
-                                <dd>521天前</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--侧边正在发生旅游热点-->
-            <div class="narrow_wbox hot_travels">
-                <div class="narrow_title cf">
-                    <h3>正在发生的旅游热点</h3>
-                </div>
-                <ul>
-                    <li class=""><span><i></i></span>
-                        <a target="_blank" href="http://you.ctrip.com/news/list-ctrip/21328.html">地球上的神奇动物</a>
-                    </li>
-                    <li class=""><span><i></i></span>
-                        <a target="_blank"
-                           href="http://you.ctrip.com/news/list-ctrip/21327.html">爱上慢时光，杨烁在这座绝美边城找回初心</a>
-                    </li>
-                </ul>
-            </div>
-
         </div>
+
         <div class="des_wide f_right">
-            <!--热门照片-->
             <!--热门目的地-->
             <div class="normalbox hotlistouter">
                 <div class="normaltitle cf">
                     <h1>广西热门目的地</h1>
                     <span class="rbox">
-                        <a href="http://you.ctrip.com/countrysightlist/guangxi100052.html" class="f_14" target="_blank">更多广西目的地<i
+                        <a href="http://localhost:8080/secd/province/more-spot/1" class="f_14" target="_blank">更多广西目的地<i
                                 class="f14_more_arror"></i></a>
                     </span>
                 </div>
                 <div class="hot_destlist cf">
                     <ul>
-                        <li class="w_220">
-                            <a href="http://localhost:8080/secd/province/city/index" target="_blank">
-                                <s class="ico_list"></s> <span class="pic_outer"><img
-                                    src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_270_170.jpg"
-                                    img-src=""
-                                    width="270" height="170"></span>
-                                <div class="liner_bg" style="height: 40px;">
-                                    <dl style="top: 0px; bottom: auto;">
-                                        <dt><strong>1</strong>桂林</dt>
-                                        <dd></dd>
-                                    </dl>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="w_220">
-                            <a href="http://you.ctrip.com/place/beihai140.html" target="_blank">
-                                <span class="pic_outer">
-                                    <img src="images/user/100p0e00000076fm26A57_C_270_170.jpg"
-                                         img-src="https://dimg05.c-ctrip.com/images/100p0e00000076fm26A57_C_270_170.jpg"
-                                         width="270" height="170"></span>
-                                <div class="liner_bg" style="height: 40px;">
-                                    <dl style="top: 0px; bottom: auto;">
-                                        <dt><strong>2</strong>北海</dt>
-                                        <dd></dd>
-                                    </dl>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="w_220">
-                            <a href="http://you.ctrip.com/place/nanning166.html" target="_blank">
-                                <span class="pic_outer"><img src="images/user/10020t000000iwjol8F2F_C_270_170.jpg"
-                                                             img-src="https://dimg01.c-ctrip.com/images/10020t000000iwjol8F2F_C_270_170.jpg"
-                                                             width="270" height="170"></span>
-                                <div class="liner_bg" style="height: 40px;">
-                                    <dl style="top: 0px; bottom: auto;">
-                                        <dt><strong>3</strong>南宁</dt>
-                                        <dd></dd>
-                                    </dl>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="w_220">
-                            <a href="http://you.ctrip.com/place/yangshuo702.html" target="_blank">
-                                <span class="pic_outer"><img src="images/user/100m0i0000009ldzo6986_C_270_170.jpg"
-                                                             img-src="https://dimg01.c-ctrip.com/images/100m0i0000009ldzo6986_C_270_170.jpg"
-                                                             width="270" height="170"></span>
-                                <div class="liner_bg" style="height: 40px;">
-                                    <dl style="top: 0px; bottom: auto;">
-                                        <dt><strong>4</strong>阳朔</dt>
-                                        <dd></dd>
-                                    </dl>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="w_220">
-                            <a href="http://you.ctrip.com/place/liuzhou143.html" target="_blank">
-                                <span class="pic_outer"><img src="images/user/1008070000002qm8h5F33_C_270_170.jpg"
-                                                             img-src="https://dimg04.c-ctrip.com/images/1008070000002qm8h5F33_C_270_170.jpg"
-                                                             width="270" height="170"></span>
-                                <div class="liner_bg" style="height: 40px;">
-                                    <dl style="top: 0px; bottom: auto;">
-                                        <dt><strong>5</strong>柳州</dt>
-                                        <dd></dd>
-                                    </dl>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="w_220">
-                            <a href="http://you.ctrip.com/place/longsheng1445120.html" target="_blank">
-                                <span class="pic_outer"><img
-                                        src="images/user/CggYHlZC0AiAedNMACKFFDgxDsk808_C_270_170.jpg"
-                                        img-src="https://dimg05.c-ctrip.com/images/fd/tg/g4/M08/C9/CA/CggYHlZC0AiAedNMACKFFDgxDsk808_C_270_170.jpg"
+                        <c:forEach var="hotDestinationVo" items="${hotDestinationVos}" varStatus="status">
+                            <li class="w_220">
+                                <a href="http://localhost:8080/secd/province/city/index/${hotDestinationVo.cityId}"
+                                   target="_blank">
+                                    <s class="ico_list"></s> <span class="pic_outer"><img
+                                        src="${hotDestinationVo.headPicUrl}"
+                                        img-src=""
                                         width="270" height="170"></span>
-                                <div class="liner_bg" style="height: 40px;">
-                                    <dl style="top: 0px; bottom: auto;">
-                                        <dt><strong>6</strong>龙胜</dt>
-                                        <dd></dd>
-                                    </dl>
-                                </div>
-                            </a>
-                        </li>
+                                    <div class="liner_bg" style="height: 40px;">
+                                        <dl style="top: 0px; bottom: auto;">
+                                            <dt><strong>${status.index+1}</strong>${hotDestinationVo.cityName}</dt>
+                                            <dd></dd>
+                                        </dl>
+                                    </div>
+                                </a>
+                            </li>
+                        </c:forEach>
                     </ul>
                 </div>
             </div>
-            <!--推荐行程-->
-            <div class="normalbox cityjourneys">
-                <div class="normaltitle cf">
-                    <h1>广西推荐行程</h1>
-                    <span class="rbox"><a href="http://you.ctrip.com/journeys/guangxi100052.html" target="_blank"
-                                          class="f_14">更多广西行程<i class="f14_more_arror"></i></a></span>
-                </div>
-                <div class="journeyswrap">
-                    <div class="journeys_v2box cf">
-                        <a class="jv2boxhover" href="http://you.ctrip.com/journeys/guangxi100052/502422.html"
-                           target="_blank">
-                            <span class="journeypic"><img
-                                    src="images/user/4bde3b739f1d4f92b0dcc96680886036_D_150_150.jpg" width="150"
-                                    height="150"></span>
-                            <dl>
-                                <dt>杨堤-兴坪段漓江精华1日游</dt>
-                                <dd><span class="daycount"><i></i>1天</span><span class="sightcount"><i></i>5个观光地</span>
-                                </dd>
 
-                                <dd>“桂林山水甲天下，阳朔山水甲桂林”，其中杨堤-兴坪段更是不容错过。这条行程可以让你在阳朔感受到漓江的精华，还可以领略古镇老街的悠悠韵味。</dd>
-                            </dl>
-                        </a>
-                    </div>
-                </div>
-            </div>
             <!--目的地游记-->
             <div class="normalbox">
                 <div class="normaltitle cf">
                     <h1>广西游记</h1><span class="t_archives"><i></i><a
-                        href="http://you.ctrip.com/travels/youyouctripstar10000/1756062.html" target="_blank">什么是优质游记？申请必入！</a></span>
-                    <span class="rbox"><a class="b_orange_m" href="http://you.ctrip.com/add-travel/Guide.html"
+                        href="javascript:void(0)" target="_blank">什么是优质游记？申请必入！</a></span>
+                    <span class="rbox"><a class="b_orange_m" href="javascript:void(0)"
                                           target="_blank">
                 <span><i class="write_journal"></i>写游记</span> </a></span>
                 </div>
@@ -394,6 +259,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -403,41 +269,40 @@
     <div class="footinner cf">
         <dl>
             <dt>社区必读</dt>
-            <dd><a href="http://you.ctrip.com/htmlpages/eula.html" target="_blank">用户协议</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/guide.html" target="_blank">社区指南</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/exp.html" target="_blank">经验与等级</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/help.html" target="_blank">新手导航</a></dd>
-            <dd><a href="http://you.ctrip.com/thematic/marketing/mianze" target="_blank">网络信息侵权保障</a></dd>
+            <dd><a href="" target="_blank">用户协议</a></dd>
+            <dd><a href="" target="_blank">社区指南</a></dd>
+            <dd><a href="" target="_blank">经验与等级</a></dd>
+            <dd><a href="" target="_blank">新手导航</a></dd>
+            <dd><a href="" target="_blank">网络信息侵权保障</a></dd>
         </dl>
         <dl>
             <dt>发现你的旅行</dt>
-            <dd><a href="http://you.ctrip.com/place" target="_blank">了解目的地</a></dd>
-            <dd><a href="http://you.ctrip.com/travels" target="_blank">阅读精彩游记</a></dd>
-            <dd><a href="http://you.ctrip.com/guides" target="_blank">下载精品攻略</a></dd>
-            <dd><a href="http://you.ctrip.com/asks" target="_blank">请教旅行达人</a></dd>
-            <dd><a href="http://you.ctrip.com/events" target="_blank">发起结伴</a></dd>
+            <dd><a href="" target="_blank">了解目的地</a></dd>
+            <dd><a href="" target="_blank">阅读精彩游记</a></dd>
+            <dd><a href="" target="_blank">下载精品攻略</a></dd>
+            <dd><a href="" target="_blank">请教旅行达人</a></dd>
+            <dd><a href="" target="_blank">发起结伴</a></dd>
         </dl>
         <dl>
             <dt>分享你的旅行</dt>
-            <dd><a href="http://you.ctrip.com/add-travel/guide.html" target="_blank">发表游记大作</a></dd>
-            <dd><a href="http://you.ctrip.com/dianping/" target="_blank">点评去过的景点</a></dd>
+            <dd><a href="" target="_blank">发表游记大作</a></dd>
+            <dd><a href="" target="_blank">点评去过的景点</a></dd>
         </dl>
         <dl class="ftabout">
             <dt>关于我们</dt>
-            <dd><a href="http://you.ctrip.com/htmlpages/about.html" target="_blank">社区简介</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/contact.html" target="_blank">联系我们</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/job.html" target="_blank">加入我们</a></dd>
-            <dd><a href="http://you.ctrip.com/intelligence.html" target="_blank">智慧旅游</a></dd>
+            <dd><a href="" target="_blank">社区简介</a></dd>
+            <dd><a href="" target="_blank">联系我们</a></dd>
+            <dd><a href="" target="_blank">加入我们</a></dd>
+            <dd><a href="" target="_blank">智慧旅游</a></dd>
         </dl>
         <dl class="ftguanzhu">
-            <dt>关注携程攻略社区</dt>
+            <dt>关注攻略社区</dt>
             <dd class="youguanzhu cf"><span class="ftweixin"></span></dd>
         </dl>
     </div>
 </div>
 
 <script src="js/user/jquery-3.3.1.js"></script>
-<script src=""></script>
 <script>
     /*
         目的热点图片特效
@@ -479,6 +344,5 @@
             $(this).removeClass("itemhover")
         })
     }
-
 </script>
 </html>

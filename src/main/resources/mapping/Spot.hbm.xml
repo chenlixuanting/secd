@@ -40,7 +40,7 @@
             <one-to-many class="cn.edu.guet.secd.web.pojo.Shop"/>
         </set>
 
-        <set name="spotComments" inverse="true" cascade="save-update">
+        <set name="spotComments" inverse="true" lazy="false" fetch="join" cascade="save-update">
             <key column="spot_id"/>
             <one-to-many class="cn.edu.guet.secd.web.pojo.SpotComment"/>
         </set>
@@ -50,7 +50,7 @@
             <one-to-many class="cn.edu.guet.secd.web.pojo.Photo"/>
         </set>
 
-        <many-to-one name="headPic" column="head_pic_id" class="cn.edu.guet.secd.web.pojo.Photo" cascade="save-update" unique="true"/>
+        <many-to-one name="headPic" column="head_pic_id" class="cn.edu.guet.secd.web.pojo.Photo" lazy="false" fetch="join" cascade="save-update" unique="true"/>
 
         <many-to-one name="city" column="city_id" class="cn.edu.guet.secd.web.pojo.City" cascade="save-update"/>
 

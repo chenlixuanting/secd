@@ -30,7 +30,7 @@ public interface BaseDao<T> {
      * @param id
      * @return
      */
-     T findById(Integer id);
+     T getById(Integer id);
 
     /**
      * 改

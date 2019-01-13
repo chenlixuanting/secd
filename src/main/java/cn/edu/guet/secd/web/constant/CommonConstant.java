@@ -16,6 +16,11 @@ public class CommonConstant {
     public static final String PAGE_NOT_FOUND = "common/error/404";
 
     /**
+     * 十大旅游目的地
+     */
+    public static final String TOP_PAGE = "common/top";
+
+    /**
      * 本机项目根目录地址
      */
     public static final String LOCAL_HOST_ADDRESS = "http://localhost:8080/secd/";

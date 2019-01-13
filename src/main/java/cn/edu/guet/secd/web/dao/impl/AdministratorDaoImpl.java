@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 public class AdministratorDaoImpl extends BaseDaoImpl<Administrator> implements AdministratorDao {
 
     @Override
-    public Administrator findByAdminAccount(String account) {
+    public Administrator getByAdminAccount(String account) {
 
         String hql = "from cn.edu.guet.secd.web.pojo.Administrator as t where t.account=:account";
 

@@ -50,7 +50,7 @@ public class CityListPagePipeline implements Pipeline {
 
                 if(!set.contains(cityNameList.get(x))){
                     set.add(cityNameList.get(x));
-                    Province province = provinceService.findByProvinceName("广西");
+                    Province province = provinceService.getByProvinceName("广西");
                     Photo headPic = new Photo();
 
                     try {

@@ -21,7 +21,7 @@ public class ProvinceServiceImpl implements ProvinceService {
     }
 
     @Override
-    public Province findByProvinceName(String provinceName) {
-        return provinceDao.findByProvinceName(provinceName);
+    public Province getByProvinceName(String provinceName) {
+        return provinceDao.getByProvinceName(provinceName);
     }
 }

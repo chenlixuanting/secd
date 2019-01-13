@@ -2,9 +2,28 @@ package cn.edu.guet.secd.web.controller.province;
 
 import cn.edu.guet.secd.web.constant.CityConstant;
 import cn.edu.guet.secd.web.constant.ProvinceConstant;
+import cn.edu.guet.secd.web.pojo.City;
+import cn.edu.guet.secd.web.pojo.HotDestination;
+import cn.edu.guet.secd.web.pojo.Spot;
+import cn.edu.guet.secd.web.service.CityService;
+import cn.edu.guet.secd.web.service.HotDestinationService;
+import cn.edu.guet.secd.web.service.ProvinceService;
+import cn.edu.guet.secd.web.service.SpotService;
+import cn.edu.guet.secd.web.vo.CityVo;
+import cn.edu.guet.secd.web.vo.HotDestinationVo;
+import cn.edu.guet.secd.web.vo.PageVo;
+import cn.edu.guet.secd.web.vo.SpotVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 省市控制器
@@ -15,14 +34,41 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/province")
 public class ProvinceController {
 
+    @Autowired
+    private CityService cityService;
+
+    @Autowired
+    private ProvinceService provinceService;
+
+    @Autowired
+    private HotDestinationService hotDestinationService;
+
+    @Autowired
+    private SpotService spotService;
+
     /**
      * 省市首页
      *
      * @return
      */
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String provinceIndexPage() {
-        return ProvinceConstant.PROVINCE_INDEX;
+    public ModelAndView provinceIndexPage(HttpServletRequest request, HttpServletResponse response, ModelAndView modelAndView) {
+
+        //加载广西必玩
+        List<City> cities = cityService.listCityOrderByIdAscLimit(0, 6);
+        List<HotDestination> hotDestinations = hotDestinationService.listAllHotDestination();
+        List<HotDestinationVo> hotDestinationVos = new ArrayList<HotDestinationVo>();
+        for (int x = 0; x < cities.size(); x++) {
+            HotDestinationVo hotDestinationVo = new HotDestinationVo();
+            hotDestinationVo.setCityId(cities.get(x).getCityId());
+            hotDestinationVo.setCityName(cities.get(x).getCityName());
+            hotDestinationVo.setHeadPicUrl(hotDestinations.get(x).getHeadPic().getUrl());
+            hotDestinationVos.add(hotDestinationVo);
+        }
+
+        modelAndView.addObject("hotDestinationVos", hotDestinationVos);
+        modelAndView.setViewName(ProvinceConstant.PROVINCE_INDEX);
+        return modelAndView;
     }
 
     /**
@@ -31,16 +77,91 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping(value = "/spot", method = RequestMethod.GET)
-    public String provinceSpotPage() {
-        return ProvinceConstant.PROVINCE_SPOT;
+    public ModelAndView provinceSpotPage(ModelAndView modelAndView) {
+
+        City city = cityService.getFirstByCityIdAsc();
+        List<Spot> spots = spotService.listByCityOrderByRankAscLimit(city, 1, 6);
+        List<SpotVo> spotVos = new ArrayList<SpotVo>();
+        for (Spot spot : spots) {
+            SpotVo spotVo = new SpotVo();
+            spotVo.setSpotId(spot.getSpotId());
+            spotVo.setSpotName(spot.getSpotName());
+            spotVo.setTotalComment(spot.getSpotComments().size());
+            spotVo.setTextdetail(spot.getIntroduce().substring(0, 20));
+            spotVo.setScore(spot.getScore());
+            spotVo.setHeadPicUrl(spot.getHeadPic().getUrl());
+            spotVo.setScoreCss((int) (spot.getScore() / 5.0 * 100));
+            spotVos.add(spotVo);
+        }
+
+        //加载前10条广西城市
+        List<City> topTenCitys = cityService.listCityOrderByIdAscLimit(0, 10);
+        List<CityVo> cityVos = new ArrayList<CityVo>();
+        for (City c : topTenCitys) {
+            CityVo cityVo = new CityVo();
+            cityVo.setCityId(c.getCityId());
+            cityVo.setCityName(c.getCityName());
+            cityVo.setHeadPic(c.getHeadPic().getUrl());
+            List<Spot> s = spotService.listByCityOrderByRankAscLimit(c, 0, 5);
+            for (Spot spot : s) {
+                SpotVo spotVo = new SpotVo();
+                spotVo.setSpotId(spot.getSpotId());
+                spotVo.setSpotName(spot.getSpotName());
+                cityVo.getRecommendSpots().add(spotVo);
+            }
+            cityVos.add(cityVo);
+        }
+        modelAndView.addObject("cityVos", cityVos);
+        modelAndView.addObject("spotVos", spotVos);
+        modelAndView.setViewName(ProvinceConstant.PROVINCE_SPOT);
+        return modelAndView;
     }
 
     /**
      * 省市更多景区
      */
-    @RequestMapping(value = "/more-spot", method = RequestMethod.GET)
-    public String provinceMoreSpotPage() {
-        return ProvinceConstant.PROVINCE_MORE_SPOT;
+    @RequestMapping(value = "/more-spot/{currentPage}", method = RequestMethod.GET)
+    public ModelAndView provinceMoreSpotPage(@PathVariable Integer currentPage, ModelAndView modelAndView) {
+
+        if (currentPage <= 0) {
+            currentPage = 1;
+        }
+
+        List<City> cities = cityService.listCityByPage(currentPage, 10);
+        List<CityVo> cityVos = new ArrayList<CityVo>();
+        for (City city : cities) {
+            CityVo cityVo = new CityVo();
+            cityVo.setCityId(city.getCityId());
+            cityVo.setCityName(city.getCityName());
+            cityVo.setHeadPic(city.getHeadPic().getUrl());
+            List<Spot> spots = spotService.listByCityOrderByRankAscLimit(city, 0, 5);
+            for (Spot spot : spots) {
+                SpotVo spotVo = new SpotVo();
+                spotVo.setSpotId(spot.getSpotId());
+                spotVo.setSpotName(spot.getSpotName());
+                cityVo.getRecommendSpots().add(spotVo);
+            }
+            cityVos.add(cityVo);
+        }
+
+        //更新分页
+        PageVo pageVo = new PageVo();
+        pageVo.setCurrentPage(currentPage);
+        pageVo.setStart((currentPage - 1) * 10 + 1);
+        pageVo.setEnd((currentPage - 1) * 10 + cityVos.size());
+        pageVo.setPreviousPageUrl("http://localhost:8080/secd/province/more-spot/" + (currentPage - 1));
+        pageVo.setNextPageUrl("http://localhost:8080/secd/province/more-spot/" + (currentPage + 1));
+        pageVo.setTotal(cityService.countAllCity());
+        double n = Math.ceil(pageVo.getTotal() / 10.0);
+        pageVo.setFirstPage((int) n > 0 ? 1 : 0);
+        pageVo.setFinalPage((int) n);
+        for (int x = 1; x <= n; x++) {
+            pageVo.getContainPage().add(x);
+        }
+        modelAndView.addObject("cityVos", cityVos);
+        modelAndView.addObject("pageVo", pageVo);
+        modelAndView.setViewName(ProvinceConstant.PROVINCE_MORE_SPOT);
+        return modelAndView;
     }
 
     /**
@@ -88,8 +209,8 @@ public class ProvinceController {
      *
      * @return
      */
-    @RequestMapping(value = "/city/index", method = RequestMethod.GET)
-    public String cityIndexPage() {
+    @RequestMapping(value = "/city/index/{cityId}", method = RequestMethod.GET)
+    public String cityIndexPage(@PathVariable String cityId) {
         return CityConstant.CITY_INDEX;
     }
 
@@ -98,8 +219,8 @@ public class ProvinceController {
      *
      * @return
      */
-    @RequestMapping(value = "/city/spot", method = RequestMethod.GET)
-    public String citySpotPage() {
+    @RequestMapping(value = "/city/spot/{cityId}", method = RequestMethod.GET)
+    public String citySpotPage(@PathVariable String cityId) {
         return CityConstant.CITY_SPOT;
     }
 
@@ -138,8 +259,8 @@ public class ProvinceController {
      *
      * @return
      */
-    @RequestMapping(value = "/city/spot-detail")
-    public String citySpotDetailPage() {
+    @RequestMapping(value = "/city/spot-detail/{spotId}")
+    public String citySpotDetailPage(@PathVariable String spotId) {
         return CityConstant.CITY_SPOT_DETAIL;
     }
 

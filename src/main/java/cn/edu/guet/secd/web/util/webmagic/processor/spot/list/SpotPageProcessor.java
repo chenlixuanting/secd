@@ -16,7 +16,7 @@ import java.util.List;
 @Component
 public class SpotPageProcessor implements Serializable, PageProcessor {
 
-    private Site site = Site.me().setRetryTimes(15).setSleepTime(100).setTimeOut(3000);
+    private Site site = Site.me().setRetryTimes(10).setSleepTime(400).setTimeOut(5000);
 
     @Override
     public void process(Page page) {

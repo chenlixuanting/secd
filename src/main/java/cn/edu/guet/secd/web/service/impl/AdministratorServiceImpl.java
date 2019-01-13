@@ -18,8 +18,8 @@ public class AdministratorServiceImpl implements AdministratorService {
     private AdministratorDao administratorDao;
 
     @Override
-    public Administrator findByAdminAccount(String account) {
-        return administratorDao.findByAdminAccount(account);
+    public Administrator getByAdminAccount(String account) {
+        return administratorDao.getByAdminAccount(account);
     }
 
 }

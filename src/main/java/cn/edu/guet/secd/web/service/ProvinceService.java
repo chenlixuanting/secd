@@ -9,6 +9,6 @@ public interface ProvinceService {
 
     Boolean saveProvince(Province province);
 
-    Province findByProvinceName(String provinceName);
+    Province getByProvinceName(String provinceName);
 
 }

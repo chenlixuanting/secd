@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 public class ProvinceDaoImpl extends BaseDaoImpl<Province> implements ProvinceDao {
 
     @Override
-    public Province findByProvinceName(String provinceName) {
+    public Province getByProvinceName(String provinceName) {
         String hql = "from cn.edu.guet.secd.web.pojo.Province";
         try {
             Query query = getCurrentSession().createQuery(hql);

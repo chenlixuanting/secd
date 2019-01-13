@@ -6,7 +6,6 @@ import cn.edu.guet.secd.web.util.webmagic.pipeline.spot.detail.SpotListDetailPip
 import cn.edu.guet.secd.web.util.webmagic.pipeline.spot.list.SpotListPagePipeline;
 import cn.edu.guet.secd.web.util.webmagic.processor.city.CityListPageProcessor;
 import cn.edu.guet.secd.web.util.webmagic.processor.province.ProvincePageProcessor;
-import cn.edu.guet.secd.web.util.webmagic.processor.spot.detail.SpotDetailProcessor;
 import cn.edu.guet.secd.web.util.webmagic.processor.spot.detail.SpotListDetailProcessor;
 import cn.edu.guet.secd.web.util.webmagic.processor.spot.list.SpotListPageProcessor;
 import org.junit.Test;
@@ -65,7 +64,7 @@ public class Master implements Serializable {
         /**
          * 爬取省份主页信息生成province实体
          */
-//        Spider.create(provincePageProcessor).addPipeline(provincePagePipeline).addUrl(ProvincePageProcessor.BASE_URL).thread(1).run();
+        Spider.create(provincePageProcessor).addPipeline(provincePagePipeline).addUrl(ProvincePageProcessor.BASE_URL).thread(1).run();
 
         /**
          * 爬取省份城市列表生成city实体
@@ -80,7 +79,7 @@ public class Master implements Serializable {
         /**
          * 爬取景点详细信息
          */
-        Spider.create(spotListDetailProcessor).addPipeline(spotListDetailPipeline).addUrl(SpotListDetailProcessor.BASE_URL).thread(10).run();
+//        Spider.create(spotListDetailProcessor).addPipeline(spotListDetailPipeline).addUrl(SpotListDetailProcessor.BASE_URL).thread(1).run();
 
     }
 

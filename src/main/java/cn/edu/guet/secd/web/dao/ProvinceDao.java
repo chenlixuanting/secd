@@ -8,5 +8,5 @@ import cn.edu.guet.secd.web.pojo.Province;
 public interface ProvinceDao {
     Boolean save(Province province);
 
-    Province findByProvinceName(String provinceName);
+    Province getByProvinceName(String provinceName);
 }

@@ -33,7 +33,7 @@ public class CityConstant {
     /**
      * 城市景点详情
      */
-    public static final String CITY_SPOT_DETAIL = "province/city/spot-detail";
+    public static final String CITY_SPOT_DETAIL = "province/city/spot/spot-detail";
 
     /**
      * 游记

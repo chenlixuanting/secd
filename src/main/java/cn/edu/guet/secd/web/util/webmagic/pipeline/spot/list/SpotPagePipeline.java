@@ -61,7 +61,7 @@ public class SpotPagePipeline implements Serializable,Pipeline {
                 if(!set.contains(spotName)){
                     set.add(spotName);
                     spot.setSpotName(spotNameList.get(x));
-                    City city = cityService.findByCityName(cityName);
+                    City city = cityService.getByCityName(cityName);
                     spot.setCity(city);
                     String headPicUrl = spotImgUrlList.get(x);
                     Photo headPic = new Photo();

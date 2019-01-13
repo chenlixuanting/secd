@@ -13,12 +13,12 @@ public class ProvinceConstant {
     /**
      * 省市景区界面
      */
-    public static final String PROVINCE_SPOT = "province/spot";
+    public static final String PROVINCE_SPOT = "province/spot/spot";
 
     /**
      * 省市更多景区界面
      */
-    public static final String PROVINCE_MORE_SPOT = "province/more-spot";
+    public static final String PROVINCE_MORE_SPOT = "province/spot/more-spot";
 
     /**
      * 省市购物地点

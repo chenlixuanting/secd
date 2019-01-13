@@ -21,7 +21,7 @@ public class SpotListPageProcessor implements Serializable, PageProcessor {
      */
     public static final String BASE_URL = "http://you.ctrip.com/countrysightlist/guangxi100052.html";
 
-    private Site site = Site.me().setRetryTimes(15).setSleepTime(100).setTimeOut(3000);
+    private Site site = Site.me().setRetryTimes(10).setSleepTime(400).setTimeOut(5000);
 
     @Override
     public void process(Page page) {

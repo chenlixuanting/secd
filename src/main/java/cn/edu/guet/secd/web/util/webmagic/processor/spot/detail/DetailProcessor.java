@@ -16,25 +16,22 @@ import java.util.List;
  * @author Administrator
  */
 @Component
-public class DetailProcessor implements Serializable,PageProcessor{
+public class DetailProcessor implements Serializable, PageProcessor {
 
-    private Site site = Site.me().setRetryTimes(1).setSleepTime(1000).setTimeOut(3000);
+    private Site site = Site.me().setRetryTimes(10).setSleepTime(400).setTimeOut(5000);
 
     @Override
     public void process(Page page) {
-
         String spotName = page.getHtml().xpath("//div[@class='dest_toptitle detail_tt']/div/div/h1/a/text()").toString();
         List<String> list = page.getHtml().xpath("//div[@class='detailcon detailbox_dashed']/div/div/text()").all();
         String brightPoint = page.getHtml().xpath("//div[@class='detailcon bright_spot']/ul/li/text()").toString();
-
-        if(StringUtils.isEmpty(spotName) || StringUtils.isEmpty(list) ||StringUtils.isEmpty(brightPoint)){
+        if (StringUtils.isEmpty(spotName) || StringUtils.isEmpty(list) || StringUtils.isEmpty(brightPoint)) {
             page.setSkip(true);
-        }else{
-            page.putField(DetailPipeline.SPOT_NAME,spotName);
-            page.putField(DetailPipeline.BRIGHT_POINT,brightPoint);
-            page.putField(DetailPipeline.INTRODUCE_AND_SPECIAL_HINT,list);
+        } else {
+            page.putField(DetailPipeline.SPOT_NAME, spotName);
+            page.putField(DetailPipeline.BRIGHT_POINT, brightPoint);
+            page.putField(DetailPipeline.INTRODUCE_AND_SPECIAL_HINT, list);
         }
-
     }
 
     @Override

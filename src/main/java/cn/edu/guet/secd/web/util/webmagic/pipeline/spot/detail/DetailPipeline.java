@@ -30,7 +30,7 @@ public class DetailPipeline implements Serializable,Pipeline{
         List<String> list = resultItems.get(INTRODUCE_AND_SPECIAL_HINT);
         String spotName = resultItems.get(SPOT_NAME);
         String brightPoint = resultItems.get(BRIGHT_POINT);
-        Spot spot = spotService.findBySpotName(spotName);
+        Spot spot = spotService.getBySpotName(spotName);
 
         synchronized (DetailPipeline.class){
             if(!StringUtils.isEmpty(spot)){

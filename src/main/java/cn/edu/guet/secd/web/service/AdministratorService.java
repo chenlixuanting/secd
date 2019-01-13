@@ -9,6 +9,6 @@ import cn.edu.guet.secd.web.pojo.Administrator;
  */
 public interface AdministratorService {
 
-    Administrator findByAdminAccount(String account);
+    Administrator getByAdminAccount(String account);
 
 }

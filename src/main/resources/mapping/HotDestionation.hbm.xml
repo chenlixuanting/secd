@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.edu.guet.secd.web.pojo.HotDestination" table="s_host_destionation">
+
+        <id name="hotDesId" column="hotdes_id">
+            <generator class="uuid"/>
+        </id>
+
+        <timestamp name="updateTime" column="update_time" access="field"/>
+
+        <property name="destName" type="string" column="dest_name"/>
+
+        <property name="createTime" type="timestamp">
+            <column name="create_time" sql-type="datetime"/>
+        </property>
+
+        <many-to-one name="province" column="province_id" class="cn.edu.guet.secd.web.pojo.Province"
+                     cascade="save-update"/>
+
+        <many-to-one name="headPic" column="head_pic_id" lazy="false" fetch="join" class="cn.edu.guet.secd.web.pojo.Photo" cascade="save-update"
+                     unique="true"/>
+
+    </class>
+</hibernate-mapping>

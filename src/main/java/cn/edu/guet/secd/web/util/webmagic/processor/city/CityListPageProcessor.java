@@ -23,30 +23,24 @@ public class CityListPageProcessor implements Serializable, PageProcessor {
      */
     public static final String BASE_URL = "http://you.ctrip.com/countrysightlist/guangxi100052.html";
 
-    private Site site = Site.me().setRetryTimes(3).setSleepTime(100).setTimeOut(3000);
+    private Site site = Site.me().setRetryTimes(10).setSleepTime(400).setTimeOut(5000);
 
     @Override
     public void process(Page page) {
-
         List<String> urlList = page.getHtml().links().regex("/countrysightlist/guangxi100052/p.?\\.html").all();
-
         for (int x = 0; x < urlList.size(); x++) {
             urlList.set(x, new StringBuilder(urlList.get(x)).insert(0, "http://you.ctrip.com").toString());
         }
-
         List<String> cityNameList = page.getHtml().xpath("//div[@class='cityimg']/span/text()").all();
         List<String> cityHeadPicUrlList = page.getHtml().xpath("//a[@class='ttd_nopic100']/img/@src").all();
-
         if (StringUtils.isEmpty(cityNameList) || StringUtils.isEmpty(cityHeadPicUrlList)) {
             page.setSkip(true);
         } else {
             page.putField(CityListPagePipeline.RES_KEY_CITY_NAME_LIST, cityNameList);
             page.putField(CityListPagePipeline.RES_KEY_CITY_HEAD_PIC_URL_LIST, cityHeadPicUrlList);
         }
-
         //更新待爬取队列
         page.addTargetRequests(urlList);
-
     }
 
     @Override
