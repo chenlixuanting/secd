@@ -95,7 +95,7 @@ public class Master implements Serializable {
         /**
          * 爬取城市详细信息
          */
-        Spider.create(cityDetailPageProcessor).addPipeline(cityDetailPagePipeline).addUrl(SpotListDetailProcessor.BASE_URL).thread(1).run();
+//        Spider.create(cityDetailPageProcessor).addPipeline(cityDetailPagePipeline).addUrl(SpotListDetailProcessor.BASE_URL).thread(1).run();
 
     }
 

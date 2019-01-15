@@ -20,4 +20,6 @@ public interface SpotDao {
 
     List<Spot> listSpotByCityPage(City city, int currentPage, int number);
 
+    Spot getSpotById(String spotId);
+
 }

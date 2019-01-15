@@ -43,4 +43,9 @@ public class SpotServiceImpl implements SpotService {
         return spotDao.listSpotByCityPage(city, currentPage, number);
     }
 
+    @Override
+    public Spot getSpotById(String spotId) {
+        return spotDao.getSpotById(spotId);
+    }
+
 }

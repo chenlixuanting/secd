@@ -23,7 +23,7 @@ public class DetailProcessor implements Serializable, PageProcessor {
     @Override
     public void process(Page page) {
         String spotName = page.getHtml().xpath("//div[@class='dest_toptitle detail_tt']/div/div/h1/a/text()").toString();
-        List<String> list = page.getHtml().xpath("//div[@class='detailcon detailbox_dashed']/div/div/text()").all();
+        List<String> list = page.getHtml().xpath("//div[@class='detailcon detailbox_dashed']/html()").all();
         String brightPoint = page.getHtml().xpath("//div[@class='detailcon bright_spot']/ul/li/text()").toString();
         if (StringUtils.isEmpty(spotName) || StringUtils.isEmpty(list) || StringUtils.isEmpty(brightPoint)) {
             page.setSkip(true);

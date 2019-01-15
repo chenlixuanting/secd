@@ -16,7 +16,7 @@ import java.util.List;
  * @author Administrator
  */
 @Repository
-public class DetailPipeline implements Serializable,Pipeline{
+public class DetailPipeline implements Serializable, Pipeline {
 
     public static final String SPOT_NAME = "spotName";
     public static final String INTRODUCE_AND_SPECIAL_HINT = "list";
@@ -32,12 +32,18 @@ public class DetailPipeline implements Serializable,Pipeline{
         String brightPoint = resultItems.get(BRIGHT_POINT);
         Spot spot = spotService.getBySpotName(spotName);
 
-        synchronized (DetailPipeline.class){
-            if(!StringUtils.isEmpty(spot)){
+        synchronized (DetailPipeline.class) {
+            if (!StringUtils.isEmpty(spot)) {
                 spot.setBrightPoint(brightPoint);
-                spot.setIntroduce(list.get(0));
-                System.out.println(list.get(list.size()-2));
-                spot.setSpecialHint(list.get(list.size()-2));
+                if (list.size() == 2) {
+                    spot.setIntroduce(list.get(0));
+                    spot.setSpecialHint(list.get(1));
+                } else if (list.size() == 1) {
+                    spot.setIntroduce(list.get(0));
+                } else {
+                    spot.setIntroduce("");
+                    spot.setSpecialHint("");
+                }
                 spotService.updateSpot(spot);
             }
         }

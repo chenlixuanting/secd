@@ -26,18 +26,19 @@
 </head>
 <body>
 
-<div class="gs-header cf">
-    <div class="content">
-        <div class="gs-nav">
-            <ul>
-                <li id="gs_nav_0"><a href="http://you.ctrip.com/"><i class="icon_home"></i></a></li>
-                <li id="my_home"><a href="http://you.ctrip.com/members/">我的主页</a></li>
-            </ul>
-        </div>
-        <div class="gs-search-2"><input id="gsSearch" type="text" placeholder="搜索城市/景点/游记/问答/住宿/用户" class="sgtgray">
-            <button type="button" class="btn-search"></button>
-            <div class="gs-notice" id="gsNotice"></div>
-            <a class="gs_write_link" id="gsWriteLink" href="http://you.ctrip.com/add-travel/Guide.html"><i></i></a>
+<div>
+    <div class="gs-header cf">
+        <div class="content">
+            <div class="gs-nav">
+                <ul>
+                    <li id="gs_nav_0"><a href="http://localhost:8080/secd/province/index"><i class="icon_home"></i></a>
+                    </li>
+                    <li id="my_home"><a href="http://localhost:8080/secd/user/home">我的主页</a></li>
+                </ul>
+            </div>
+            <div class="gs-search-2"><input id="gsSearch" type="text" placeholder="搜索城市/景点/游记/问答/住宿/用户" class="sgtgray">
+                <button type="button" class="btn-search"></button>
+            </div>
         </div>
     </div>
 </div>

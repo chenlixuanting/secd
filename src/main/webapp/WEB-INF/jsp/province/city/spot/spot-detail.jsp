@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
-    <title>桂林漓江攻略,桂林漓江门票/游玩攻略/地址/图片/门票价格【携程攻略】</title>
+    <title>${cityVo.cityName}${spotVo.spotName}攻略,${cityVo.cityName}${spotVo.spotName}门票/游玩攻略/地址/图片/门票价格</title>
     <meta name="keywords" content="桂林漓江,桂林漓江门票,漓江攻略,漓江地址,漓江图片,漓江门票价格">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
@@ -25,8 +25,9 @@
         <div class="content">
             <div class="gs-nav">
                 <ul>
-                    <li id="gs_nav_0"><a href="http://you.ctrip.com/"><i class="icon_home"></i></a></li>
-                    <li id="my_home"><a href="http://you.ctrip.com/members/">我的主页</a></li>
+                    <li id="gs_nav_0"><a href="http://localhost:8080/secd/province/index"><i class="icon_home"></i></a>
+                    </li>
+                    <li id="my_home"><a href="http://localhost:8080/secd/user/home">我的主页</a></li>
                 </ul>
             </div>
             <div class="gs-search-2"><input id="gsSearch" type="text" placeholder="搜索城市/景点/游记/问答/住宿/用户" class="sgtgray">
@@ -41,13 +42,10 @@
     <div class="dest_toptitle detail_tt">
         <div class="cf">
             <div class="f_left">
-                <h1><a href="http://you.ctrip.com/sight/guilin28/2888.html">漓江</a></h1>
+                <h1><a href="http://you.ctrip.com/sight/guilin28/2888.html">${spotVo.spotName}</a></h1>
                 <p>
-
                     &nbsp;
-
                 </p>
-
             </div>
             <div class="f_right">
                 <ul>
@@ -73,64 +71,25 @@
     <div class="content cf dest_details">
         <div class="des_wide f_left">
             <div class="detailtop cf normalbox">
-
                 <!--轮播效果-统一为线上首页渐隐展现形式-->
                 <div class="carousel " id="detailCarousel">
                     <div class="carousel-inner">
-                        <div class="item" style="display: none;">
-                            <a href="http://you.ctrip.com/photos/sight/guilin28/r2888-23519528.html" target="_blank">
-                                <img width="350" height="230"
-                                     src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_350_230.jpg">
-                            </a>
-                        </div>
-                        <div class="item" style="display: none;">
-                            <a href="http://you.ctrip.com/photos/sight/guilin28/r2888-27526166.html" target="_blank">
-                                <img width="350" height="230"
-                                     src="images/user/CghzgVWw3u6AdPjfACWjrJmGPB0426_C_350_230.jpg">
-                            </a>
-                        </div>
-                        <div class="item active" style="display: block;">
-                            <a href="http://you.ctrip.com/photos/sight/guilin28/r2888-27526315.html" target="_blank">
-                                <img width="350" height="230"
-                                     src="images/user/Cghzf1Ww3uyAJqaaACygxswaNKQ684_C_350_230.jpg">
-                            </a>
-                        </div>
-                        <div class="item" style="display: none;">
-                            <a href="http://you.ctrip.com/photos/sight/guilin28/r2888-27526218.html" target="_blank">
-                                <img width="350" height="230"
-                                     src="images/user/CghzgVWw3uqAaG5sADowmigi1Pc718_C_350_230.jpg">
-                            </a>
-                        </div>
-                        <div class="item" style="display: none;">
-                            <a href="http://you.ctrip.com/photos/sight/guilin28/r2888-27526219.html" target="_blank">
-                                <img width="350" height="230"
-                                     src="images/user/CghzfFWw3umAKeS6ABv94pHUMdc165_C_350_230.jpg">
-                            </a>
+                        <div class="item" style="display: block;">
+                            <img width="350" height="230"
+                                 src="${spotVo.headPicUrl}">
                         </div>
                     </div>
-                    <i class="picdiscover"></i>
-                    <ol class="carousel-indicators" style="margin-left: -37.5px; display: block;">
-                        <li data-target="#detailCarousel" data-slide-to="0" class=""></li>
-                        <li data-target="#detailCarousel" data-slide-to="1" class=""></li>
-                        <li data-target="#detailCarousel" data-slide-to="2" class="active"></li>
-                        <li data-target="#detailCarousel" data-slide-to="3" class=""></li>
-                        <li data-target="#detailCarousel" data-slide-to="4" class=""></li>
-                    </ol>
-                    <a target="_blank" href="http://you.ctrip.com/photos/sight/guilin28/r2888.html" class="r_text">全部4201张照片</a>
-                </div>    <!-- todo 点评信息 -->
+                </div>
+                <!-- todo 点评信息 -->
                 <ul class="detailtop_r_info">
-                    <li><span class="score"><b>4.6</b>分</span>
-                        <a data-share-title="快来围观我发现的景点【漓江】 ！还有更多去过这里的携程旅游攻略社区达人点评！快来看看！请戳&gt;&gt;&gt;http://you.ctrip.com/sight/guilin28/2888.html （分享自@携程攻略社区）"
-                           data-share-pic="https://dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_350_230.jpg"
-                           data-share-url="" href="javascript:;" class="link_share"><i></i>分享景点</a></li>
+                    <li><span class="score"><b>${spotVo.score}</b>分</span></li>
                     <li>
-                        <span class="comment_ring_16"><span style="width: 90%"></span></span>
+                        <span class="comment_ring_16"><span style="width: ${spotVo.scoreCss}%"></span></span>
                         <span class="pl_num">
-                        <dfn id="hrefyyDp"><span class="f_orange">10782</span>条点评</dfn>
+                        <dfn id="hrefyyDp"><span class="f_orange">${spotVo.totalComment}</span>条点评</dfn>
                     <span>|</span><span class="c_tipswrap">
                     <a href="http://you.ctrip.com/dianping/edit/75898.html"
-                       class="b_orange_m"><span><i></i>写点评</span></a><i class="icon_c_tips">立赚50-200积分<em
-                                class="c_arrow_l"></em></i>
+                       class="b_orange_m"><span><i></i>写点评</span></a>
                     </span>
                 </span>
                     </li>
@@ -142,82 +101,31 @@
                 <div class="detailcon bright_spot">
                     <span class="subscript"></span>
                     <ul>
-                        <li><i>•</i>乘船游江尽赏桂林山水的精华。</li>
+                        <li><i>•</i>${spotVo.brightPoint}</li>
                     </ul>
                 </div>
                 <!--概览-->
                 <div class="detailcon detailbox_dashed">
                     <h2>
-                        景点介绍<a id="jieshao" target="_blank"></a>
+                        <a id="jieshao" target="_blank"></a>
                     </h2>
                     <div class="toggle_s" style="display: block;">
                         <div itemprop="description" class="text_style">
-                            小学语文课本有篇“桂林山水甲天下”指的就是游漓江。漓江的两岸山峰伟岸挺拔，形态万千，是桂林风光的精华。它全程最具代表性的景观有九马画山和黄布倒影，新版人民币20元背面，就是指的黄布倒影的景观。一般游漓江的主要方式有坐船、竹筏及徒步，其中坐船又有分漓江精华游（桂林-阳朔）、阳朔水上游、市区水上游（桂林市区）。漓江精华游（桂林-阳朔）从桂林至阳朔的漓江河段，称漓江精华游，为游览漓江最常规的方式。游览时长4.5小时左右，沿途景点有：<a
-                                href="https://you.ctrip.com/sight/28/6030.html" class="inset-p-link"
-                                target="_blank">冠岩</a>、童子拜观音、九马画山、黄布倒影等。此线路有大船和竹筏可以选择，但在暴雨或涨水期间，竹筏停止运营。阳朔水上游从阳朔县城水东门码头起航至普益往返，途径福利镇，沿途观赏阳朔下游风光，游览总时长3小时左右。
-                            沿途景点有：<a href="https://you.ctrip.com/sight/702/22085.html" class="inset-p-link"
-                                     target="_blank">碧莲峰</a>、<a href="https://you.ctrip.com/sight/702/50095.html"
-                                                                class="inset-p-link" target="_blank">秀才看榜</a>、<a
-                                href="https://you.ctrip.com/sight/702/22082.html" class="inset-p-link" target="_blank">书童山</a>等。桂林市区水上游从龙船坪起航至上游木龙洞码头往返，沿途观赏市区两岸风光，游览时长1小时左右。沿途景点有：斗鸡山、塔山、<a
-                                href="https://you.ctrip.com/sight/28/50457.html" class="inset-p-link"
-                                target="_blank">穿山</a>、<a href="https://you.ctrip.com/sight/28/2881.html"
-                                                          class="inset-p-link" target="_blank">象鼻山</a>、<a
-                                href="https://you.ctrip.com/sight/28/2883.html" class="inset-p-link"
-                                target="_blank">伏波山</a>等。竹筏漂流说是漂流，实际是平缓的，非刺激的那种竹筏，一般是杨堤到兴坪段往返，可以看到漓江最主要的景观九马画山和黄布倒影，游览时间一般为2.5小时。
+                            ${spotVo.introduce}
                         </div>
                     </div>
-                    <div class="toggle_l" style="display: none;">
-                        <div itemprop="description" class="text_style">
-                            <p class="inset-p">
-                                小学语文课本有篇“桂林山水甲天下”指的就是游漓江。漓江的两岸山峰伟岸挺拔，形态万千，是桂林风光的精华。它全程最具代表性的景观有九马画山和黄布倒影，新版人民币20元背面，就是指的黄布倒影的景观。</p>
-                            <p class="inset-p">一般游漓江的主要方式有坐船、竹筏及徒步，其中坐船又有分漓江精华游（桂林-阳朔）、阳朔水上游、市区水上游（桂林市区）。</p>
-                            <p class="inset-p"><strong>漓江精华游（桂林-阳朔）</strong><br>从桂林至阳朔的漓江河段，称漓江精华游，为游览漓江最常规的方式。游览时长4.5小时左右，沿途景点有：<a
-                                    href="https://you.ctrip.com/sight/28/6030.html" class="inset-p-link"
-                                    target="_blank">冠岩</a>、童子拜观音、九马画山、黄布倒影等。此线路有大船和竹筏可以选择，但在暴雨或涨水期间，竹筏停止运营。<br><br><strong>阳朔水上游</strong><br>从阳朔县城水东门码头起航至普益往返，途径福利镇，沿途观赏阳朔下游风光，游览总时长3小时左右。
-                                沿途景点有：<a href="https://you.ctrip.com/sight/702/22085.html" class="inset-p-link"
-                                         target="_blank">碧莲峰</a>、<a href="https://you.ctrip.com/sight/702/50095.html"
-                                                                    class="inset-p-link" target="_blank">秀才看榜</a>、<a
-                                        href="https://you.ctrip.com/sight/702/22082.html" class="inset-p-link"
-                                        target="_blank">书童山</a>等。<br><br><strong>桂林市区水上游</strong><br>从龙船坪起航至上游木龙洞码头往返，沿途观赏市区两岸风光，游览时长1小时左右。沿途景点有：斗鸡山、塔山、<a
-                                        href="https://you.ctrip.com/sight/28/50457.html" class="inset-p-link"
-                                        target="_blank">穿山</a>、<a href="https://you.ctrip.com/sight/28/2881.html"
-                                                                  class="inset-p-link" target="_blank">象鼻山</a>、<a
-                                        href="https://you.ctrip.com/sight/28/2883.html" class="inset-p-link"
-                                        target="_blank">伏波山</a>等。<br><br><strong>竹筏漂流</strong><br>说是漂流，实际是平缓的，非刺激的那种竹筏，一般是杨堤到兴坪段往返，可以看到漓江最主要的景观九马画山和黄布倒影，游览时间一般为2.5小时。
-                            </p>
-                            <p class="inset-p"><br></p>
-                            <p class="inset-p"><strong>徒步游漓江</strong><br>较为推荐的徒步线路是从杨堤开始到兴坪结束，是徒步漓江的经典线路，期间还能乘竹筏赏漓江，步行时间约4-5小时。
-                            </p>
-                            <p class="inset-p">
-                                徒步的优点为自由度高，可随意停下拍照欣赏，而且有些驴友本身较为喜欢徒步。缺点为由于是徒步线路，视角高，许多景色会看不到，况且景点如果没人解说的话，很容易被错过，并且体力要求高，所以徒步游漓江算非常规路线。</p>
-                            <p class="inset-p">推荐的徒步线路大致行程如下：<br>杨堤码头（摆渡）-浪石村渡口（摆渡）-全家州-九马画山-冷水渡口（摆渡）-兴坪<br>杨堤码头需要摆渡到对岸才能开始徒步，然后到浪石村需要第二次摆渡。之后就一直沿着漓江的堤岸走即可，路况很好，路过全家州以后开始有一段山路。从杨堤走到九马画山大概需2小时。在九马画山最后一次过渡后，可沿着漓江边的堤岸继续走，或上大路坐机动车直接到兴坪。<br>
-                            </p>
-                        </div>
-                    </div>
-                    <p class="toggle_btn"><a href="javascript:;" target="_blank">查看全部<i class="arrow"></i></a></p>
                 </div>
                 <!--START 新增实用贴士-->
                 <div class="detailcon detailbox_dashed">
-                    <h2>特别提示<a id="tieshi" target="_blank"></a></h2>
+                    <h2><a id="tieshi" target="_blank"></a></h2>
                     <div class="toggle_s" style="display: block;">
                         <div itemprop="description" class="text_style">
-                            1、若是乘船游漓江，上船码头有：桂林市灵川县磨盘山码头、桂林市雁山区竹江码头；下船码头有：桂林市阳朔县龙头山码头、桂林市阳朔县水东门码头
-                            2、枯水期（11月-次年3月），根据水位情况，上下码头地点会变化，游览的路线也会有更改。
-                            3、 如果漓江水位上涨，涨大水，建议不要竹筏游了，还是坐大船，安全最重要。
+                            ${spotVo.specialHint}
                         </div>
                     </div>
-                    <div class="toggle_l" style="display: none;">
-                        <div itemprop="description" class="text_style">
-                            <p>1、若是乘船游漓江，上船码头有：桂林市灵川县磨盘山码头、桂林市雁山区竹江码头；下船码头有：桂林市阳朔县龙头山码头、桂林市阳朔县水东门码头</p>
-                            <p>2、枯水期（11月-次年3月），根据水位情况，上下码头地点会变化，游览的路线也会有更改。</p>
-                            <p>3、 如果漓江水位上涨，涨大水，建议不要竹筏游了，还是坐大船，安全最重要。</p>
-                        </div>
-                    </div>
-                    <p class="toggle_btn"><a href="javascript:;" target="_blank">查看全部<i class="arrow"></i></a></p>
                 </div>
                 <!--END 新增实用贴士-->
             </div>
-
 
             <div class="normalbox boxcomment_v1" id="sightcommentbox1">
                 <div class="comment_wrap">
@@ -695,12 +603,10 @@
                     </p>
                 </div>
             </div>
-
             <div id="ad_left1" style="display:none;" class="bd_event_detailw"></div>
-
         </div>
-        <div class="des_narrow f_right">
 
+        <div class="des_narrow f_right">
             <!--景点信息-->
             <div class="s_sight_infor">
                 <div class="narrow_title cf">
@@ -771,61 +677,58 @@
                         漓江三星游船：全年 09:00-11:00；时间仅供参考，游船开船时间以船票上的开船时间为准。游船时间：约3.5-4.5小时（因当天漓江水位水量等原因，会造成游船时间缩短或延长，属正常现象）。
                     </dd>
                 </dl>
-
             </div>
-            <div id="PoiBannerRightHtml" class="sight_narrow_jzpic" style="display: none;"></div>
-            <!--机票-->
-            <input type="hidden" id="putDistrictId" value="28">
-            <input type="hidden" id="putInChina" value="True">
-            <!--侧边特价机票-->
-
-            <input type="hidden" id="startCityId" name="startCityId" value="2">
-            <input type="hidden" id="endCityId" name="endCityId" value="28">
-            <input type="hidden" id="dCode" name="dCode" value="">
-            <input type="hidden" id="aCode" name="aCode" value="">
-            <input type="hidden" id="inChina" name="inChina" value="True">
-            <input type="hidden" id="ctmInfo" name="ctmInfo" value="#ctm_ref=gs_ttd_{0}_02_fld_2_28_undefined">
         </div>
     </div>
 </div>
-
 
 <div class="footgray">
     <div class="footinner cf">
         <dl>
             <dt>社区必读</dt>
-            <dd><a href="http://you.ctrip.com/htmlpages/eula.html" target="_blank">用户协议</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/guide.html" target="_blank">社区指南</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/exp.html" target="_blank">经验与等级</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/help.html" target="_blank">新手导航</a></dd>
-            <dd><a href="http://you.ctrip.com/thematic/marketing/mianze" target="_blank">网络信息侵权保障</a></dd>
+            <dd><a href="" target="_blank">用户协议</a></dd>
+            <dd><a href="" target="_blank">社区指南</a></dd>
+            <dd><a href="" target="_blank">经验与等级</a></dd>
+            <dd><a href="" target="_blank">新手导航</a></dd>
+            <dd><a href="" target="_blank">网络信息侵权保障</a></dd>
         </dl>
         <dl>
             <dt>发现你的旅行</dt>
-            <dd><a href="http://you.ctrip.com/place" target="_blank">了解目的地</a></dd>
-            <dd><a href="http://you.ctrip.com/travels" target="_blank">阅读精彩游记</a></dd>
-            <dd><a href="http://you.ctrip.com/guides" target="_blank">下载精品攻略</a></dd>
-            <dd><a href="http://you.ctrip.com/asks" target="_blank">请教旅行达人</a></dd>
-            <dd><a href="http://you.ctrip.com/events" target="_blank">发起结伴</a></dd>
+            <dd><a href="" target="_blank">了解目的地</a></dd>
+            <dd><a href="" target="_blank">阅读精彩游记</a></dd>
+            <dd><a href="" target="_blank">下载精品攻略</a></dd>
+            <dd><a href="" target="_blank">请教旅行达人</a></dd>
+            <dd><a href="" target="_blank">发起结伴</a></dd>
         </dl>
         <dl>
             <dt>分享你的旅行</dt>
-            <dd><a href="http://you.ctrip.com/add-travel/guide.html" target="_blank">发表游记大作</a></dd>
-            <dd><a href="http://you.ctrip.com/dianping/" target="_blank">点评去过的景点</a></dd>
+            <dd><a href="" target="_blank">发表游记大作</a></dd>
+            <dd><a href="" target="_blank">点评去过的景点</a></dd>
         </dl>
         <dl class="ftabout">
             <dt>关于我们</dt>
-            <dd><a href="http://you.ctrip.com/htmlpages/about.html" target="_blank">社区简介</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/contact.html" target="_blank">联系我们</a></dd>
-            <dd><a href="http://you.ctrip.com/htmlpages/job.html" target="_blank">加入我们</a></dd>
-            <dd><a href="http://you.ctrip.com/intelligence.html" target="_blank">智慧旅游</a></dd>
+            <dd><a href="" target="_blank">社区简介</a></dd>
+            <dd><a href="" target="_blank">联系我们</a></dd>
+            <dd><a href="" target="_blank">加入我们</a></dd>
+            <dd><a href="" target="_blank">智慧旅游</a></dd>
         </dl>
         <dl class="ftguanzhu">
-            <dt>关注携程攻略社区</dt>
+            <dt>关注攻略社区</dt>
             <dd class="youguanzhu cf"><span class="ftweixin"></span></dd>
         </dl>
     </div>
 </div>
-
 </body>
+<script src="js/user/jquery-3.3.1.js"></script>
+<script>
+    $("p.toggle_btn").click(function () {
+        if ($(this).prev("div").css("display") == "block") {
+            $(this).prev("div").css("display", "none");
+            $(this).prev("div").prev("div").css("display", "block");
+        } else {
+            $(this).prev("div").css("display", "block");
+            $(this).prev("div").prev("div").css("display", "none");
+        }
+    });
+</script>
 </html>

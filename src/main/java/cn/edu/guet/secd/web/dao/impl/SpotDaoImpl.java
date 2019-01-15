@@ -53,4 +53,17 @@ public class SpotDaoImpl extends BaseDaoImpl<Spot> implements SpotDao {
         return null;
     }
 
+    @Override
+    public Spot getSpotById(String spotId) {
+        String hql = "from cn.edu.guet.secd.web.pojo.Spot as s where s.spotId=:spotId";
+        try {
+            Query query = getCurrentSession().createQuery(hql);
+            query.setParameter("spotId", spotId);
+            return (Spot) query.uniqueResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }

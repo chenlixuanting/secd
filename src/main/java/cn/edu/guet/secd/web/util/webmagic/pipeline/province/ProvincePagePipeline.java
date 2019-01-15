@@ -37,10 +37,10 @@ public class ProvincePagePipeline implements Pipeline {
     @Override
     public void process(ResultItems resultItems, Task task) {
 
-//        Province province = new Province();
-//        province.setProvinceName("广西");
-//        province.setCreateTime(new Timestamp(System.currentTimeMillis()));
-//        provinceService.saveProvince(province);
+        Province province = new Province();
+        province.setProvinceName("广西");
+        province.setCreateTime(new Timestamp(System.currentTimeMillis()));
+        provinceService.saveProvince(province);
 
         List<String> hotDestinationPicUrl = resultItems.get(HOT_DESTINATION_PIC_URL);
         List<String> hotDestinationName = resultItems.get(HOT_DESTINATION_NAME);

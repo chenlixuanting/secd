@@ -17,6 +17,24 @@ public class SpotVo implements Serializable {
     private String textdetail;
     private String introduce;
     private String address;
+    private String specialHint;
+    private String brightPoint;
+
+    public String getSpecialHint() {
+        return specialHint;
+    }
+
+    public void setSpecialHint(String specialHint) {
+        this.specialHint = specialHint;
+    }
+
+    public String getBrightPoint() {
+        return brightPoint;
+    }
+
+    public void setBrightPoint(String brightPoint) {
+        this.brightPoint = brightPoint;
+    }
 
     public String getAddress() {
         return address;

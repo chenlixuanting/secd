@@ -186,7 +186,7 @@
                                     </dd>
                                     <dd class="textdetail">${spotVo.textdetail}...</dd>
                                 </dl>
-                                <a href="/province/city/spot-detail/${spotVo.spotId}" class="all_link"
+                                <a href="province/city/spot-detail/${spotVo.spotId}" class="all_link"
                                    target="_blank"></a>
                             </li>
                         </c:forEach>

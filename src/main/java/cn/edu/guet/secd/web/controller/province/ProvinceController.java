@@ -16,6 +16,7 @@ import cn.edu.guet.secd.web.vo.PageVo;
 import cn.edu.guet.secd.web.vo.SpotVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -327,8 +328,37 @@ public class ProvinceController {
      * @return
      */
     @RequestMapping(value = "/city/spot-detail/{spotId}")
-    public String citySpotDetailPage(@PathVariable String spotId) {
-        return CityConstant.CITY_SPOT_DETAIL;
+    public ModelAndView citySpotDetailPage(@PathVariable String spotId, ModelAndView modelAndView) {
+
+        Spot spot = spotService.getSpotById(spotId);
+        SpotVo spotVo = new SpotVo();
+        CityVo cityVo = new CityVo();
+
+        if (!StringUtils.isEmpty(spot)) {
+            spotVo.setScore(spot.getScore());
+            spotVo.setAddress(spot.getAddress());
+            spotVo.setHeadPicUrl(spot.getHeadPic().getUrl());
+            spotVo.setSpotId(spot.getSpotId());
+            spotVo.setScoreCss((int) (spot.getScore() / 5.0 * 100));
+            spotVo.setTotalComment(spot.getSpotComments().size());
+            spotVo.setTextdetail(spot.getIntroduce());
+            spotVo.setSpotName(spot.getSpotName());
+            spotVo.setSpotRank(spot.getSpotRank());
+            spotVo.setIntroduce(spot.getIntroduce());
+            spotVo.setBrightPoint(spot.getBrightPoint());
+            spotVo.setSpecialHint(spot.getSpecialHint());
+            City city = cityService.getById(spot.getCity().getCityId());
+            if (!StringUtils.isEmpty(city)) {
+                cityVo.setCityName(city.getCityName());
+                cityVo.setCityId(city.getCityId());
+            }
+        }
+
+        modelAndView.addObject("cityVo", cityVo);
+        modelAndView.addObject("spotVo", spotVo);
+        modelAndView.setViewName(CityConstant.CITY_SPOT_DETAIL);
+
+        return modelAndView;
     }
 
     /**

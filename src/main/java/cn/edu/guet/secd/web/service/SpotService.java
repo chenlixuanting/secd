@@ -20,4 +20,6 @@ public interface SpotService {
 
     List<Spot> listSpotByCityPage(City city, int currentPage, int number);
 
+    Spot getSpotById(String spotId);
+
 }
