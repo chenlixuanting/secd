@@ -140,7 +140,7 @@
                                 <dd class="ellipsis">
                                     推荐景点：
                                     <c:forEach var="s" items="${cityVo.recommendSpots}">
-                                        <a href="/province/city/spot-detail/${s.spotId}"
+                                        <a href="province/city/spot-detail/${s.spotId}"
                                            target="_blank">${s.spotName}</a>、
                                     </c:forEach>
                                 </dd>

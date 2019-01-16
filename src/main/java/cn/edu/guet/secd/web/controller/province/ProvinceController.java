@@ -91,7 +91,7 @@ public class ProvinceController {
             spotVo.setSpotId(spot.getSpotId());
             spotVo.setSpotName(spot.getSpotName());
             spotVo.setTotalComment(spot.getSpotComments().size());
-            spotVo.setTextdetail(spot.getIntroduce().substring(0, 20));
+//            spotVo.setTextdetail(spot.getIntroduce().substring(0, 20));
             spotVo.setScore(spot.getScore());
             spotVo.setHeadPicUrl(spot.getHeadPic().getUrl());
             spotVo.setScoreCss((int) (spot.getScore() / 5.0 * 100));
@@ -320,6 +320,25 @@ public class ProvinceController {
     @RequestMapping(value = "/city/route")
     public String cityRoutePage() {
         return CityConstant.CITY_ROUTE;
+    }
+
+    /**
+     * 写景点评论
+     *
+     * @return
+     */
+    @RequestMapping(value = "/city/spot-comment/{spotId}")
+    public ModelAndView citySpotComment(@PathVariable String spotId, ModelAndView modelAndView) {
+        Spot spot = spotService.getSpotById(spotId);
+        SpotVo spotVo = new SpotVo();
+        if (!StringUtils.isEmpty(spot)) {
+            spotVo.setSpotName(spot.getSpotName());
+            spotVo.setHeadPicUrl(spot.getHeadPic().getUrl());
+            spotVo.setAddress(spot.getAddress());
+        }
+        modelAndView.addObject("spotVo", spotVo);
+        modelAndView.setViewName(CityConstant.CITY_SPOT_COMMENT);
+        return modelAndView;
     }
 
     /**

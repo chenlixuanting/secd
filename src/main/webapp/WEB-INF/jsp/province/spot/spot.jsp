@@ -25,8 +25,9 @@
         <div class="content">
             <div class="gs-nav">
                 <ul>
-                    <li id="gs_nav_0"><a href="http://you.ctrip.com/"><i class="icon_home"></i></a></li>
-                    <li id="my_home"><a href="http://you.ctrip.com/members/">我的主页</a></li>
+                    <li id="gs_nav_0"><a href="http://localhost:8080/secd/province/index"><i class="icon_home"></i></a>
+                    </li>
+                    <li id="my_home"><a href="http://localhost:8080/secd/user/home">我的主页</a></li>
                 </ul>
             </div>
             <div class="gs-search-2"><input id="gsSearch" type="text" placeholder="搜索城市/景点/游记/问答/住宿/用户" class="sgtgray">
@@ -140,9 +141,9 @@
                                             class="score"> <strong>${spotVo.score}</strong>分 </span><span
                                             class="comment_text">${spotVo.totalComment}条点评</span>
                                     </dd>
-                                    <dd class="textdetail">
-                                        <p class="ellipsis">${spotVo.textdetail}，…</p>
-                                    </dd>
+                                    <%--<dd class="textdetail">--%>
+                                        <%--<p class="ellipsis">${spotVo.textdetail}，…</p>--%>
+                                    <%--</dd>--%>
                                     <dd class="fromtext">
                                         来自<a target="_blank" rel="nofollow" href="javascript:void(0)"
                                              title="广西壮瑶文化信息采集和分类系统">广西壮瑶文化信息采集和分类系统</a>

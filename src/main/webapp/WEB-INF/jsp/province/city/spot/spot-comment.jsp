@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=1024">
     <meta http-equiv="Cache-Control" content="no-siteapp ">
-    <title>漓江旅游点评_桂林漓江好玩吗_怎么样【携程攻略】</title>
+    <title>${spotVo.spotName}旅游点评_${spotVo.spotName}好玩吗_怎么样？</title>
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/common.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/fed.v2.0.css">
     <link charset="utf-8" type="text/css" rel="stylesheet" href="css/user/comment_form.v2.0.css">
@@ -24,14 +24,13 @@
         <div class="content">
             <div class="gs-nav">
                 <ul>
-                    <li id="gs_nav_0"><a href="http://you.ctrip.com/"><i class="icon_home"></i></a></li>
-                    <li id="my_home"><a href="http://you.ctrip.com/members/">我的主页</a></li>
+                    <li id="gs_nav_0"><a href="http://localhost:8080/secd/province/index"><i class="icon_home"></i></a>
+                    </li>
+                    <li id="my_home"><a href="http://localhost:8080/secd/user/home">我的主页</a></li>
                 </ul>
             </div>
             <div class="gs-search-2"><input id="gsSearch" type="text" placeholder="搜索城市/景点/游记/问答/住宿/用户" class="sgtgray">
                 <button type="button" class="btn-search"></button>
-                <div class="gs-notice" id="gsNotice"></div>
-                <a class="gs_write_link" id="gsWriteLink" href="http://you.ctrip.com/add-travel/Guide.html"><i></i></a>
             </div>
         </div>
     </div>
@@ -43,9 +42,10 @@
             <div class="main_title">
                 <a href="http://you.ctrip.com/sight/guilin28/2888.html" class="comment_nopic86" target="_blank">
                     <img width="86" height="60"
-                         src="images/user/CghzfVWwtayAcRE2ABaIuxjYffE235_C_86_60.jpg"></a>
-                <h3 class="ellipsis"><a href="http://you.ctrip.com/sight/guilin28/2888.html" target="_blank">漓江</a></h3>
-                <p class="ellipsis">桂林市灵川县</p>
+                         src="${spotVo.headPicUrl}"></a>
+                <h3 class="ellipsis"><a href="http://you.ctrip.com/sight/guilin28/2888.html"
+                                        target="_blank">${spotVo.spotName}</a></h3>
+                <p class="ellipsis">${spotVo.address}</p>
             </div>
             <div class="formbox cf">
                 <!--未登录提示-->
@@ -102,7 +102,8 @@
                         点评内容：</label>
                     <div class="f_rbox">
                         <div class="upload">
-                            <textarea placeholder="旅行中有哪些亮点？哪些发现？给迷茫的游友们指条明路吧~"></textarea>
+                            <textarea placeholder="旅行中有哪些亮点？哪些发现？给迷茫的游友们指条明路吧~"
+                                      style="padding:5px 0 5px 9px;"></textarea>
                         </div>
                         <p class="bottomtips">
                             <span class="f_right">再写<em>10</em>个字并传图，成为优质点评，获得更多积分！</span> <span class="error_text"

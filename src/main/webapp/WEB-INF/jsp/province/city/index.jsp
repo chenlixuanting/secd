@@ -184,7 +184,7 @@
                                             class="score"><strong>${spotVo.score}</strong>分 </span><span
                                             class="comment_text">(${spotVo.totalComment}条点评)</span>
                                     </dd>
-                                    <dd class="textdetail">${spotVo.textdetail}...</dd>
+                                    <%--<dd class="textdetail">${spotVo.textdetail}...</dd>--%>
                                 </dl>
                                 <a href="province/city/spot-detail/${spotVo.spotId}" class="all_link"
                                    target="_blank"></a>
